@@ -27,7 +27,7 @@ public class BoardDAO {
 		}
 	}
 		// board table에서 게시판 전체리스트를 가져오기
-		public List<exercise.entity.BoardVO> selectAll() {
+		public List<BoardVO> selectAll() {
 			SqlSession session = sqlSessionFactory.openSession();
 			// SqlSession은 어떤 정보를 알고 있어야 될까?
 			// 1. SQL문장이 어디 있는지(BoardMapper.xml)

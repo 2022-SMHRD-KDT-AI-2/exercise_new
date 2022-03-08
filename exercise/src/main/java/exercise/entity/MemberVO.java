@@ -3,15 +3,17 @@ package exercise.entity;
 public class MemberVO {
 	private String memId;
 	private String memPwd;
-	private String memUser;
+	private String memNick;
+	private String memAdmin;
 	public MemberVO() {
 		
 	}
-	public MemberVO(String memId, String memPwd, String memUser) {
+	public MemberVO(String memId, String memPwd, String memNick, String memAdmin) {
 		super();
 		this.memId = memId;
 		this.memPwd = memPwd;
-		this.memUser = memUser;
+		this.memNick = memNick;
+		this.memAdmin = memAdmin;
 	}
 	public String getMemId() {
 		return memId;
@@ -25,11 +27,20 @@ public class MemberVO {
 	public void setMemPwd(String memPwd) {
 		this.memPwd = memPwd;
 	}
-	public String getMemUser() {
-		return memUser;
+
+
+	public String getMemNick() {
+		return memNick;
 	}
-	public void setMemUser(String memUser) {
-		this.memUser = memUser;
+	public void setMemNick(String memNick) {
+		this.memNick = memNick;
 	}
+	public String getMemAdmin() {
+		return memAdmin;
+	}
+	public void setMemAdmin(String memAdmin) {
+		this.memAdmin = memAdmin;
+	}
+
 	
 }

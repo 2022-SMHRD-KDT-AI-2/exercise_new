@@ -33,5 +33,10 @@
      select * from member 
      where memId=#{memId} and memPwd=#{memPwd} 
   </select>
+  
+  <insert id="memberInsert" parameterType="exercise.entity.MemberVO">
+    insert into tbl_member(mb_id,mb_pw,mb_nick,mb_addr)
+    values(#{memId},#{memPw},#{memNick},#{memAddr})
+  </insert>
 </mapper>
 

@@ -16,6 +16,8 @@ public class HandlerMapping {
 		//새로운 요청이 발생하면 여기서부터 출발
 	
 		mappings.put("/memberForm.do", new MemberFormController());
+		mappings.put("/memberInsert.do", new MemberInsertController());
+		mappings.put("/survey.do", new SurveyController());
 	}
 	
 	public Controller getController(String key) {

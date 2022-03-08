@@ -40,3 +40,7 @@ insert into MEMBER values('smhrd03','smhrd03', 'º≠¥Î»Ò');
 select * from MEMBER;
 delete from MEMBER
 drop table member;
+
+
+
+select * from tbl_member;
