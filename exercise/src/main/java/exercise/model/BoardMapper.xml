@@ -36,7 +36,9 @@
   
   <insert id="memberInsert" parameterType="exercise.entity.MemberVO">
     insert into tbl_member(mb_id,mb_pw,mb_nick,mb_addr)
-    values(#{memId},#{memPw},#{memNick},#{memAddr})
+    values(#{memId},#{memPwd},#{memNick},#{memAddr})
   </insert>
+  
+  
 </mapper>
 

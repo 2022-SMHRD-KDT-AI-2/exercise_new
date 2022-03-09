@@ -14,21 +14,19 @@ public class MemberDAO {
 	// 초기화블럭(프로그램 실행시 한번만 실행되는 부분)
 	static {
 		try {
-			String resource = "exercise/model/config.xml";
-			InputStream inputStream = Resources.getResourceAsStream(resource);
-			sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);	
-		} catch (Exception e) {
-			
+		String resource = "goalsns/model/config.xml";
+		InputStream inputStream = Resources.getResourceAsStream(resource);
+		sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+		}catch(Exception e) {
+			e.printStackTrace();
+		
 		}
 	}
-	
 	public int memberInsert(MemberVO vo) {
-		  
-		  SqlSession session=sqlSessionFactory.openSession();   
+		  SqlSession session = sqlSessionFactory.openSession();  
 	      int cnt=session.insert("memberInsert", vo);
 	      session.commit();
 	      session.close();// 반납(*)
-	      
 	      return cnt;
 	}
 }

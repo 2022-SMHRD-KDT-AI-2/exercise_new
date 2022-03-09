@@ -5,9 +5,11 @@ public class MemberVO {
 	private String memPwd;
 	private String memNick;
 	private String memAdmin;
+	
 	public MemberVO() {
 		
 	}
+	
 	public MemberVO(String memId, String memPwd, String memNick, String memAdmin) {
 		super();
 		this.memId = memId;
