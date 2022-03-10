@@ -62,9 +62,21 @@
                 <h3 class="join_title"><label for="pswd2">비밀번호 재확인</label></h3>
                 <span class="box int_pass_check">
                     <input type="text" id="pswd2" class="int" maxlength="20">
-                    <img src="./img/pw.png" id="pswd1_img1" class="pswdImg">
+                 <img src="./img/pw.png" id="pswd1_img1" class="pswdImg">
                 </span>
                 <span class="error_next_box"></span>
+            </div>
+            
+            <!-- GENDER(성별) -->
+            <div>
+                <h3 class="join_title"><label for="gender">성별</label></h3>
+                <span class="box gender_code">
+                    <select id="gender" class="sel">
+                        <option>성별</option>
+                        <option value="M">남자</option>
+                        <option value="F">여자</option>
+                    </select>                            
+                </span>
             </div>
 
             <!--ADDR(주소)-->

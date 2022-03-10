@@ -45,7 +45,7 @@ a{
     position: absolute;
     left: 50%;
     transform: translate(-50%,0%);
-    width: 460px;
+    width: 300px;
 }
 .join_title{
     font-size: 18px;
@@ -80,7 +80,7 @@ h3 {
 }
 .box1 {
     display: block;
-    width: 225px;
+    width: 148px;
     height: 51px;
     border: solid 1px #dadada;
     padding: 10px 14px 10px 14px;
@@ -93,13 +93,13 @@ h3 {
 
 .box2 {
     display: block;
-    width: 225px;
+    width: 148px;
     height: 51px;
     border: solid 1px #dadada;
     padding: 10px 14px 10px 14px;
     box-sizing: border-box;
     background: #fff;
-    margin-left: 225px;
+    margin-left: 140px;
     margin-top: -50px;
     border-radius: 9.8px
 }

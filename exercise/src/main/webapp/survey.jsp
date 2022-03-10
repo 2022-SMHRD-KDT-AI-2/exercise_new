@@ -18,9 +18,19 @@
         <!-- content-->
         <div id="content">
             <!-- height, weight-->
+            <!-- GENDER -->
+               <div>
+                   <h3 class="join_title"><label for="gender">1.성별을 선택하세요</label></h3>
+                        <select id="gender" class="sel">
+                            <option value="M">남자</option>
+                            <option value="F">여자</option>
+                        </select>                            
+              
+                </div>
+            
             <div>
                 <h3 class="request_title">
-                    <label for="height">1.신체정보를 입력하세요.</label>
+                    <label for="height">2.신체정보를 입력하세요.</label>
                 </h3>
                 <div class="box height_id">
                     <input type="text" id="height" class="int" maxlength="30" placeholder="키를 입력하세요">
@@ -33,7 +43,7 @@
 
             <!-- target_weight -->
             <div><br>
-                <h3 class="request_title"><label for="goal">2.원하는 몸무게를 입력하세요.</label></h3>
+                <h3 class="request_title"><label for="goal">3.원하는 몸무게를 입력하세요.</label></h3>
                 <span class="box int_traget">
                     <input type="text" id="target" class="int" maxlength="20">
                 </span>
@@ -42,7 +52,7 @@
 
             <!-- athletic_part -->
             <div><br>
-                <h3 class="request_title"><label for="athletic_part">3.원하는 운동종류를 선택하세요.</label></h3>
+                <h3 class="request_title"><label for="athletic_part">4.원하는 운동종류를 선택하세요.</label></h3>
 
                 <div id="athletic_wrap">
                     <div class="athletic_part">
@@ -57,7 +67,7 @@
 
             <!-- athletic_level-->
             <div>
-                <h3 class="request_title"><label for="athletic_level">4.본인의 운동레벨을 선택하세요 </label></h3>
+                <h3 class="request_title"><label for="athletic_level">5.본인의 운동레벨을 선택하세요 </label></h3>
 
                 <div id="level_wrap">
                     <div class="athletic_level">
