@@ -1,0 +1,507 @@
+@charset "EUC-KR";
+@import url('https://fonts.googlepis.com/css?family=Nanum+Myeongjo:800&subset=korean');
+@import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Roboto 100 300 400 500 700 900 */
+/* Noto Sans KR 100 300 400 500 700 900 */
+@font-face {
+    font-family: 'GyeonggiTitleM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiTitleM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'IBMPlexSansKR-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 15px;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.board_wrap {
+    width: 1000px;
+    margin: 100px auto;
+}
+
+.board_title strong{
+    margin-bottom: 30px;
+    color: #090B0D;
+}
+
+.board_title strong {
+    font-size: 3.2rem;
+    font-family: 'IBMPlexSansKR-Bold';
+}
+
+.board_title p {
+    margin-top: 50px;
+    font-size: 1.6rem;
+    font-family: 'IBMPlexSansKR-Regular';
+}
+
+.bt_wrap {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0;
+    
+}
+
+.bt_wrap a {
+    display: inline-block;
+    min-width: 80px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #090B0D;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    font-family: 'IBMPlexSansKR-Bold';
+    border-radius: 5px;
+}
+
+.bt_wrap a:first-child {
+    margin-left: 0;
+}
+
+.bt_wrap a.on {
+    background: #090B0D;
+    color: #fff;
+}
+
+.board_list {
+    width: 100%;
+    border-top: 2px solid #000;
+    font-family: 'IBMPlexSansKR-Regular';
+}
+
+.board_list > div {
+    border-bottom: 1px solid #ddd;
+    font-size: 0;
+}
+
+.board_list > div.top {
+    border-bottom: 1px solid #999;
+}
+
+.board_list > div:last-child {
+    border-bottom: 1px solid #000;
+}
+
+.board_list > div > div {
+    display: inline-block;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.board_list > div.top > div {
+    font-weight: 600;
+}
+
+.board_list .num {
+    width: 10%;
+}
+
+.board_list .title {
+    width: 60%;
+    text-align: left;
+}
+
+.board_list .top .title {
+    text-align: center;
+}
+
+.board_list .writer {
+    width: 10%;
+}
+
+.board_list .date {
+    width: 10%;
+}
+
+.board_list .count {
+    width: 5%;
+}
+
+.board_page {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 0;
+}
+
+.board_page a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    border-left: 0;
+    line-height: 100%;
+}
+
+.board_page a.bt {
+    padding-top: 10px;
+    font-size: 1.2rem;
+    letter-spacing: -1px;
+}
+
+.board_page a.num {
+    padding-top: 9px;
+    font-size: 1.4rem;
+}
+
+.board_page a.num.on {
+    border-color: #000;
+    background: #000;
+    color: #fff;
+}
+
+.board_page a:first-child {
+    border-left: 1px solid #ddd;
+}
+
+.board_view {
+    width: 100%;
+    border-top: 2px solid #000;
+    font-family: 'IBMPlexSansKR-Regular';
+}
+
+.board_view .title {
+    padding: 20px 15px;
+    border-bottom: 1px dashed #ddd;
+    font-size: 1.8rem;
+}
+
+.board_view .info {
+    padding: 15px;
+    border-bottom: 1px solid #999;
+    
+}
+
+.board_view .info dl {
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.board_view .info dl:first-child {
+    padding-left: 0;
+}
+
+.board_view .info dl::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 0;
+    display: block;
+    width: 1px;
+    height: 13px;
+    background: #ddd;
+}
+
+.board_view .info dl:first-child::before {
+    display: none;
+}
+
+.board_view .info dl dt,
+.board_view .info dl dd {
+    display: inline-block;
+    font-size: 1.4rem;
+}
+
+
+.board_view .info dl dd {
+    margin-left: 10px;
+    color: #777;
+}
+
+.board_view .cont {
+    padding: 15px;
+    border-bottom: 1px solid #000;
+    line-height: 160%;
+    font-size: 1.4rem;
+}
+
+.board_write {
+    border-top: 2px solid #000;
+}
+
+.board_write .title{
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'IBMPlexSansKR-Regular';
+}
+
+.board_write .title input{
+    font-size: 17px;
+    font-family: 'IBMPlexSansKR-Regular';
+}
+
+.board_write .info {
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'IBMPlexSansKR-Regular';
+}
+
+.board_write .info {
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px solid #000;
+    font-size: 0;
+}
+
+.board_write .info input{
+    font-size: 16px;
+    font-family: 'IBMPlexSansKR-Regular';
+}
+
+.cont textarea{
+    font-size: 20px;
+    font-family: 'IBMPlexSansKR-Regular';
+}
+
+.board_write .title dl {
+    font-size: 0;
+}
+
+.board_write .info dl {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.board_write .title dt,
+.board_write .title dd,
+.board_write .info dt,
+.board_write .info dd {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.4rem;
+}
+
+.board_write .title dt,
+.board_write .info dt {
+    width: 100px;
+}
+
+.board_write .title dd {
+    width: calc(100% - 100px);
+}
+
+.board_write .title input[type="text"],
+.board_write .info input[type="text"],
+.board_write .info input[type="password"] {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.board_write .title input[type="text"] {
+    width: 80%;
+}
+
+.board_write .cont {
+    border-bottom: 1px solid #000;
+}
+
+.board_write .cont textarea {
+    display: block;
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 0;
+    resize: vertical;
+}
+
+
+
+
+
+
+/* 공통 */
+
+html {
+    font-size: 15px;
+}
+
+/* 15px 가장많이 사용 */
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+
+
+body {
+    font-family: 'Roboto', 'Noto Sans KR', 'sans-serif';
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+/* header contents */
+
+/* header contents */
+
+#header {
+    background-color: #368132;
+    width: 100%;
+    height: 70px;
+}
+
+#header .h_cont {
+    width: 1000px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+#header .h_cont img{
+    margin-top: 10px;
+    width:120px;
+    height:55px;
+}
+
+
+.h_cont nav > ul > li {
+    display: inline-block;
+    margin: 0 12px;
+    position: relative;
+}
+
+.h_cont nav > ul > li > a {
+    font-size: 22px;
+    font-weight: 400;
+    color: #ebeaea;
+    transition: 0.2s;
+    font-family: 'Do Hyeon', sans-serif;
+
+}
+
+.h_cont nav > ul > li > a:hover {
+    color: #fff;
+    font-size: 24px;
+}
+
+nav .sub_menu {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%, 0);
+    background-color: #fff;
+    width: 100px;
+    display: none;
+}
+
+/* nav .sub_menu ul {display: flex; flex-direction: column; align-items: center;} 지움 */
+
+/* nav .sub_menu ul li {padding: 10px 0;} 지움 */
+nav .sub_menu ul li {
+    width: 100%
+}
+
+nav .sub_menu ul li a {
+    display: block;
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #135817;
+}
+
+nav .sub_menu ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.h_cont .h_menu {
+    position: relative;
+}
+
+/* 가상클래스가 붙은 실질적인 아이한테 position: relative; 주는것 */
+
+
+
+/* 가상클래스 ::before 사용시 content, position: absolute;, 너비값, 높이값 꼭 써줘야됨*/
+/* transform: translate(0,-50%);로 중간에 맞춘 후 left조절 */
+
+#header > div > ul > li:nth-child(1) > a > img{
+    width:30px;
+    height:30px;
+
+}
+#header > div > ul > li:nth-child(2) > a > img{
+    width:30px;
+    height:30px;
+}
+#header > div > ul > li:nth-child(3) > a > img{
+    width:30px;
+    height:30px;
+}
+.h_cont .h_menu  {
+    margin-left:20px;
+}
+.h_cont .h_menu li {
+    display: inline-block;
+    margin-left: 7px;
+    font-family: 'GyeonggiTitleM';
+}
+
+
+
+.h_cont .h_menu li:first-child {
+    margin: 0;
+}
+
+.h_cont .h_menu li a {
+    font-size: 0.9333rem;
+    font-weight: 500;
+    color: #dedede;
+    transition: 0.2s;
+   
+}
+
+.h_cont .h_menu li a:hover {
+    color: #fff;
+}
+
+
+
+
+

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
+    
 <!DOCTYPE html>
 <html>
     <head>
@@ -56,11 +57,11 @@
 
                 <div id="athletic_wrap">
                     <div class="athletic_part">
-                        <input id="shoulder" type="radio" name="shoulder">유산소 운동 &nbsp;
-                        <input id="arm" type="radio" name="arm">무산소 운동 &nbsp;
-                        <input id="chest" type="radio" name="chest">근력운동 &nbsp;<br>
-                        <input id="back" type="radio" name="back">요가 &nbsp;
-                        <input id="bae" type="radio" name="bae">스트레칭<br> &nbsp;
+                        <input id="shoulder" type="radio" name="part">유산소 운동 &nbsp;
+                        <input id="arm" type="radio" name="part">무산소 운동 &nbsp;
+                        <input id="chest" type="radio" name="part">근력운동 &nbsp;<br>
+                        <input id="back" type="radio" name="part">요가 &nbsp;
+                        <input id="bae" type="radio" name="part">스트레칭<br> &nbsp;
                     </div>
                 </div>
             </div>
@@ -68,12 +69,12 @@
             <!-- athletic_level-->
             <div>
                 <h3 class="request_title"><label for="athletic_level">5.본인의 운동레벨을 선택하세요 </label></h3>
-
-                <div id="level_wrap">
+                <div id="athletic_wrap">
                     <div class="athletic_level">
-                        <input id="sang" type="radio" name="snag">상 &nbsp;
-                        <input id="jung" type="radio" name="jung">중 &nbsp;
-                        <input id="ha" type="radio" name="ha">하 &nbsp;<br>
+                        <input type="radio" name="level" value="sang">상 &nbsp;
+                        <input type="radio" name="level" value="jung">중 &nbsp;
+                        <input type="radio" name="level" value="ha">하 &nbsp;<br>
+                        
                     </div><br>
                 </div>
             </div>
@@ -81,18 +82,15 @@
             <!--정보 불러오기-->
                 <div id="reinfo_wrap">
                     <div class="info">
-                        <input id="sang" type="checkbox" name="snag">&nbsp; 이전 정보를 불러올래요 &nbsp;
+                        <input id="back" type="checkbox" name="back"/>&nbsp; 이전 정보를 불러올래요 &nbsp;
                     </div>
                 </div>
             
            
             <!-- SUBMIT BTN-->
-            <div class="btn_area">
-                <button type="button" id="btnSubmit">
-                    <a href="/Main/index.html">제출하기</a>
-                </button>
-            </div>
-
+          <div class="submit">
+          <button type="button"/><a href="/main.jsp/">제출하기</a>
+          </button>
         </div>
         <!-- content-->
 

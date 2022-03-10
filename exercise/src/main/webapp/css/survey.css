@@ -13,6 +13,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 html {
     height: 100%;
 }
@@ -130,27 +131,4 @@ input {
 
 /* ¹öÆ° */
 
-.btn_area {
-    margin-top: -165px;
-}
 
-#btnSubmit {
-    width: 80%;
-    height: 70px;
-    border: 0;
-    cursor: pointer;
-    background-color: #227364;
-    font-size: 25px;
-    font-weight: bolder;
-    font-family: 'IBMPlexSansKR-Bold';
-    border-radius: 8px;
-    margin-top: 180px;
-}
-#btnSubmit a{
-    color: #fff;
-}
-
-#btnSubmit:hover{
-    opacity: 0.5;
-  transition:0.5s;
-}

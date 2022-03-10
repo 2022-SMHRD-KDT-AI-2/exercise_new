@@ -34,7 +34,7 @@
                 </h3>
                 <span class="box int_nick">
                     <input type="text" id="memNick" name="memNick" class="int" maxlength="20">
-                    <input type="button" value="중복확인" onclick="openIdChk()">
+                    <input type="button" id="btn_ck" value="중복확인" onclick="openIdChk()">
                     <input type="hidden" name="idDuplication" value="idUncheck">
                 </span>
                 <span class="error_next_box"></span>

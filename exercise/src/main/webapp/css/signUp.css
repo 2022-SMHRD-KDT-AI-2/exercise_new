@@ -29,7 +29,7 @@ a{
 }
 #logo {
     width: 350px;
-    height:200px;
+    height:180px;
     margin-top: auto;
 }
 
@@ -52,7 +52,6 @@ a{
 }
 
 
-
 /* 입력폼 */
 
 input:focus {
@@ -72,12 +71,14 @@ h3 {
     width: 100%;
     height: 51px;
     border: solid 1px #dadada;
-    padding: 10px 14px 10px 14px;
+    padding: 3px 14px 10px 14px;
     box-sizing: border-box;
     background: #fff;
-    position: relative;
     border-radius: 9.8px;
+    margin-bottom:-10px;
 }
+
+
 .box1 {
     display: block;
     width: 148px;
@@ -103,15 +104,16 @@ h3 {
     margin-top: -50px;
     border-radius: 9.8px
 }
-
+/* 중복확인 */
 .int {
     display: block;
     position: relative;
-    width: 100%;
+    width: 80%;
     height: 29px;
     border: none;
     background: #fff;
     font-size: 15px;
+    margin-bottom:-30px;
 }
 
 input {
@@ -134,8 +136,13 @@ input {
     font-family: 'IBMPlexSansKR-Bold';
 }
 
+.box.int_nick{
+	padding-right: 10px;
+    width:70%
+}
 .box.int_id {
     padding-right: 10px;
+    width:70%
 }
 
 
@@ -154,7 +161,7 @@ input {
     position: absolute;
     top: 50%;
     right: 16px;
-    margin-top: -10px;
+    margin-bottom: 80px;
     cursor: pointer;
 }
 
@@ -217,15 +224,28 @@ select {
 }
 
 /* 버튼 */
-
+/*가입하기버튼*/
 .btn_area {
     margin: 30px 0 91px;
 }
 
+#btn_ck{
+	color: black;
+	font-size:16px;
+	font-weight:80px;
+	font-family:'IBMPlexSansKR-regular';
+	margin-left:200px;
+	border-radius: 4px;
+	background-color:white;
+	padding:7px;
+	
+}
+
+
 #btnJoin{
     width: 100%;
-    padding: 20px 0 17px;
-    border: 0;
+    padding: 18px 0 17px;
+    border-color: none;
     cursor: pointer;
     color: white;
     background-color: #227364;
