@@ -14,11 +14,11 @@ public class MemberInsertController implements Controller{
 public String requestHandler(HttpServletRequest request, HttpServletResponse response)
 		throws ServletException, IOException {
 	String memId = request.getParameter("memId");
-	String memPw = request.getParameter("memPw");
+	String memPwd = request.getParameter("memPwd");
 	String memNick = request.getParameter("memNick");
 	MemberVO vo = new MemberVO();
 	vo.setMemId(memId);
-	vo.setMemPwd(memPw);
+	vo.setMemPwd(memPwd);
 	vo.setMemNick(memNick);
 	MemberDAO dao = new MemberDAO();
 	dao.memberInsert(vo);

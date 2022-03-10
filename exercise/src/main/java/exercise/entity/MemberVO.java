@@ -29,8 +29,6 @@ public class MemberVO {
 	public void setMemPwd(String memPwd) {
 		this.memPwd = memPwd;
 	}
-
-
 	public String getMemNick() {
 		return memNick;
 	}
