@@ -23,14 +23,14 @@
 
             <!-- content-->
             <div id="content">
-		<form action="${context}/memberInsert.do" method="post">
+
                 <!-- Nick -->
                 <div>
                     <h3 class="join_title">
                         <label for="nick">닉네임</label>
                     </h3>
                     <span class="box int_nick">
-                        <input type="text" id="memNick" name="memNick" class="int" maxlength="20">
+                        <input type="text" id="id" class="int" maxlength="20">
                     </span>
                     <span class="error_next_box"></span>
                 </div>
@@ -42,7 +42,7 @@
                     </h3>
                     
                     <span class="box int_id">
-                        <input type="text" id="memId" name="memId" class="int" maxlength="20">
+                        <input type="text" id="id" class="int" maxlength="20">
                     </span>
                 </div>
 
@@ -50,7 +50,7 @@
                 <div>
                     <h3 class="join_title"><label for="pswd1">비밀번호</label></h3>
                     <span class="box int_pass">
-                        <input type="text" id="memPwd" name="memPwd" class="int" maxlength="20">
+                        <input type="text" id="pswd1" class="int" maxlength="20">
                         <span id="alertTxt">사용불가</span>
                         <img src="../img/icon_pass.png" id="pswd1_img1" class="pswdImg">
                     </span>
@@ -64,7 +64,7 @@
                     </h3>
                     
                     <span class="box int_addr">
-                        <input type="text" id="memAddr" name="memAddr" class="int" maxlength="20">
+                        <input type="text" id="addr" class="int" maxlength="20">
                     </span>
                 </div>
         
@@ -76,12 +76,12 @@
 
                 <!-- JOIN BTN-->
                 <div class="btn_area">
-                    <button type="submit" id="btnJoin">
+                    <button type="button" id="btnJoin">
                         <span>가입하기</span>
                     </button>
                 </div>
 
-                </form>
+                
 
             </div> 
             <!-- content-->
