@@ -19,7 +19,7 @@
     <div id="wrap">
         <container class="container">
             <div id="section_1"><a href=""><img src="../img/HP.png" alt=""></a></section_1>
-            <!-- *** Healthy Pleasure를 선택하면 회원가입(join.jsp)로 넘어가요 ***-->
+            <!-- *** Healthy Pleasure를 선택하면 로그인(login.jsp)로 넘어가요 ***-->
             <div id="section_2"><button><a href="${context}/memberForm.do"><i>Healthy Pleasure</i></a></button></section_2>
         </container>
     </div>
