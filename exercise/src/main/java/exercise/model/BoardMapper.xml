@@ -39,11 +39,16 @@
     values(#{memId},#{memPwd},#{memNick},#{memAddr},#{gender})
   </insert>
   
-    <select id="checkLogin"  parameterType="exercise.entity.MemberVO"
+ <select id="checkLogin"  parameterType="exercise.entity.MemberVO"
                            resultType="exercise.entity.MemberVO">
-     select * from member 
-     where memId=#{memId} and memPwd=#{memPwd} 
-  </select>
-  
+     select * from tbl_member where mb_pw=#{memPwd} and mb_id=#{memId} 
+ </select>
+ 
+   <insert id="surveyInsert" parameterType="exercise.entity.SurveyVO">
+    insert into tbl_result(request_seq,gender,height,weight,target_weight,athletic_part
+    ,athletic_level,)
+    values(board_idx.nextval,#{memId},#{title},#{content},#{writer})
+  </insert> 
+
 </mapper>
 

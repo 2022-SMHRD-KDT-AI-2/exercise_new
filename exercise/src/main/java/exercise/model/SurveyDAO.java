@@ -9,7 +9,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import exercise.entity.MemberVO;
 
-public class MemberDAO {
+public class SurveyDAO {
 	private static SqlSessionFactory sqlSessionFactory;
 	// 초기화블럭(프로그램 실행시 한번만 실행되는 부분)
 	static {
@@ -22,27 +22,12 @@ public class MemberDAO {
 		
 		}
 	}
-	public int memberInsert(MemberVO vo) {
+	public int surveyInsert(MemberVO vo) {
 		  SqlSession session = sqlSessionFactory.openSession();  
-	      int cnt=session.insert("memberInsert", vo);
+	      int cnt=session.insert("surveyInsert", vo);
 	      session.commit();
 	      session.close();// 반납(*)
 	      return cnt;
 	}
 	
-	public int checkId(MemberVO vo) {
-		  SqlSession session = sqlSessionFactory.openSession();  
-	      int cnt=session.insert("checkId", vo);
-	      session.commit();
-	      session.close();// 반납(*)
-	      return cnt;
-	}
-	
-	public MemberVO checkLogin(MemberVO vo) {
-		SqlSession session=sqlSessionFactory.openSession();
-		MemberVO memVO = session.selectOne("checkLogin", vo);
-		session.close();
-		return memVO;
-		
-	}
 }

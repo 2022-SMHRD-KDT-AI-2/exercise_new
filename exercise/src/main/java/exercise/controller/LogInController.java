@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import exercise.entity.MemberVO;
-import exercise.model.BoardDAO;
+import exercise.model.MemberDAO;
 
 public class LogInController implements Controller {
 
@@ -23,7 +23,7 @@ public class LogInController implements Controller {
 		vo.setMemId(memId);
 		vo.setMemPwd(memPwd);
 		// Model??
-		BoardDAO dao=new BoardDAO();
+		MemberDAO dao=new MemberDAO();
 		MemberVO memVO = dao.checkLogin(vo);
 		if(memVO!=null) { // ¼º°ø
 			HttpSession session= request.getSession(); // 

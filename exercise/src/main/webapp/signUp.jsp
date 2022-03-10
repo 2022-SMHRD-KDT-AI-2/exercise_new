@@ -126,5 +126,46 @@
         </div>
         <!-- wrapper -->
         <script src="main.js"></script>
+        <script>
+        
+        $("#btn_ck").click(function() {
+            var id = $("#memId").val();
+            if(id == ""){
+                alert("아이디를 입력해 주십시오");
+            }else{
+                idCheckFunc(id);
+            }    
+        })
+		
+        function idCheckFunc(id) {
+   			 //alert("idCheckFunc");
+    
+    		$.ajax({
+        
+        		type:"post",
+       			url:"checkId.do",
+        		async:true,
+        		data:"id=" + id,
+        		success:function(msg){
+            		alert("ajax success")
+            		idCheckMsg(msg);
+        		},
+         		 error : function(){
+            		alert("ajax error");
+        		}
+    		});
+		}
+        
+        function idCheckMsg(msg) {
+            
+            if(msg.message == 'YES'){
+              	alert("사용할 수 없는 아이디 입니다.");       
+            }else{
+            	alert("사용할 수 있는 아이디 입니다.");        
+            }        
+        
+        }
+
+        </script>
 </body>
 </html>
