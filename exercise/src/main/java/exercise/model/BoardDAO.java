@@ -80,7 +80,7 @@ public class BoardDAO {
 			session.close();
 		}
 		
-		//회원인증여부를 확인하는 베서드
+		//회원인증여부를 확인하는 메서드
 		public MemberVO checkLogin(MemberVO vo) {
 			SqlSession session=sqlSessionFactory.openSession();
 			MemberVO memVO = session.selectOne("checkLogin", vo);
