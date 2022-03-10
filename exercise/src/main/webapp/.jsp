@@ -62,7 +62,7 @@
                         <div id="account" class="sc_login">
                             <p class="login_msg"></p>
                             <a href="${context}/login.do" class="link_login" data-clk="log_off.login">로그인</a><br>
-                        <br><a href="${context}/signUp.do" class="link_join" data-clk="log_off.registration">회원가입</a>
+                            <br><a href="${context}/signUp.do" class="link_join" data-clk="log_off.registration">회원가입</a>
                             </div>
                         </div>
                     </div>
