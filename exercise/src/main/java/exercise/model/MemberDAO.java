@@ -29,4 +29,13 @@ public class MemberDAO {
 	      session.close();// ¹Ý³³(*)
 	      return cnt;
 	}
+	
+	public int idCheck(MemberVO vo) {
+		  SqlSession session = sqlSessionFactory.openSession();  
+	      int cnt=session.insert("idCheckk", vo);
+	      session.commit();
+	      session.close();// ¹Ý³³(*)
+	      return cnt;
+	}
+	
 }
