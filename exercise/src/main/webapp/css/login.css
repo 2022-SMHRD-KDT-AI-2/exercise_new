@@ -1,0 +1,176 @@
+@charset "EUC-KR";
+@import url('https://fonts.googlepis.com/css?family=Nanum+Myeongjo:800&subset=korean');
+@import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'IBMPlexSansKR-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* ·¹ÀÌ¾Æ¿ô Æ² */
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    height: 100%;
+    font-size: 25px;
+    background: #f5f6f7;
+    font-family: 'IBMPlexSansKR-Regular';
+}
+a{
+    text-decoration: none;
+}
+#logo {
+    width: 350px;
+    height:200px;
+    margin-top: auto;
+}
+
+#header {
+    padding-top: 18px;
+    text-align: center;
+    margin-top:200px;
+    margin-left: 55px;
+}
+
+#header img{
+    height: 190px;
+    margin-bottom: 10px;
+}
+#wrapper {
+    position: relative;
+}
+
+#content {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0%);
+    width: 460px;
+}
+
+
+/* ÀÔ·ÂÆû */
+
+input:focus {
+    outline: none;
+}
+
+
+h3 {
+    margin: 15px 0 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.box {
+    display: block;
+    align-items: center;
+    width: 80%;
+    height: 51px;
+    border: solid 1px #dadada;
+    padding: 10px 14px 10px 14px;
+    box-sizing: border-box;
+    background: #fff;
+    position: relative;
+    border-radius: 9.8px;
+    margin-left: 70px;
+}
+
+.int {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 29px;
+    border: none;
+    background: #fff;
+    font-size: 15px;
+}
+
+input {
+    font-family: 'IBMPlexSansKR-Regular';    
+}
+
+
+.pswdImg {
+    width: 18px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+/* ¹öÆ° */
+
+.btn_area1 {
+    margin: 20px 0 10px;
+}
+
+.btn_area2 {
+    margin : 5px 0 15px;
+}
+
+#btnJoin{
+    width: 80%;
+    padding: 5px 0 17px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    background-color: #227364;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 8px;
+    font-family: 'IBMPlexSansKR-Bold';
+    margin-left: 70px;
+}
+
+#btnJoin div{
+    text-align:center;
+    margin-top: 7px;
+}
+
+
+#btnJoin:hover{
+    opacity: 0.5;
+  transition: 0.5s;
+}
+
+#btnSignUp{
+    width: 80%;
+    padding: 5px 0 17px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    background-color: #227364;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 8px;
+    font-family: 'IBMPlexSansKR-Bold';
+    margin-left: 70px;
+}
+
+#btnSignUp div{
+    text-align:center;
+    margin-top: 7px;
+}
+
+#btnSignUp:hover{
+    opacity: 0.5;
+  transition: 0.5s;
+}
+#btnJoin a{
+    color: #fff;
+}
+#btnSignUp a{
+    color: #fff;
+}

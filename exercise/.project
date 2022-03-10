@@ -34,4 +34,21 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/main/webapp/img/logo1.jpg</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/%EC%9A%B4%EB%8F%99%EC%A7%B1%EC%82%AC%EC%A7%84/logo1.jpg</locationURI>
+		</link>
+		<link>
+			<name>src/main/webapp/img/logo2.jpg</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/%EC%9A%B4%EB%8F%99%EC%A7%B1%EC%82%AC%EC%A7%84/logo2.jpg</locationURI>
+		</link>
+		<link>
+			<name>src/main/webapp/img/pw.png</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/%EC%9A%B4%EB%8F%99%EC%A7%B1%EC%82%AC%EC%A7%84/pw.png</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>
