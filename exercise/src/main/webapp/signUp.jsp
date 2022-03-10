@@ -96,8 +96,8 @@
                     <div class="box1">
                         <select id="memAddr" name="memAddr" class="sel">
                             <option id="input_city">지역</option>
-                            <option value="서울특별시">서울특별시</option>
-                            <option value="광주광역시">광주광역시</option>
+                            <option  value="서울특별시">서울특별시</option>
+                            <option  value="광주광역시">광주광역시</option>
                         </select>
                     </div>
                     <div class="box2">

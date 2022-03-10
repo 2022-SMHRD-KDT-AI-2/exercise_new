@@ -1,6 +1,7 @@
 @charset "EUC-KR";
 @import url('https://fonts.googlepis.com/css?family=Nanum+Myeongjo:800&subset=korean');
 @import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
+
 @font-face {
     font-family: 'IBMPlexSansKR-Regular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
@@ -29,7 +30,7 @@ a{
 }
 #logo {
     width: 350px;
-    height:100px;
+    height:183px;
 }
 
 #header {
@@ -89,9 +90,18 @@ h3 {
     background: #fff;
     position: relative;
     border-radius: 9.8px;
-    margin-left:-10px;
+    margin-left:52x;
 }
 
+#memAddr{
+	margin-top:-100px;
+}
+
+#pswd1_img1{
+	margin-left:240px;
+	margin-top:6px;
+	height:80%;
+}
 .box2 {
     display: block;
     width: 148px;
@@ -100,7 +110,7 @@ h3 {
     padding: 10px 14px 10px 14px;
     box-sizing: border-box;
     background: #fff;
-    margin-left: 140px;
+    margin-left: 154px;
     margin-top: -50px;
     border-radius: 9.8px
 }
@@ -111,7 +121,7 @@ h3 {
     width: 80%;
     height: 29px;
     border: none;
-    background: #fff;
+    background:white;
     font-size: 15px;
     margin-bottom:-30px;
 }
@@ -123,18 +133,6 @@ input {
     margin: 30px 0 91px;
 }
 
-#btnId{
-    width: 50%;
-    padding: 20px 0 17px;
-    border: 0;
-    cursor: pointer;
-    color: #fff;
-    background-color: #41F2E1;
-    font-size: 25px;
-    font-weight: 400;
-    border-radius: 8px;
-    font-family: 'IBMPlexSansKR-Bold';
-}
 
 .box.int_nick{
 	padding-right: 10px;
@@ -153,8 +151,6 @@ input {
 .box.int_pass_check {
     padding-right: 40px;
 }
-
-
 
 select {
     width: 100%;
@@ -195,16 +191,27 @@ select {
 }
 
 #btn_ck{
-	color: black;
+	height:45px;
+	width:85px;
+	color:white;
 	font-size:16px;
-	font-weight:80px;
-	font-family:'IBMPlexSansKR-regular';
-	margin-left:200px;
-	border-radius: 4px;
-	background-color:white;
-	padding:7px;
-	
+	font-weight:100px;
+	font-family:'IBMPlexSansKR-Bold';
+	margin-left:203px;
+	border-radius: 10px;
+	background-color:#348b7c;
+	cursor: pointer;
+	border:0.1px;
+	outline:3px;
 }
+#btn_ck{
+    color: #fff;
+}
+#btn_ck:hover{
+    opacity: 0.5;
+  transition: 0.1s;
+}
+
 
 
 #btnJoin{
@@ -218,13 +225,16 @@ select {
     font-size: 25px;
     font-weight: 400;
     border-radius: 8px;
-    border-line:none;
     font-family: 'IBMPlexSansKR-Bold';
+    border:0.1px;
+	outline:3px;
 }
 #btnJoin a{
     color: #fff;
 }
 #btnJoin:hover{
     opacity: 0.5;
-  transition: 0.5s;
+  transition: 0.3s;
 }
+
+
