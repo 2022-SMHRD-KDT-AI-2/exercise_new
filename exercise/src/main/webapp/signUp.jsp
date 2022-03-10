@@ -1,10 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<%
+	pageContext.setAttribute("context", request.getContextPath());
+%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>ȸ������</title>
+<meta charset="utf-8">
+<title>회원가입</title>
 <link rel="stylesheet" type="text/css" href="./css/signUp.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,19 +20,20 @@
          <a><img src="./img/logo2.jpg" id="logo"></a>
     </div>
 
+
     <!-- wrapper -->
     <div id="wrapper">
 
         <!-- content-->
         <div id="content">
-
+		<form action="${context}/memberInsert.do" method="post">
             <!-- Nick -->
             <div>
                 <h3 class="join_title">
-                    <label for="nick">�г���</label>
+                    <label for="nick">닉네임</label>
                 </h3>
                 <span class="box int_nick">
-                    <input type="text" id="id" class="int" maxlength="20">
+                    <input type="text" id="memNick" name="memNick" class="int" maxlength="20">
                 </span>
                 <span class="error_next_box"></span>
             </div>
@@ -37,20 +41,20 @@
             <!-- ID -->
             <div>
                 <h3 class="join_title">
-                    <label for="id">���̵�</label>
+                    <label for="id">아이디</label>
                 </h3>
 
                 <span class="box int_id">
-                    <input type="text" id="id" class="int" maxlength="20">
+                    <input type="text" id="memId" name="memId" class="int" maxlength="20">
                 </span>
             </div>
 
             <!-- PW1 -->
             <div>
-                <h3 class="join_title"><label for="pswd1">��й�ȣ</label></h3>
+                <h3 class="join_title"><label for="pswd1">비밀번호</label></h3>
                 <span class="box int_pass">
-                    <input type="text" id="pswd1" class="int" maxlength="20">
-                    <span id="alertTxt">���Ұ�</span>
+                    <input type="text" id="memPwd" name="memPwd" class="int" maxlength="20">
+                    <span id="alertTxt">사용불가</span>
                    <img src="./img/pw.png" id="pswd1_img1" class="pswdImg">
                 </span>
                 <span class="error_next_box"></span>
@@ -58,45 +62,45 @@
 
             <!-- PW2 -->
             <div>
-                <h3 class="join_title"><label for="pswd2">��й�ȣ ��Ȯ��</label></h3>
+                <h3 class="join_title"><label for="pswd2">비밀번호 재확인</label></h3>
                 <span class="box int_pass_check">
                     <input type="text" id="pswd2" class="int" maxlength="20">
-                 <img src="./img/pw.png" id="pswd1_img1" class="pswdImg">
+                    <img src="./img/pw.png" id="pswd1_img1" class="pswdImg">
                 </span>
                 <span class="error_next_box"></span>
             </div>
             
-            <!-- GENDER(����) -->
+            <!-- GENDER(성별) -->
             <div>
-                <h3 class="join_title"><label for="gender">����</label></h3>
+                <h3 class="join_title"><label for="gender">성별</label></h3>
                 <span class="box gender_code">
-                    <select id="gender" class="sel">
-                        <option>����</option>
-                        <option value="M">����</option>
-                        <option value="F">����</option>
+                    <select id="gender" name="gender" class="sel">
+                        <option>성별</option>
+                        <option value="남자">남자</option>
+                        <option value="여자">여자</option>
                     </select>                            
                 </span>
             </div>
 
-            <!--ADDR(�ּ�)-->
+            <!--ADDR(주소)-->
 
             <div id="bir_mm">
                 <h3 class="join_title">
-                    <label for="addr">�ּ�</label>
+                    <label for="addr">주소</label>
                 </h3>
                 <div class="addr">
                     <div class="box1">
-                        <select id="city" class="sel">
-                            <option id="input_city">����</option>
-                            <option value="01">����Ư����</option>
-                            <option value="02">���ֱ�����</option>
+                        <select id="memAddr" name="memAddr" class="sel">
+                            <option id="input_city">지역</option>
+                            <option value="서울특별시">서울특별시</option>
+                            <option value="광주광역시">광주광역시</option>
                         </select>
                     </div>
                     <div class="box2">
-                        <select id="city" class="sel">
-                            <option id="input_city">����</option>
-                            <option value="01">����Ư����</option>
-                            <option value="02">���ֱ�����</option>
+                        <select id="memAddr1" name="memAddr1" class="sel">
+                            <option id="input_city">지역</option>
+                            <option value="서울특별시">서울특별시</option>
+                            <option value="광주광역시">광주광역시</option>
                         </select>
                     </div>
                 </div>
@@ -108,11 +112,11 @@
 
                 <!-- JOIN BTN-->
                 <div class="btn_area">
-                    <button type="button" id="btnJoin">
-                        <span>�����ϱ�</span>
+                    <button type="submit" id="btnJoin">
+                        <span>가입하기</span>
                     </button>
                 </div>
-
+			</form>
 
 
             </div>

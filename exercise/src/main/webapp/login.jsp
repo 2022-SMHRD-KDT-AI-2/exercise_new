@@ -43,7 +43,7 @@
             <div class="btn_area2">
                 <button type="button" id="btnSignUp">
                 <!-- *** Sign Up을 누르면 signUp.jsp(회원가입)로 넘어갑니다 *** -->
-                   <a href="/Sign up/index.html">Sign up</a> 
+                   <a href="signUp.do">Sign up</a> 
                 </button>
             </div>
 
