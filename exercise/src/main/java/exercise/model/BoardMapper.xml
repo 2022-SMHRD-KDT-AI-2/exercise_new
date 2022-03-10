@@ -2,8 +2,8 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="kr.exercise.model.BoardMapper">
-  <select id="selectAll" resultType="exercise.entity.BoardVO">
+<mapper namespace="exercise.model.BoardMapper">
+  <!-- <select id="selectAll" resultType="exercise.entity.BoardVO">
     select * from board order by idx desc
   </select>
   
@@ -32,7 +32,7 @@
                            resultType="exercise.entity.MemberVO">
      select * from member 
      where memId=#{memId} and memPwd=#{memPwd} 
-  </select>
+  </select> -->
   
   <insert id="memberInsert" parameterType="exercise.entity.MemberVO">
     insert into tbl_member(mb_id,mb_pw,mb_nick,mb_addr)

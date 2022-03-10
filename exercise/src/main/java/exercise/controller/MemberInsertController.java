@@ -16,10 +16,12 @@ public String requestHandler(HttpServletRequest request, HttpServletResponse res
 	String memId = request.getParameter("memId");
 	String memPwd = request.getParameter("memPwd");
 	String memNick = request.getParameter("memNick");
+	String memAddr = request.getParameter("memAddr");
 	MemberVO vo = new MemberVO();
 	vo.setMemId(memId);
 	vo.setMemPwd(memPwd);
 	vo.setMemNick(memNick);
+	vo.setMemAddr(memAddr);
 	MemberDAO dao = new MemberDAO();
 	dao.memberInsert(vo);
 	return "redirect:/memberForm.do";

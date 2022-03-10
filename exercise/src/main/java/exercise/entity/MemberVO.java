@@ -4,17 +4,19 @@ public class MemberVO {
 	private String memId;
 	private String memPwd;
 	private String memNick;
+	private String memAddr;
 	private String memAdmin;
 	
 	public MemberVO() {
 		
 	}
 	
-	public MemberVO(String memId, String memPwd, String memNick, String memAdmin) {
+	public MemberVO(String memId, String memPwd, String memNick, String memAddr, String memAdmin) {
 		super();
 		this.memId = memId;
 		this.memPwd = memPwd;
 		this.memNick = memNick;
+		this.memAddr = memAddr;
 		this.memAdmin = memAdmin;
 	}
 	public String getMemId() {
@@ -35,6 +37,16 @@ public class MemberVO {
 	public void setMemNick(String memNick) {
 		this.memNick = memNick;
 	}
+	
+	
+	public String getMemAddr() {
+		return memAddr;
+	}
+
+	public void setMemAddr(String memAddr) {
+		this.memAddr = memAddr;
+	}
+
 	public String getMemAdmin() {
 		return memAdmin;
 	}
