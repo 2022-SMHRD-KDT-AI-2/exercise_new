@@ -29,8 +29,7 @@ a{
 }
 #logo {
     width: 350px;
-    height:180px;
-    margin-top: auto;
+    height:100px;
 }
 
 #header {
@@ -46,6 +45,7 @@ a{
     left: 50%;
     transform: translate(-50%,0%);
     width: 300px;
+
 }
 .join_title{
     font-size: 18px;

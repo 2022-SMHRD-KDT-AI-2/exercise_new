@@ -203,22 +203,24 @@ nav .sub_menu ul li a:hover {
 }
 #section_2 .visual .s_menu{
     position: absolute;
-    top: 20%;
-    left: 94%;
+    top: 21.5%;
+    left: 90%;
     transform: translate(-50%, -50%);
     position:fixed;
-    width:150px;
+    width:120px;
     height:70px;
-    background-color: #04573077;
-    border-radius: 100px;
+    background-color: #107a4977;
+    border-radius: 40px;
     text-align: center;
     padding:17px;
+    color: white;
 }
 #section_2 .visual .s_menu li a{
     color:white;
     font-weight: 700;
     text-align: center;
     margin: 30px;
+    
 }
 
 .visual .item {
@@ -282,8 +284,16 @@ nav .sub_menu ul li a:hover {
 }
 
 
+/*³×ÀÌ¹ö*/
+#section_2 a{
+    font-family: 'GyeonggiTitleM' ;
+    font-size: 20px;
+    color: white;
+}
 
-
-
+#section_2 a:hover{
+    color: rgba(144, 248, 84, 0.904);
+    font-size:23px;
+}
 
 

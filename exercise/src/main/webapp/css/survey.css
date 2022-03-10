@@ -56,6 +56,10 @@ body {
 .request_title{
     font-size:19px;
 }
+.request_title option{
+	font-size:30px;
+}
+
 #height{
     align-items: center;
 }
@@ -130,8 +134,30 @@ input {
 
 
 /* ¹öÆ° */
-.btn_area{
-	height:100px
+.btn_area {
+    margin: 10px 0 91px;
 }
+
+#btnJoin{
+    width: 100%;
+    padding: 18px 0 17px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    background-color: #227364;
+    font-size: 25px;
+    font-weight: 400;
+    border-radius: 8px;
+    font-family: 'IBMPlexSansKR-Bold';
+    border-color: #dadada;
+}
+#btnJoin a{
+    color: #fff;
+}
+#btnJoin:hover{
+    opacity: 0.5;
+  transition: 0.5s;
+}
+
 
 
