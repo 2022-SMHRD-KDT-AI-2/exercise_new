@@ -5,13 +5,13 @@
     <head>
         <meta charset="UTF-8">
         <title>설문조사</title>
-        <link rel="stylesheet" href="./css/설문조사.css">
+        <link rel="stylesheet" href="./css/survey.css">
         
   	</head>
-   <body>
+  <body>
     <!-- header -->
     <div id="header">
-        <a><img src="./img/손글씨2.jpg" id="logo"></a>
+        <a><img src="./img/logo2.jpg" id="logo"></a>
     </div>
     <!-- wrapper -->
     <div id="wrapper">
