@@ -39,8 +39,8 @@
     values(#{memId},#{memPwd},#{memNick},#{memAddr},#{gender})
   </insert>
   
-    <select id="checkLogin"  parameterType="kr.smhrd.entity.MemberVO"
-                           resultType="kr.smhrd.entity.MemberVO">
+    <select id="checkLogin"  parameterType="exercise.entity.MemberVO"
+                           resultType="exercise.entity.MemberVO">
      select * from member 
      where memId=#{memId} and memPwd=#{memPwd} 
   </select>
