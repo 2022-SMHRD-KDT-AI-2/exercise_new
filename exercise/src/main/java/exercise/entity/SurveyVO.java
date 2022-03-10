@@ -1,7 +1,7 @@
 package exercise.entity;
 
 public class SurveyVO {
-	private String gender;
+	private int seq;
 	private int height;
 	private int weight;
 	private int targetWeight;
@@ -15,9 +15,9 @@ public class SurveyVO {
 	}
 
 
-	public SurveyVO(String gender, int height, int weight, int targetWeight, String part, String level, String memId) {
+	public SurveyVO(int seq, int height, int weight, int targetWeight, String part, String level, String memId) {
 		super();
-		this.gender = gender;
+		this.seq = seq;
 		this.height = height;
 		this.weight = weight;
 		this.targetWeight = targetWeight;
@@ -27,13 +27,13 @@ public class SurveyVO {
 	}
 
 
-	public String getGender() {
-		return gender;
+	public int getSeq() {
+		return seq;
 	}
 
 
-	public void setGender(String gender) {
-		this.gender = gender;
+	public void setSeq(int seq) {
+		this.seq = seq;
 	}
 
 

@@ -12,7 +12,6 @@ public class SurveyInsertController implements Controller{
 	@Override
 	public String requestHandler(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		String gender = request.getParameter("gender");
 		int height = Integer.parseInt(request.getParameter("height"));
 		int weight = Integer.parseInt(request.getParameter("weight"));
 		int targetWeight = Integer.parseInt(request.getParameter("targetWeight"));
@@ -20,7 +19,6 @@ public class SurveyInsertController implements Controller{
 		String level = request.getParameter("level");
 		String memId = request.getParameter("memId");
 		SurveyVO vo = new SurveyVO();
-		vo.setGender(gender);
 		vo.setHeight(height);
 		vo.setWeight(weight);
 		vo.setTargetWeight(targetWeight);
