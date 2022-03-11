@@ -8,7 +8,8 @@
 <head>
 <meta charset="utf-8">
 <title>회원가입</title>
-<script src="${path}/resources/js/jquery.city.js"></script>
+<script type="text/javascript" src="./js/jquery.city.js" ></script> 
+<link rel="stylesheet" type="text/css" href="./css/signUp.css">
 <link rel="stylesheet" type="text/css" href="./css/signUp.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -103,15 +104,23 @@
                     </div>
                     
                     <div class="box2">
-                        <select id="good" name="memAddr1" class="sel">
-                            <option>자치구</option>
-                        </select>
+                    	<select onchange="categoryChange(this)">
+							  <option>지역</option>
+							  <option value="a">서울특별시</option>
+							  <option value="b">광주광역시</option>
+							</select>
+							 
+							<select id="good">
+							<option>자치구</option>
+							</select>
+                    
+                    
+                    
+                       
                       
                                
-                        </select>
                     </div>
                 </div>
-                    </span>
                 </div>
 
                 <!-- JOIN BTN-->
