@@ -7,6 +7,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
+import exercise.entity.BoardVO;
 import exercise.entity.SurveyVO;
 
 public class SurveyDAO {
@@ -28,6 +29,13 @@ public class SurveyDAO {
 	      session.commit();
 	      session.close();// ¹Ý³³(*)
 	      return cnt;
+	}
+	
+	public void surveyUpdate(SurveyVO vo) {
+		SqlSession session=sqlSessionFactory.openSession();
+		session.update("surveyUpdate", vo);
+		session.commit();
+		session.close();
 	}
 	
 }

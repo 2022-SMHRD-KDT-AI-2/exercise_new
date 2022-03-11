@@ -47,7 +47,12 @@
    <insert id="surveyInsert" parameterType="exercise.entity.SurveyVO">
     insert into tbl_result(request_seq,height,weight,targetWeight,athleticPart,athleticLevel,memId)
     values(request_seq.nextval,#{height},#{weight},#{targetWeight},#{athleticPart},#{athleticLevel},#{memId})
-  </insert> 
+  </insert>
+  
+  <update id="surveyUpdate" parameterType="exercise.entity.SurveyVO">
+  	update tbl_result set weight=#{weight}, targetWeight=#{targetWeight}, athleticPart=#{athleticPart},
+  	athleticLevel=#{athleticLevel} where memId=#{memId}
+  </update> 
 
 </mapper>
 
