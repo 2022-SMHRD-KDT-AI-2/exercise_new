@@ -26,6 +26,7 @@ pageContext.setAttribute("context", request.getContextPath());
 	<div id="wrapper">
 
 		<!-- content-->
+		<!-- content-->
 		<div id="content">
 			<form action="${context}/memberInsert.do" method="post">
 				<!-- Nick -->
