@@ -1,33 +1,33 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Ŀ�´�Ƽ</title>
+<title>커뮤니티</title>
 <link rel="stylesheet" type="text/css" href="./css/community.css">
 </head>
 <body>
 <div id="wrap">
         <header id="header">
             <div class="h_cont">
-                <h1><a href="/Main/index.html"><img src="img/logo_1.png" alt="�ΰ�"></a></h1>
+                <h1><a href="/Main/index.html"><img src="img/logo_1.png" alt="로고"></a></h1>
                 <nav>
                     <ul>
                         <li>
                             <a href="/Main/index.html">Home</a>
                         </li>
                         <li>
-                            <a href="/Challenge/index.html">� ��õ ���α׷�</a>
+                            <a href="/Challenge/index.html">운동 추천 프로그램</a>
                         </li>
                         <li>
-                            <a href="/Outdoor/index.html">�߿� ü���ü�</a>
+                            <a href="/Outdoor/index.html">야외 체육시설</a>
                         </li>
                         <li>
-                            <a href="/Sales_site/index.html">� ��ǰ</a>
+                            <a href="/Sales_site/index.html">운동 용품</a>
                         </li>
                         <li>
-                            <a href="/Community/Community.html">Ŀ�´�Ƽ</a>
+                            <a href="/Community/Community.html">커뮤니티</a>
                         </li>
                     </ul>
                 </nav>
@@ -42,56 +42,56 @@
      
         <div class="board_wrap">
             <div class="board_title">
-                <strong>Ŀ�´�Ƽ</strong>
-                <p>�����Ӱ� �̾߱��ϼ���</p><br><br>
+                <strong>커뮤니티</strong>
+                <p>자유롭게 이야기하세요</p><br><br>
             </div>
             <div class="board_list_wrap">
                 <div class="board_list">
                     <div class="top">
-                        <div class="num">��ȣ</div>
-                        <div class="category">�з�</div>
-                        <div class="title">����</div>
-                        <div class="writer">�۾���</div>
-                        <div class="date">�ۼ���</div>
-                        <div class="count">��ȸ</div>
+                        <div class="num">번호</div>
+                        <div class="category">분류</div>
+                        <div class="title">제목</div>
+                        <div class="writer">글쓴이</div>
+                        <div class="date">작성일</div>
+                        <div class="count">조회</div>
                     </div>
                     <div>
                         <div class="num">5</div>
-                        <div class="category">�з�</div>
-                        <div class="title"><a href="./Sub_2/Ŀ�´�Ƽ����.html">ç������ ���� ���ǵ帳�ϴ�.</a></div>
-                        <div class="writer">�ڼҿ�</div>
+                        <div class="category">분류</div>
+                        <div class="title"><a href="./Sub_2/커뮤니티보기.html">챌린지방 관련 문의드립니다.</a></div>
+                        <div class="writer">박소연</div>
                         <div class="date">2021.1.15</div>
                         <div class="count">33</div>
                     </div>
                     <div>
                         <div class="num">4</div>
-                        <div class="category">�з�</div>
-                        <div class="title"><a href="./Sub_2/Ŀ�´�Ƽ����.html">�������縦 �ٽ� �ϰ� �ͽ��ϴ�.</a></div>
-                        <div class="writer">������</div>
+                        <div class="category">분류</div>
+                        <div class="title"><a href="./Sub_2/커뮤니티보기.html">설문조사를 다시 하고 싶습니다.</a></div>
+                        <div class="writer">김유진</div>
                         <div class="date">2021.1.15</div>
                         <div class="count">33</div>
                     </div>
                     <div>
                         <div class="num">3</div>
-                        <div class="category">�з�</div>
-                        <div class="title"><a href="./Sub_2/Ŀ�´�Ƽ����.html">�ٸ� ��� ��õ���� �� �ֳ���?</a></div>
-                        <div class="writer">���߿�</div>
+                        <div class="category">분류</div>
+                        <div class="title"><a href="./Sub_2/커뮤니티보기.html">다른 운동을 추천받을 수 있나요?</a></div>
+                        <div class="writer">윤중열</div>
                         <div class="date">2021.1.15</div>
                         <div class="count">33</div>
                     </div>
                     <div>
                         <div class="num">2</div>
-                        <div class="category">�з�</div>
-                        <div class="title"><a href="./Sub_2/Ŀ�´�Ƽ����.html">ȸ�� ������ �����ϰ� �;��.</a></div>
-                        <div class="writer">�̻���</div>
+                        <div class="category">분류</div>
+                        <div class="title"><a href="./Sub_2/커뮤니티보기.html">회원 정보를 수정하고 싶어요.</a></div>
+                        <div class="writer">이상현</div>
                         <div class="date">2021.1.15</div>
                         <div class="count">33</div>
                     </div>
                     <div>
                         <div class="num">1</div>
-                        <div class="category">�з�</div>
-                        <div class="title"><a href="./Sub_2/Ŀ�´�Ƽ����.html">������� ���� ���ǵ帳�ϴ�.</a></div>
-                        <div class="writer">�尭��</div>
+                        <div class="category">분류</div>
+                        <div class="title"><a href="./Sub_2/커뮤니티보기.html">사용방법에 관해 문의드립니다.</a></div>
+                        <div class="writer">장강근</div>
                         <div class="date">2021.1.15</div>
                         <div class="count">33</div>
                     </div>
@@ -108,8 +108,8 @@
                     <a href="#" class="bt last">&gt;&gt;</a>
                 </div>
                 <div class="bt_wrap">
-                    <a href="/Community/Sub_3/Ŀ�´�Ƽ�ۼ�.html" class="on">���</a>
-                    <!--<a href="#">����</a>-->
+                    <a href="/Community/Sub_3/커뮤니티작성.html" class="on">등록</a>
+                    <!--<a href="#">수정</a>-->
                 </div>
             </div>
         </div>

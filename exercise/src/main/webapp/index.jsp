@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <%
 	pageContext.setAttribute("context", request.getContextPath());
 %>
@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>¸ÞÀÎÆäÀÌÁö</title>
+<title>ë©”ì¸íŽ˜ì´ì§€</title>
 <link rel="stylesheet" type="text/css" href="./css/main.css">
 <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 <link rel="icon" href="img/favicon.ico" type="image/x-icon">
@@ -21,23 +21,23 @@
     <div id="wrap">
         <header id="header">
             <div class="h_cont">
-                <h1><a href="/Main/index.html"><img src="img/logo_1.png" alt="·Î°í"></a></h1>
+                <h1><a href="/Main/index.html"><img src="img/logo_1.png" alt="ë¡œê³ "></a></h1>
                 <nav>
                     <ul>
                         <li>
                             <a href="/Main/index.html">Home</a>
                         </li>
                         <li>
-                            <a href="/Challenge/index.html">¿îµ¿ ÃßÃµ ÇÁ·Î±×·¥</a>
+                            <a href="/Challenge/index.html">ìš´ë™ ì¶”ì²œ í”„ë¡œê·¸ëž¨</a>
                         </li>
                         <li>
-                            <a href="/Outdoor/index.html">¾ß¿Ü Ã¼À°½Ã¼³</a>
+                            <a href="/Outdoor/index.html">ì•¼ì™¸ ì²´ìœ¡ì‹œì„¤</a>
                         </li>
                         <li>
-                            <a href="/Sales_site/index.html">¿îµ¿ ¿ëÇ°</a>
+                            <a href="/Sales_site/index.html">ìš´ë™ ìš©í’ˆ</a>
                         </li>
                         <li>
-                            <a href="/Community/Community.html">Ä¿¹Â´ÏÆ¼</a>
+                            <a href="/Community/Community.html">ì»¤ë®¤ë‹ˆí‹°</a>
                         </li>
                     </ul>
                 </nav>
@@ -51,7 +51,7 @@
             <section id="section_1">
                 <div class="visual">
                     <div class="slogan">
-                        <img src="img/Logo.png" alt="±ÛÀÚ½½·Î°Ç">
+                        <img src="img/Logo.png" alt="ê¸€ìžìŠ¬ë¡œê±´">
                     </div>
 
                 </div>
@@ -61,8 +61,8 @@
                     <div class="s_menu">
                         <div id="account" class="sc_login">
                             <p class="login_msg"></p>
-                            <a href="${context}/loginForm.do" class="link_login" data-clk="log_off.login">·Î±×ÀÎ</a><br>
-                        <br><a href="${context}/signUp.do" class="link_join" data-clk="log_off.registration">È¸¿ø°¡ÀÔ</a>
+                            <a href="${context}/loginForm.do" class="link_login" data-clk="log_off.login">ë¡œê·¸ì¸</a><br>
+                        <br><a href="${context}/signUp.do" class="link_join" data-clk="log_off.registration">íšŒì›ê°€ìž…</a>
                             </div>
                         </div>
                     </div>
@@ -70,7 +70,7 @@
                         <img src="img/visual_item.png" alt="">
                     </div>
                 </div>
-                <!-- cate_img ±¸Á¶ Áß¿ä!! »çÁø¿¡ ¸¶¿ì½º¿À¹ö ½Ã ´Ù¸¥ ÀÌ¹ÌÁö ³ª¿À°Ô ¸¸µé±âÀ§ÇØ spanÀ¸·Î ³ª¿Ã »çÁø Àû¿ëÇØ³õÀ½ -->
+                <!-- cate_img êµ¬ì¡° ì¤‘ìš”!! ì‚¬ì§„ì— ë§ˆìš°ìŠ¤ì˜¤ë²„ ì‹œ ë‹¤ë¥¸ ì´ë¯¸ì§€ ë‚˜ì˜¤ê²Œ ë§Œë“¤ê¸°ìœ„í•´ spanìœ¼ë¡œ ë‚˜ì˜¬ ì‚¬ì§„ ì ìš©í•´ë†“ìŒ -->
             </section>
             
 

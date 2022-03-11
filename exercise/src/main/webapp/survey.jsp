@@ -1,11 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
     
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>╪Ё╧╝а╤╩Г</title>
+        <title>Л└╓К╛╦Л║╟Л┌╛</title>
         <link rel="stylesheet" href="./css/survey.css">
         
   	</head>
@@ -22,19 +22,19 @@
             <!-- height, weight-->
 			<div>
                 <h3 class="request_title">
-                    <label for="height">1.╫ец╪а╓╨╦╦╕ ют╥бго╪╪©Д</label>
+                    <label for="height">1.Л▀═Л╡╢Л═∙КЁ╢К╔╪ Л·┘К═╔М∙≤Л└╦Л ■</label>
                 </h3>
                     <div class="box height_id">
-                    <input type="text" id="height" class="int" maxlength="30" placeholder="е╟╦╕ ют╥бго╪╪©Д">
+                    <input type="text" id="height" class="int" maxlength="30" placeholder="М┌╓К╔╪ Л·┘К═╔М∙≤Л└╦Л ■">
                		</div>
                 	<br>
                 	<div class="box weight_id">
-                    <input type="text" id="weight" class="int" maxlength="20" placeholder="╦Ж╧╚╟т╦╕ ют╥бго╪╪©Д">
+                    <input type="text" id="weight" class="int" maxlength="20" placeholder="К╙╦К╛╢Й╡▄К╔╪ Л·┘К═╔М∙≤Л└╦Л ■">
                 	</div>                         
              </div>
             <!-- target_weight -->
             <div><br>
-                <h3 class="request_title"><label for="goal">2.©Ьго╢б ╦Ж╧╚╟т╦╕ ют╥бго╪╪©Д.</label></h3>
+                <h3 class="request_title"><label for="goal">2.Л⌡░М∙≤К┼■ К╙╦К╛╢Й╡▄К╔╪ Л·┘К═╔М∙≤Л└╦Л ■.</label></h3>
                 <span class="box int_traget">
                     <input type="text" id="target" class="int" maxlength="20">
                 </span>
@@ -43,43 +43,43 @@
 
             <!-- athletic_part -->
             <div><br>
-                <h3 class="request_title"><label for="athletic_part">3.©Ьго╢б ©Н╣©а╬╥Ы╦╕ ╪╠ецго╪╪©Д.</label></h3>
+                <h3 class="request_title"><label for="athletic_part">3.Л⌡░М∙≤К┼■ Л ╢К▐≥Л╒┘К╔≤К╔╪ Л└═М┐²М∙≤Л└╦Л ■.</label></h3>
 
                 <div id="athletic_wrap">
                     <div class="athletic_part">
-                        <input id="shoulder" type="radio" name="part">ю╞╩Й╪р ©Н╣© &nbsp;
-                        <input id="arm" type="radio" name="part">╧╚╩Й╪р ©Н╣© &nbsp;
-                        <input id="chest" type="radio" name="part">╠ы╥б©Н╣© &nbsp;<br>
-                        <input id="back" type="radio" name="part">©Д╟║ &nbsp;
-                        <input id="bae" type="radio" name="part">╫╨ф╝╥╧д╙<br> &nbsp;
+                        <input id="shoulder" type="radio" name="part">Л°═Л┌╟Л├▄ Л ╢К▐≥ &nbsp;
+                        <input id="arm" type="radio" name="part">К╛╢Л┌╟Л├▄ Л ╢К▐≥ &nbsp;
+                        <input id="chest" type="radio" name="part">Й╥╪К═╔Л ╢К▐≥ &nbsp;<br>
+                        <input id="back" type="radio" name="part">Л ■Й╟─ &nbsp;
+                        <input id="bae" type="radio" name="part">Л┼╓М┼╦К═┬Л╧╜<br> &nbsp;
                     </div>
                 </div>
             </div>
 
             <!-- athletic_level-->
             <div>
-                <h3 class="request_title"><label for="athletic_level">4.╨╩юнюг ©Н╣©╥╧╨╖ю╩ ╪╠ецго╪╪©Д </label></h3>
+                <h3 class="request_title"><label for="athletic_level">4.КЁ╦Л²╦Л²≤ Л ╢К▐≥К═┬К╡╗Л²└ Л└═М┐²М∙≤Л└╦Л ■ </label></h3>
                 <div id="athletic_wrap">
                     <div class="athletic_level">
-                        <input type="radio" name="level" value="sang">╩С &nbsp;
-                        <input type="radio" name="level" value="jung">аъ &nbsp;
-                        <input type="radio" name="level" value="ha">го &nbsp;<br>
+                        <input type="radio" name="level" value="sang">Л┐│ &nbsp;
+                        <input type="radio" name="level" value="jung">Л╓▒ &nbsp;
+                        <input type="radio" name="level" value="ha">М∙≤ &nbsp;<br>
                         
                     </div><br><br>
                 </div>
             </div>
 
-            <!--а╓╨╦ ╨р╥╞©ю╠Б-->
+            <!--Л═∙КЁ╢ К╤┬К÷╛Л≤╓Й╦╟-->
             <div id="reinfo_wrap">
                 <div class="info">
-                    <input id="back" type="checkbox" name="back"/>&nbsp; юлюЭ а╓╨╦╦╕ ╨р╥╞©ц╥║©Д &nbsp;
+                    <input id="back" type="checkbox" name="back"/>&nbsp; Л²╢Л═└ Л═∙КЁ╢К╔╪ К╤┬К÷╛Л≤╛К·≤Л ■ &nbsp;
                 </div>
             </div>
             
             <!-- SUBMIT BTN-->
           	<div class="btn_area">
                     <button type="submit" id="btnJoin">
-                        <span>╟║ютго╠Б</span>
+                        <span>Й╟─Л·┘М∙≤Й╦╟</span>
                     </button>
             </div>
 

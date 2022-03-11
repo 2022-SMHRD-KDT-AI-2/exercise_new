@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <%
 	pageContext.setAttribute("context", request.getContextPath());
 %>
@@ -37,7 +37,7 @@
              <!-- LOGIN BTN-->
              <div class="btn_area1">
                 <button type="button" id="btnJoin">
-                <!-- *** Login¹öÆ°À» ´©¸£¸é survey.jsp(¼³¹®Á¶»ç)·Î ³Ñ¾î°©´Ï´Ù *** -->
+                <!-- *** Loginë²„íŠ¼ì„ ëˆ„ë¥´ë©´ survey.jsp(ì„¤ë¬¸ì¡°ì‚¬)ë¡œ ë„˜ì–´ê°‘ë‹ˆë‹¤ *** -->
                     <a href="${context}/survey.do">Survey</a>
                 </button>
             </div>
@@ -45,7 +45,7 @@
             <!-- JOIN BTN-->
             <div class="btn_area2">
                 <button type="button" id="btnSignUp">
-                <!-- *** Sign UpÀ» ´©¸£¸é signUp.jsp(È¸¿ø°¡ÀÔ)·Î ³Ñ¾î°©´Ï´Ù *** -->
+                <!-- *** Sign Upì„ ëˆ„ë¥´ë©´ signUp.jsp(íšŒì›ê°€ìž…)ë¡œ ë„˜ì–´ê°‘ë‹ˆë‹¤ *** -->
                    <a href="${context}/signUp.do">Sign up</a> 
                 </button>
             </div>

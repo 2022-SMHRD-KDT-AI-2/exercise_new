@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,19 +9,19 @@
 <body>
 
 		<%--
-			¹üÀ§
-			pageContext -->  ÇÑ jsp ÆäÀÌÁö
+			ë²”ìœ„
+			pageContext -->  í•œ jsp íŽ˜ì´ì§€
 			
-			request --> ÇÑ¹ø ¿äÃ»-ÀÀ´ä
+			request --> í•œë²ˆ ìš”ì²­-ì‘ë‹µ
 			
-			session --> ºê¶ó¿ìÀú ´ÝÀ»¶§±îÁö 
+			session --> ë¸Œë¼ìš°ì € ë‹«ì„ë•Œê¹Œì§€ 
 			
-			applicatio --> ÅèÄ¹¼­¹ö ²ø¶§±îÁö
+			applicatio --> í†°ìº£ì„œë²„ ëŒë•Œê¹Œì§€
 			
 			
-			application¿¡ ´ã¾ÆµÎ¸é contextpath¸¦ ½áµµ °¡Á®¿Ã ¼ö ÀÖ´Ù.
+			applicationì— ë‹´ì•„ë‘ë©´ contextpathë¥¼ ì¨ë„ ê°€ì ¸ì˜¬ ìˆ˜ ìžˆë‹¤.
 					
 		 --%>
-		${context}
+		
 </body>
 </html>
