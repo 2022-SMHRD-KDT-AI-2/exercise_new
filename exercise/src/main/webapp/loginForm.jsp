@@ -26,7 +26,8 @@
                 <span class="box int_id">
                     <input type="text" id="memId" name="memId" class="int" maxlength="20" placeholder="ID">
                 </span>
-            </div>
+            
+            
             <!-- PW -->
             <div>
                 <h3 class="join_title"><label for="pswd1"></label></h3>
@@ -36,10 +37,6 @@
                 </span>
             </div>
             
-            <!-- ID 잘못 입력 -->
-            <c:if test = "${result == 0 }">
-                <div class = "login_warn">사용자 ID 또는 비밀번호를 잘못 입력하셨습니다.</div>
-            </c:if>
 
              <!-- LOGIN BTN-->
              <div class="btn_area1">
@@ -57,9 +54,11 @@
                 </button>
             </div>
           </form>  
+          
+            
         </div>
-    </div>
     <!-- wrapper -->
     <script src="main.js"></script>
+    </div>
 </body>
 </html>
