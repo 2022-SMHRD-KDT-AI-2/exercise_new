@@ -1,130 +1,119 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+    pageEncoding="UTF-8"%>
 <%
 	pageContext.setAttribute("context", request.getContextPath());
 %>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
-<html lang="ko">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>challenge</title>
-    <link rel="stylesheet" href="./css/challenge.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Jua&family=Sunflower:wght@500&display=swap"
-        rel="stylesheet">
+<meta charset="EUC-KR">
+<title>ì»¤ë®¤ë‹ˆí‹°</title>
+<link rel="stylesheet" type="text/css" href="./css/community.css">
 </head>
-
 <body>
-    <div id="wrap">
+<div id="wrap">
         <header id="header">
             <div class="h_cont">
-                <h1><a href="${context}/index.jsp"><img src="img/logo_1.png" alt="·Î°í"></a></h1>
+                <h1><a href="${context}/index.jsp"><img src="img/logo_1.png" alt="ë¡œê³ "></a></h1>
                 <nav>
                        <ul>
                         <li>
                             <a href="${context}/index.jsp">Home</a>
                         </li>
                         <li>
-                            <a href="${context}/challenge.jsp">¿îµ¿ ÃßÃµ ÇÁ·Î±×·¥</a>
+                            <a href="${context}/challenge.jsp">ìš´ë™ ì¶”ì²œ í”„ë¡œê·¸ëž¨</a>
                         </li>
                         <li>
-                            <a href="${context}/Outdoor.jsp">¾ß¿Ü Ã¼À°½Ã¼³</a>
+                            <a href="${context}/Outdoor.jsp">ì•¼ì™¸ ì²´ìœ¡ì‹œì„¤</a>
                         </li>
                         <li>
-                            <a href="/Sales_site/index.html">¿îµ¿ ¿ëÇ°</a>
+                            <a href="/Sales_site/index.html">ìš´ë™ ìš©í’ˆ</a>
                         </li>
                         <li>
-                            <a href="${context}/community.jsp">Ä¿¹Â´ÏÆ¼</a>
+                            <a href="${context}/community.jsp">ì»¤ë®¤ë‹ˆí‹°</a>
                         </li>
                     </ul>
                 </nav>
                 <ul class="h_menu">
-                    <li><a href="#"><img src="./img/icon_7.png" alt=""></a></li>
-                    <li><a href="#"><img src="./img/icon_5.png" alt=""></a></li>
+                    <li><a href="/Sign up/index.html"><img src="./img/icon_7.png" alt=""></a></li>
+                    <li><a href="/Login/index.html"><img src="./img/icon_5.png" alt=""></a></li>
                 </ul>
             </div>
         </header>
-        <div id="container">
-            <section id="section_1">
-                <ul class="video_1">
-                    <li><iframe width="540" height="315" src="https://www.youtube.com/embed/e4WnrhXTjg8"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <div class="text_box"><a href="">³Ê¸¦ »ó´ë·Î È¥Àã¸Á¸£ ¾ðÁ¦±îÁö ÇÒ¼öÀÕÀ»±î?<br>¸®µðÈÄ_Familly sory <br>
-                                Á¶È¸¼ö2.3¸¸È¸ 19½Ã°£Àü</a></div>
-                    </li>
-                    <li><iframe width="540" height="315" src="https://www.youtube.com/embed/e4WnrhXTjg8"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <div class="text_box"><a href="">³Ê¸¦ »ó´ë·Î È¥Àã¸Á¸£ ¾ðÁ¦±îÁö ÇÒ¼öÀÕÀ»±î?<br>¸®µðÈÄ_Familly sory <br>
-                                Á¶È¸¼ö2.3¸¸È¸ 19½Ã°£Àü</a></div>
-                    </li>
-                   
-                </ul>
-                <ul class="video_2">
-                    <li><iframe width="540" height="315" src="https://www.youtube.com/embed/e4WnrhXTjg8"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <div class="text_box"><a href="">³Ê¸¦ »ó´ë·Î È¥Àã¸Á¸£ ¾ðÁ¦±îÁö ÇÒ¼öÀÕÀ»±î?<br>¸®µðÈÄ_Familly sory <br>
-                                Á¶È¸¼ö2.3¸¸È¸ 19½Ã°£Àü</a></div>
-                    </li>
-                    <li><iframe width="540" height="315" src="https://www.youtube.com/embed/e4WnrhXTjg8"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <div class="text_box"><a href="">³Ê¸¦ »ó´ë·Î È¥Àã¸Á¸£ ¾ðÁ¦±îÁö ÇÒ¼öÀÕÀ»±î?<br>¸®µðÈÄ_Familly sory <br>
-                                Á¶È¸¼ö2.3¸¸È¸ 19½Ã°£Àü</a></div>
-                    </li>
-                </ul>
-                <ul class="video_3">
-                    <li><iframe width="540" height="315" src="https://www.youtube.com/embed/e4WnrhXTjg8"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <div class="text_box"><a href="">³Ê¸¦ »ó´ë·Î È¥Àã¸Á¸£ ¾ðÁ¦±îÁö ÇÒ¼öÀÕÀ»±î?<br>¸®µðÈÄ_Familly sory <br>
-                                Á¶È¸¼ö2.3¸¸È¸ 19½Ã°£Àü</a></div>
-                    </li>
-                    <li><iframe width="540" height="315" src="https://www.youtube.com/embed/e4WnrhXTjg8"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <div class="text_box"><a href="">³Ê¸¦ »ó´ë·Î È¥Àã¸Á¸£ ¾ðÁ¦±îÁö ÇÒ¼öÀÕÀ»±î?<br>¸®µðÈÄ_Familly sory <br>
-                                Á¶È¸¼ö2.3¸¸È¸ 19½Ã°£Àü</a></div>
-                    </li>
-                   
-                </ul>
-                </section>
-            <section id="section_2">
-                <div class="visual">
-                    <div class="s_menu">
-                        <div id="account" class="sc_login">
-                            <div class="login_msg"></div>
-                            <c:if test="${empty memVO}">
-                            <a href="${context}/loginForm.do" class="link_login" data-clk="log_off.login">·Î±×ÀÎ</a><br>
-                       		<br><a href="${context}/signUp.do" class="link_join" data-clk="log_off.registration">È¸¿ø°¡ÀÔ</a>
-                            </c:if>
-                            <c:if test="${!empty memVO}">
-                            <label>${memVO.memId}</label><br>
-                            <a href="${context}/index.jsp" class="link_join" data-clk="log_off.logout" onclick="goOut()">·Î±×¾Æ¿ô</a>
-                            </c:if>
-                        </div>
+       <div id="container">
+        <div class="board_wrap">
+            <div class="board_title">
+                <strong>ì»¤ë®¤ë‹ˆí‹°</strong>
+                <p>ìžìœ ë¡­ê²Œ ì´ì•¼ê¸°í•˜ì„¸ìš”</p><br><br>
+            </div>
+            <div class="board_list_wrap">
+                <div class="board_list">
+                    <div class="top">
+                        <div class="num">ë²ˆí˜¸</div>
+                        <div class="category">ë¶„ë¥˜</div>
+                        <div class="title">ì œëª©</div>
+                        <div class="writer">ê¸€ì“´ì´</div>
+                        <div class="date">ìž‘ì„±ì¼</div>
+                        <div class="count">ì¡°íšŒ</div>
                     </div>
-                    <div class="item">
-                        <img src="img/visual_item.png" alt="">
+                    <div>
+                        <div class="num">5</div>
+                        <div class="category">ë¶„ë¥˜</div>
+                        <div class="title"><a href="./Sub_2/ì»¤ë®¤ë‹ˆí‹°ë³´ê¸°.html">ì±Œë¦°ì§€ë°© ê´€ë ¨ ë¬¸ì˜ë“œë¦½ë‹ˆë‹¤.</a></div>
+                        <div class="writer">ë°•ì†Œì—°</div>
+                        <div class="date">2021.1.15</div>
+                        <div class="count">33</div>
+                    </div>
+                    <div>
+                        <div class="num">4</div>
+                        <div class="category">ë¶„ë¥˜</div>
+                        <div class="title"><a href="./Sub_2/ì»¤ë®¤ë‹ˆí‹°ë³´ê¸°.html">ì„¤ë¬¸ì¡°ì‚¬ë¥¼ ë‹¤ì‹œ í•˜ê³  ì‹¶ìŠµë‹ˆë‹¤.</a></div>
+                        <div class="writer">ê¹€ìœ ì§„</div>
+                        <div class="date">2021.1.15</div>
+                        <div class="count">33</div>
+                    </div>
+                    <div>
+                        <div class="num">3</div>
+                        <div class="category">ë¶„ë¥˜</div>
+                        <div class="title"><a href="./Sub_2/ì»¤ë®¤ë‹ˆí‹°ë³´ê¸°.html">ë‹¤ë¥¸ ìš´ë™ì„ ì¶”ì²œë°›ì„ ìˆ˜ ìžˆë‚˜ìš”?</a></div>
+                        <div class="writer">ìœ¤ì¤‘ì—´</div>
+                        <div class="date">2021.1.15</div>
+                        <div class="count">33</div>
+                    </div>
+                    <div>
+                        <div class="num">2</div>
+                        <div class="category">ë¶„ë¥˜</div>
+                        <div class="title"><a href="./Sub_2/ì»¤ë®¤ë‹ˆí‹°ë³´ê¸°.html">íšŒì› ì •ë³´ë¥¼ ìˆ˜ì •í•˜ê³  ì‹¶ì–´ìš”.</a></div>
+                        <div class="writer">ì´ìƒí˜„</div>
+                        <div class="date">2021.1.15</div>
+                        <div class="count">33</div>
+                    </div>
+                    <div>
+                        <div class="num">1</div>
+                        <div class="category">ë¶„ë¥˜</div>
+                        <div class="title"><a href="./Sub_2/ì»¤ë®¤ë‹ˆí‹°ë³´ê¸°.html">ì‚¬ìš©ë°©ë²•ì— ê´€í•´ ë¬¸ì˜ë“œë¦½ë‹ˆë‹¤.</a></div>
+                        <div class="writer">ìž¥ê°•ê·¼</div>
+                        <div class="date">2021.1.15</div>
+                        <div class="count">33</div>
                     </div>
                 </div>
-            </section>
-
+                <div class="board_page">
+                    <a href="#" class="bt first">&lt;&lt;</a>
+                    <a href="#" class="bt prev">&lt;</a>
+                    <a href="#" class="num on">1</a>
+                    <a href="#" class="num">2</a>
+                    <a href="#" class="num">3</a>
+                    <a href="#" class="num">4</a>
+                    <a href="#" class="num">5</a>
+                    <a href="#" class="bt next">&gt;</a>
+                    <a href="#" class="bt last">&gt;&gt;</a>
+                </div>
+                <div class="bt_wrap">
+                    <a href="/Community/Sub_3/ì»¤ë®¤ë‹ˆí‹°ìž‘ì„±.html" class="on">ë“±ë¡</a>
+                    <!--<a href="#">ìˆ˜ì •</a>-->
+                </div>
+            </div>
         </div>
-
-    </div>
-</body>
-
+        </div>
+    </body>
 </html>
