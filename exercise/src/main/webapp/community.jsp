@@ -3,6 +3,7 @@
 <%
 	pageContext.setAttribute("context", request.getContextPath());
 %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!DOCTYPE html>
 <html>
@@ -45,6 +46,26 @@
             </div>
         </header>
        <div id="container">
+       <section id="section_2">
+                <div class="visual">
+                    <div class="s_menu">
+                        <div id="account" class="sc_login">
+                            <div class="login_msg"></div>
+                            <c:if test="${empty memVO}">
+                            <a href="${context}/loginForm.do" class="link_login" data-clk="log_off.login">로그인</a><br>
+                       		<br><a href="${context}/signUp.do" class="link_join" data-clk="log_off.registration">회원가입</a>
+                            </c:if>
+                            <c:if test="${!empty memVO}">
+                            <label>${memVO.memId}</label><br>
+                            <a href="${context}/index.jsp" class="link_join" data-clk="log_off.logout" onclick="goOut()">로그아웃</a>
+                            </c:if>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/visual_item.png" alt="">
+                    </div>
+                </div>
+            </section>
         <div class="board_wrap">
             <div class="board_title">
                 <strong>커뮤니티</strong>
