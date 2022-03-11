@@ -21,6 +21,7 @@ public class HandlerMapping {
 		mappings.put("/surveyInsert.do", new SurveyInsertController());
 		mappings.put("/surveyUpdate.do", new SurveyUpdateController());
 		mappings.put("/surveyUpdateForm.do", new SurveyUpdateFormController());
+		mappings.put("/surveyLoginForm.do", new SurveyLoginFormController());
 		mappings.put("/loginForm.do", new LoginFormController());
 		
        mappings.put("/login.do", new LogInController());
