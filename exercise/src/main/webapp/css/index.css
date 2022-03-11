@@ -82,7 +82,7 @@ a {
 
 .h_cont nav > ul > li > a:hover {
     color: #fff;
-    font-size: 23px;
+
 }
 
 
@@ -234,6 +234,8 @@ nav .sub_menu ul li a:hover {
     font-family: 'GyeonggiTitleM' ;
     font-size: 20px;
     color: white;
+    algin-center:center;
+ 
 }
 
 #section_2 a:hover{
