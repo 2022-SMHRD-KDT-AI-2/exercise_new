@@ -3,6 +3,7 @@
 <%
 	pageContext.setAttribute("context", request.getContextPath());
 %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,6 +18,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Jua&family=Sunflower:wght@500&display=swap"
         rel="stylesheet">
+
+  <script type="text/javascript">
+  	function goOut(){
+  		location.href="/exercise/logout.do"
+  	}
+  </script>  
 </head>
 <body>
     <div id="wrap">
@@ -61,9 +68,14 @@
                     <div class="s_menu">
                         <div id="account" class="sc_login">
                             <div class="login_msg"></div>
+                            <c:if test="${empty memVO}">
                             <a href="${context}/loginForm.do" class="link_login" data-clk="log_off.login">로그인</a><br>
                        		<br><a href="${context}/signUp.do" class="link_join" data-clk="log_off.registration">회원가입</a>
-                            </div>
+                            </c:if>
+                            <c:if test="${!empty memVO}">
+                            <label>${memNick}</label><br>
+                            <a href="${context}/index.jsp" class="link_join" data-clk="log_off.logout" onclick="goOut()">로그아웃</a>
+                            </c:if>
                         </div>
                     </div>
                     <div class="item">
