@@ -25,8 +25,12 @@
 			<div>
                  <input type="hidden" name="memId" value="${memVO.memId}">
                 <h3 class="request_title">
-                    <label for="height">1.현재 몸무게를 입력하세요</label>
+                      <label for="height">1.신체정보를 입력하세요</label>
                 </h3>
+                    <div class="box height_id">
+                    <input type="text" id="height" name="height" class="int" maxlength="30" placeholder="키를 입력하세요">
+               		</div>
+                	<br>
                     
                 	<div class="box weight_id">
                     <input type="text" id="weight" name="weight" class="int" maxlength="20" placeholder="몸무게를 입력하세요">

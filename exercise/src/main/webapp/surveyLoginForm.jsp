@@ -16,7 +16,7 @@
     </div>
     <div id="wrapper">
         <div id="content">
-        <form class="form-inline" action="${context}/login.do" method="post">
+        <form class="form-inline" action="${context}/surveyLogin.do" method="post">
             <!-- ID -->
             <div>
                 <h3 class="join_title">

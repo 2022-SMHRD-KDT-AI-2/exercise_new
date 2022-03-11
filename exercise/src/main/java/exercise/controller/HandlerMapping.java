@@ -22,7 +22,9 @@ public class HandlerMapping {
 		mappings.put("/surveyUpdate.do", new SurveyUpdateController());
 		mappings.put("/surveyUpdateForm.do", new SurveyUpdateFormController());
 		mappings.put("/surveyLoginForm.do", new SurveyLoginFormController());
+		mappings.put("/surveyLogin.do", new SurveyLoginController());
 		mappings.put("/loginForm.do", new LoginFormController());
+		mappings.put("/checkId.do", new CheckIdController());
 		
        mappings.put("/login.do", new LogInController());
        mappings.put("/logout.do", new LogOutController());

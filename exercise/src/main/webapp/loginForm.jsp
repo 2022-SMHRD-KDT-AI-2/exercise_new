@@ -42,15 +42,15 @@
              <div class="btn_area1">
                 <button type="submit" id="btnJoin">
                 <!-- *** Login버튼을 누르면 survey.jsp(설문조사)로 넘어갑니다 *** -->
-                    <a href="${context}/index.jsp">Login</a>
+                    <a >Login</a>
                 </button>               
             </div>
            
             <!-- 회원가입 BTN-->
              <div class="btn_area1">
-                <button type="button" id="btnJoin">
+                <button type="button" id="btnJoin"  onclick ="location.href='${context}/signUp.do'">
                 <!-- *** Login버튼을 누르면 survey.jsp(설문조사)로 넘어갑니다 *** -->
-                    <a href="${context}/signUp.do">SignUp</a>
+                    <a>SignUp</a>
                 </button>
             </div>
           </form>  

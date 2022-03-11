@@ -16,6 +16,8 @@ pageContext.setAttribute("context", request.getContextPath());
 <link
 	href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Jua&family=Sunflower:wght@500&display=swap"
 	rel="stylesheet">
+
+<script src="/webjars/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
 	<!-- header -->
@@ -35,7 +37,7 @@ pageContext.setAttribute("context", request.getContextPath());
 					</h3>
 					<span class="box int_nick"> <input type="text" id="memNick"
 						name="memNick" class="int" maxlength="20"> <input
-						type="button" id="btn_ck" value="중복확인" onclick="openIdChk()">
+						type="button" class="btn_ck" id="btn_nick" value="중복확인" onclick="openIdChk()">
 						<input type="hidden" name="idDuplication" value="idUncheck">
 					</span> <span class="error_next_box"></span>
 				</div>
@@ -48,7 +50,7 @@ pageContext.setAttribute("context", request.getContextPath());
 
 					<span class="box int_id"> <input type="text" id="memId"
 						name="memId" class="int" maxlength="20"> <input
-						type="button" id="btn_ck" value="중복확인" onclick="checkid()">
+						type="button" class="btn_ck" id="btn_id" value="중복확인" onclick="checkid()">
 						<input type="hidden" name="idDuplication" value="idUncheck">
 					</span>
 				</div>
@@ -131,45 +133,53 @@ pageContext.setAttribute("context", request.getContextPath());
 	<script src="main.js"></script>
 
 
-
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
 	<script>
-		$("#btn_ck").click(function() {
+		$("#btn_id").click(function() {
 			var id = $("#memId").val();
 			if (id == "") {
 				alert("아이디를 입력해 주십시오");
 			} else {
-				idCheckFunc(id);
+				checkid(id);
 			}
 		})
 
-		function idCheckFunc(id) {
+		function checkid(id) {
+			$.ajax({
+				type : "post",
+				url : 'checkId.do',
+				success : function(){
+					alert("성공");
+					console.log(id);
+				},
+				error : function(){
+					alert("실패");
+				}
+			});
+			
 			//alert("idCheckFunc");
 
-			$.ajax({
+			/* $.ajax({
 
 				type : "post",
-				url : "checkid.do",
-				async : true,
-				data : "id=" + id,
-				success : function(msg) {
-					alert("ajax success")
-					idCheckMsg(msg);
+				url : "checkId.do",
+				data : {memId: memId},
+				dataType : 'json',
+				success : function(result) {
+					if(result == 0){
+						${"#checkId"}.
+						
+					} else{
+						${"#checkId"}.
+					}
 				},
 				error : function() {
 					alert("ajax error");
 				}
-			});
-		}
+			});*/
+		} 
 
-		function idCheckMsg(msg) {
-
-			if (msg.message == 'YES') {
-				alert("사용할 수 없는 아이디 입니다.");
-			} else {
-				alert("사용할 수 있는 아이디 입니다.");
-			}
-
-		}
+	
 	</script>
 
 

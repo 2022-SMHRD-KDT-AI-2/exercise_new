@@ -13,6 +13,7 @@ public class SurveyUpdateController implements Controller {
 @Override
 public String requestHandler(HttpServletRequest request, HttpServletResponse response)
 		throws ServletException, IOException {
+	int height = Integer.parseInt(request.getParameter("height"));
 	int weight = Integer.parseInt(request.getParameter("weight"));
 	int targetWeight = Integer.parseInt(request.getParameter("targetWeight"));
 	String athleticPart = request.getParameter("athleticPart");
@@ -20,6 +21,7 @@ public String requestHandler(HttpServletRequest request, HttpServletResponse res
 	String memId = request.getParameter("memId");
 	SurveyVO vo = new SurveyVO();
 	SurveyDAO dao = new SurveyDAO();
+	vo.setHeight(height);
 	vo.setMemId(memId);
 	vo.setWeight(weight);
 	vo.setTargetWeight(targetWeight);
