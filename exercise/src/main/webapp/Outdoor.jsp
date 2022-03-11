@@ -1,5 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<%
+	pageContext.setAttribute("context", request.getContextPath());
+%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,23 +20,23 @@
     <div id="wrap">
         <header id="header">
             <div class="h_cont">
-                <h1><a href=""${context}/index.jsp""><img src="img/logo_1.png" alt="·Î°í"></a></h1>
+                <h1><a href="${context}/index.jsp"><img src="img/logo_1.png" alt="ë¡œê³ "></a></h1>
                 <nav>
                     <ul>
                         <li>
                             <a href="${context}/index.jsp">Home</a>
                         </li>
                         <li>
-                            <a href="${context}/challenge.jsp">¿îµ¿ ÃßÃµ ÇÁ·Î±×·¥</a>
+                            <a href="${context}/challenge.jsp">ìš´ë™ ì¶”ì²œ í”„ë¡œê·¸ëž¨</a>
                         </li>
                         <li>
-                            <a href="${context}/Outdoor.jsp">¾ß¿Ü Ã¼À°½Ã¼³</a>
+                            <a href="${context}/Outdoor.jsp">ì•¼ì™¸ ì²´ìœ¡ì‹œì„¤</a>
                         </li>
                         <li>
-                            <a href="#">¿îµ¿ ¿ëÇ°</a>
+                            <a href="#">ìš´ë™ ìš©í’ˆ</a>
                         </li>
                         <li>
-                            <a href="${context}/community.jsp">Ä¿¹Â´ÏÆ¼</a>
+                            <a href="${context}/community.jsp">ì»¤ë®¤ë‹ˆí‹°</a>
                         </li>
                     </ul>
                 </nav>
@@ -46,43 +50,43 @@
             <section id="section_1">
                 <div class="s1_cont">
                     <div class="box">
-                        <div class="text">°­ºÏ À£ºù ½ºÆ÷Ã÷ ¼¾ÅÍ</div>
-                    <div class="text">½É»ç ¿©ºÎ : ½É»ç</div>
-                    <div class="text">ÀÌ¿ë ¿ä±Ý  : 165,500¿ø</div>
-                    <div class="button"><button>¹Ù·Î°¡±â</button></div>
+                        <div class="text">ê°•ë¶ ì›°ë¹™ ìŠ¤í¬ì¸  ì„¼í„°</div>
+                    <div class="text">ì‹¬ì‚¬ ì—¬ë¶€ : ì‹¬ì‚¬</div>
+                    <div class="text">ì´ìš© ìš”ê¸ˆ  : 165,500ì›</div>
+                    <div class="button"><button>ë°”ë¡œê°€ê¸°</button></div>
                     </div>
                     <div class="box">
-                        <div class="text">°­ºÏ À£ºù ½ºÆ÷Ã÷ ¼¾ÅÍ</div>
-                        <div class="text">½É»ç ¿©ºÎ : ½É»ç</div>
-                        <div class="text">ÀÌ¿ë ¿ä±Ý  : 165,500¿ø</div>
-                        <div class="button"><button>¹Ù·Î°¡±â</button></div>
+                        <div class="text">ê°•ë¶ ì›°ë¹™ ìŠ¤í¬ì¸  ì„¼í„°</div>
+                        <div class="text">ì‹¬ì‚¬ ì—¬ë¶€ : ì‹¬ì‚¬</div>
+                        <div class="text">ì´ìš© ìš”ê¸ˆ  : 165,500ì›</div>
+                        <div class="button"><button>ë°”ë¡œê°€ê¸°</button></div>
                     </div>
                     <div class="box">
-                        <div class="text">°­ºÏ À£ºù ½ºÆ÷Ã÷ ¼¾ÅÍ</div>
-                        <div class="text">½É»ç ¿©ºÎ : ½É»ç</div>
-                        <div class="text">ÀÌ¿ë ¿ä±Ý  : 165,500¿ø</div>
-                        <div class="button"><button>¹Ù·Î°¡±â</button></div>
+                        <div class="text">ê°•ë¶ ì›°ë¹™ ìŠ¤í¬ì¸  ì„¼í„°</div>
+                        <div class="text">ì‹¬ì‚¬ ì—¬ë¶€ : ì‹¬ì‚¬</div>
+                        <div class="text">ì´ìš© ìš”ê¸ˆ  : 165,500ì›</div>
+                        <div class="button"><button>ë°”ë¡œê°€ê¸°</button></div>
                     </div>
               
             </div>
             <div class="s1_cont">
                 <div class="box">
-                    <div class="text">°­ºÏ À£ºù ½ºÆ÷Ã÷ ¼¾ÅÍ</div>
-                    <div class="text">½É»ç ¿©ºÎ : ½É»ç</div>
-                    <div class="text">ÀÌ¿ë ¿ä±Ý  : 165,500¿ø</div>
-                    <div class="button"><button>¹Ù·Î°¡±â</button></div>
+                    <div class="text">ê°•ë¶ ì›°ë¹™ ìŠ¤í¬ì¸  ì„¼í„°</div>
+                    <div class="text">ì‹¬ì‚¬ ì—¬ë¶€ : ì‹¬ì‚¬</div>
+                    <div class="text">ì´ìš© ìš”ê¸ˆ  : 165,500ì›</div>
+                    <div class="button"><button>ë°”ë¡œê°€ê¸°</button></div>
                 </div>
                 <div class="box">
-                    <div class="text">°­ºÏ À£ºù ½ºÆ÷Ã÷ ¼¾ÅÍ</div>
-                    <div class="text">½É»ç ¿©ºÎ : ½É»ç</div>
-                    <div class="text">ÀÌ¿ë ¿ä±Ý  : 165,500¿ø</div>
-                    <div class="button"><button>¹Ù·Î°¡±â</button></div>
+                    <div class="text">ê°•ë¶ ì›°ë¹™ ìŠ¤í¬ì¸  ì„¼í„°</div>
+                    <div class="text">ì‹¬ì‚¬ ì—¬ë¶€ : ì‹¬ì‚¬</div>
+                    <div class="text">ì´ìš© ìš”ê¸ˆ  : 165,500ì›</div>
+                    <div class="button"><button>ë°”ë¡œê°€ê¸°</button></div>
                 </div>
                 <div class="box">
-                    <div class="text">°­ºÏ À£ºù ½ºÆ÷Ã÷ ¼¾ÅÍ</div>
-                    <div class="text">½É»ç ¿©ºÎ : ½É»ç</div>
-                    <div class="text">ÀÌ¿ë ¿ä±Ý  : 165,500¿ø</div>
-                    <div class="button"><button>¹Ù·Î°¡±â</button></div>
+                    <div class="text">ê°•ë¶ ì›°ë¹™ ìŠ¤í¬ì¸  ì„¼í„°</div>
+                    <div class="text">ì‹¬ì‚¬ ì—¬ë¶€ : ì‹¬ì‚¬</div>
+                    <div class="text">ì´ìš© ìš”ê¸ˆ  : 165,500ì›</div>
+                    <div class="button"><button>ë°”ë¡œê°€ê¸°</button></div>
                 </div>
           
         </div>
@@ -92,16 +96,16 @@
                 <div class="visual">
                     <div class="s_menu">
                         <ul>
-                            <li><a href="">ÃÊ±Þ</a></li>
-                            <li><a href="">Áß±Þ</a></li>
-                            <li><a href="">¾ß¿ÜÃ¼À°½Ã¼³</a></li>
+                            <li><a href="">ì´ˆê¸‰</a></li>
+                            <li><a href="">ì¤‘ê¸‰</a></li>
+                            <li><a href="">ì•¼ì™¸ì²´ìœ¡ì‹œì„¤</a></li>
                         </ul>
                     </div>
                     <div class="item">
                         <img src="img/visual_item.png" alt="">
                     </div>
                 </div>
-                <!-- cate_img ±¸Á¶ Áß¿ä!! »çÁø¿¡ ¸¶¿ì½º¿À¹ö ½Ã ´Ù¸¥ ÀÌ¹ÌÁö ³ª¿À°Ô ¸¸µé±âÀ§ÇØ spanÀ¸·Î ³ª¿Ã »çÁø Àû¿ëÇØ³õÀ½ -->
+                <!-- cate_img êµ¬ì¡° ì¤‘ìš”!! ì‚¬ì§„ì— ë§ˆìš°ìŠ¤ì˜¤ë²„ ì‹œ ë‹¤ë¥¸ ì´ë¯¸ì§€ ë‚˜ì˜¤ê²Œ ë§Œë“¤ê¸°ìœ„í•´ spanìœ¼ë¡œ ë‚˜ì˜¬ ì‚¬ì§„ ì ìš©í•´ë†“ìŒ -->
             </section>
 
 
