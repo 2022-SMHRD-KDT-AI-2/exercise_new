@@ -70,13 +70,8 @@
                         <img src="img/visual_item.png" alt="">
                     </div>
                 </div>
-                <!-- cate_img 구조 중요!! 사진에 마우스오버 시 다른 이미지 나오게 만들기위해 span으로 나올 사진 적용해놓음 -->
             </section>
-            
-
-
         </div>
-
     </div>
 </body>
 </html>

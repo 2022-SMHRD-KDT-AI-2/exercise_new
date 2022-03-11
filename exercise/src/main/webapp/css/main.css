@@ -71,17 +71,18 @@ a {
 }
 
 .h_cont nav > ul > li > a {
-    font-size: 18px;
+    font-size: 21px;
     font-weight: 400;
     color: #ebeaea;
     transition: 0.2s;
     font-family: 'Do Hyeon', sans-serif;
+    transition:0.9;
 
 }
 
 .h_cont nav > ul > li > a:hover {
     color: #fff;
-    font-size: 24px;
+    font-size: 23px;
 }
 
 
