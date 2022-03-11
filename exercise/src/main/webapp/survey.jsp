@@ -17,7 +17,7 @@
     <div id="wrapper">
         <!-- content-->
         <div id="content">
-               
+         <form action="${context}/surveyInsert.do" method="post">      
             <!-- height, weight-->
 			<div>
                 <h3 class="request_title">
@@ -78,9 +78,10 @@
             <!-- SUBMIT BTN-->
           	<div class="btn_area">
                     <button type="submit" id="btnJoin">
-                        <span>가입하기</span>
+                        <span>제출하기</span>
                     </button>
             </div>
+            </form>
 
     </div>
     <script src="main.js"></script>

@@ -38,17 +38,10 @@
              <div class="btn_area1">
                 <button type="button" id="btnJoin">
                 <!-- *** Login버튼을 누르면 survey.jsp(설문조사)로 넘어갑니다 *** -->
-                    <a href="${context}/survey.do">Survey</a>
+                    <a href="${context}/survey.do">Login</a>
                 </button>
             </div>
 
-            <!-- JOIN BTN-->
-            <div class="btn_area2">
-                <button type="button" id="btnSignUp">
-                <!-- *** Sign Up을 누르면 signUp.jsp(회원가입)로 넘어갑니다 *** -->
-                   <a href="${context}/signUp.do">Sign up</a> 
-                </button>
-            </div>
 
         </div>
     </div>

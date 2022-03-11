@@ -6,6 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <meta charset="utf-8">
 <title>회원가입</title>
 <link rel="stylesheet" type="text/css" href="./css/signUp.css">
@@ -57,7 +58,7 @@
             <div>
                 <h3 class="join_title"><label for="pswd1">비밀번호</label></h3>
                 <span class="box int_pass">
-                    <input type="text" id="memPwd" name="memPwd" class="int" maxlength="20">
+                    <input type="password" id="memPwd" name="memPwd" class="int" maxlength="20">
                     <span id="alertTxt">사용불가</span>
                    <img src="./img/pw.png" id="pswd1_img1" class="pswdImg">
                 </span>
@@ -68,7 +69,7 @@
             <div>
                 <h3 class="join_title"><label for="pswd2">비밀번호 재확인</label></h3>
                 <span class="box int_pass_check">
-                    <input type="text" id="pswd2" class="int" maxlength="20">
+                    <input type="password" id="pswd2" class="int" maxlength="20">
                     <img src="./img/pw.png" id="pswd1_img1" class="pswdImg">
                 </span>
                 <span class="error_next_box"></span>
@@ -102,9 +103,39 @@
                     </div>
                     <div class="box2">
                         <select id="memAddr1" name="memAddr1" class="sel">
-                            <option id="input_city">지역</option>
-                            <option value="서울특별시">서울특별시</option>
-                            <option value="광주광역시">광주광역시</option>
+                            <option id="input_city">자치구</option>
+                            <option value="서울특별시">강남구</option>
+                            <option value="서울특별시">강동구</option>
+                            <option value="서울특별시">강북구</option>
+                            <option value="서울특별시">강서구</option>
+                            <option value="서울특별시">관악구</option>
+                            <option value="서울특별시">광진구</option>
+                            <option value="서울특별시">구로구</option>
+                            <option value="서울특별시">금천구</option>
+                            <option value="서울특별시">노원구</option>
+                            <option value="서울특별시">도봉구</option>
+                            <option value="서울특별시">동대문구</option>
+                            <option value="서울특별시">동작구</option>
+                            <option value="서울특별시">마포구</option>
+                            <option value="서울특별시">서대문구</option>
+                            <option value="서울특별시">서초구</option>
+                            <option value="서울특별시">성동구</option>
+                            <option value="서울특별시">성북구</option>
+                            <option value="서울특별시">송파구</option>
+                            <option value="서울특별시">양천구</option>
+                            <option value="서울특별시">영등포구</option>
+                            <option value="서울특별시">용산구</option>
+                            <option value="서울특별시">은평구</option>
+                            <option value="서울특별시">종로구</option>
+                            <option value="서울특별시">중구</option>
+                            <option value="서울특별시">중랑구</option>
+                            
+                             <option  value="광주광역시">광산구</option>
+                             <option value="광주광역시">동구</option>
+                             <option  value="광주광역시">서구</option>
+                             <option  value="광주광역시">남구</option>
+                             <option  value="광주광역시">북구</option>
+                               
                         </select>
                     </div>
                 </div>

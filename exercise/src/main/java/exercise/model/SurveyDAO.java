@@ -7,7 +7,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
-import exercise.entity.MemberVO;
+import exercise.entity.SurveyVO;
 
 public class SurveyDAO {
 	private static SqlSessionFactory sqlSessionFactory;
@@ -22,7 +22,7 @@ public class SurveyDAO {
 		
 		}
 	}
-	public int surveyInsert(MemberVO vo) {
+	public int surveyInsert(SurveyVO vo) {
 		  SqlSession session = sqlSessionFactory.openSession();  
 	      int cnt=session.insert("surveyInsert", vo);
 	      session.commit();
