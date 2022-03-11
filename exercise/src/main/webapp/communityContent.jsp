@@ -113,8 +113,8 @@
                     </div>
                 </div>
                 <div class="bt_wrap">
-                    <a href="/Community/Community.html" class="on">목록</a>
-                    <a href="/Community/Sub_1/커뮤니티수정.html">수정</a>
+                    <a href="${context}/community.jsp" class="on">목록</a>
+                    <a href="${context}/communityEdit.jsp">수정</a>
                 </div>
             </div>
         </div>

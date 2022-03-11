@@ -108,8 +108,8 @@
                     </div>
                 </div>
                 <div class="bt_wrap">
-                    <a href="Q&A보기.html" class="on">등록</a>
-                    <a href="Q&A.html">취소</a>
+                    <a href=${context}/community.jsp class="on">등록</a>
+                    <a href="${context}/community.jsp">취소</a>
                 </div>
             </div>
         </div>
