@@ -20,20 +20,19 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="/Main/index.html">Home</a>
+                            <a href="${context}/index.jsp">Home</a>
                         </li>
                         <li>
-                            <a href="/Challenge/index.html">운동 추천 프로그램</a>
+                            <a href="${context}/challenge.jsp">운동 추천 프로그램</a>
                         </li>
                         <li>
-                            <a href="/Outdoor/">야외 체육시설</a>
+                            <a href="${context}/Outdoor.jsp">야외 체육시설</a>
                         </li>
                         <li>
-                            <a href="/Sales_site/">운동 용품</a>
+                            <a href="#">운동 용품</a>
                         </li>
                         <li>
-                            <a href="/Community/Community.html">커뮤니티</a>
-                            
+                            <a href="${context}/community.jsp">커뮤니티</a>
                         </li>
                     </ul>
                 </nav>
