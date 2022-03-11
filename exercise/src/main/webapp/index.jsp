@@ -8,9 +8,7 @@
 <head>
 <meta charset="EUC-KR">
 <title>메인페이지</title>
-<link rel="stylesheet" type="text/css" href="./css/main.css">
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="./css/index.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Jua&family=Sunflower:wght@500&display=swap"

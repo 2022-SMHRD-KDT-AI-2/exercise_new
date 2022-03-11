@@ -4,16 +4,13 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>DoTERRA</title>
+    <title>Outdoor</title>
     <link rel="stylesheet" href="./css/Outdoor.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Jua&family=Sunflower:wght@500&display=swap"
         rel="stylesheet">
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
     <div id="wrap">

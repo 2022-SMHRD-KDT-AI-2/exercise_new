@@ -1,88 +1,244 @@
 @charset "EUC-KR";
-@import url('https://fonts.googlepis.com/css?family=Nanum+Myeongjo:800&subset=korean');
-@import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Roboto 100 300 400 500 700 900 */
+/* Noto Sans KR 100 300 400 500 700 900 */
 @font-face {
-  font-family: 'TmoneyRoundWindExtraBold';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindExtraBold.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'TmoneyRoundWindRegular';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindRegular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'GyeonggiBatang';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'IBMPlexSansKR-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'GyeonggiTitleM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiTitleM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-a {
-  text-decoration: none;
+
+
+
+/* 공통 */
+
+html {
+    font-size: 15px;
 }
 
-legend {
-  display: none;
+/* 15px 가장많이 사용 */
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+
+
+body {
+    font-family: 'Roboto', 'Noto Sans KR', 'sans-serif';
 }
 
 ul,
 ol {
-  list-style: none;
+    list-style: none;
 }
 
-body {
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
+a {
+    text-decoration: none;
 }
+/* header contents */
 
-
-#wrap{
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-}
-
-#section_1{
-  width:100%;
-  height:950px;
-  position:relative;
+#header {
+    background-color: rgba(53, 190, 64, 0.6);
+    position: fixed;
+    width: 100%;
+    z-index: 9;
 }
 
 
-#section_1 .btn{
+#header .h_cont {
+    width: 1000px;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header .h_cont img{
+    margin-top: 10px;
+    width:120px;
+    height:55px;
+}
+
+.h_cont nav > ul > li {
+    display: inline-block;
+    margin: 0 12px;
+    position: relative;
+}
+
+.h_cont nav > ul > li > a {
+    font-size: 21px;
+    font-weight: 400;
+    color: #ebeaea;
+    transition: 0.2s;
+    font-family: 'Do Hyeon', sans-serif;
+    transition:0.9;
+
+}
+
+.h_cont nav > ul > li > a:hover {
+    color: #fff;
+    font-size: 23px;
+}
+
+
+nav .sub_menu {
     position: absolute;
-    left: 45%;
-    right:50%;
-    bottom:50%;
-    top:50%;
+    left: 50%;
+    top: 20px;
     transform: translate(-50%, 0);
+    background-color: #fff;
     width: 100px;
+    display: none;
 }
 
-#section_1 .btn button a {
-color:white;
-font-size:24px;
-font-family:'IBMPlexSansKR-Regular';
-}
-#section_1 .btn button{
-  background-color: #37eec6;
-  width:220px;
-  height:70px;
-  border: none;
-  border-radius: 3px;
-  justify-content: center;
+/* nav .sub_menu ul {display: flex; flex-direction: column; align-items: center;} 지움 */
+
+/* nav .sub_menu ul li {padding: 10px 0;} 지움 */
+nav .sub_menu ul li {
+    width: 100%
 }
 
-.btn button:hover{
-  opacity: 0.7;
-  transition: 0.4s;
+nav .sub_menu ul li a {
+    display: block;
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #135817;
 }
+
+nav .sub_menu ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.h_cont .h_menu {
+    position: relative;
+}
+
+/* 가상클래스가 붙은 실질적인 아이한테 position: relative; 주는것 */
+
+
+
+/* 가상클래스 ::before 사용시 content, position: absolute;, 너비값, 높이값 꼭 써줘야됨*/
+/* transform: translate(0,-50%);로 중간에 맞춘 후 left조절 */
+
+#header > div > ul > li:nth-child(1) > a > img{
+    width:30px;
+    height:30px;
+
+}
+#header > div > ul > li:nth-child(2) > a > img{
+    width:30px;
+    height:30px;
+}
+#header > div > ul > li:nth-child(3) > a > img{
+    width:30px;
+    height:30px;
+}
+.h_cont .h_menu  {
+    margin-left:20px;
+}
+.h_cont .h_menu li {
+    display: inline-block;
+    margin-left: 7px;
+    font-family: 'GyeonggiTitleM';
+}
+
+
+
+.h_cont .h_menu li:first-child {
+    margin: 0;
+}
+
+.h_cont .h_menu li a {
+    font-size: 0.9333rem;
+    font-weight: 500;
+    color: #dedede;
+    transition: 0.2s;
+   
+}
+
+.h_cont .h_menu li a:hover {
+    color: #fff;
+}
+
+
+
+
+
+/* container contents */
+
+#container #section_1 {
+    background: url(../img/visual_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+/* background-size: cover; 배경 전체로 맞춤 */
+
+#section_1 .visual {
+    width: 1000px;
+    margin: 0 auto;
+    height: 100vh;
+    position: relative;
+}
+
+.visual .slogan {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#section_2 .visual .s_menu{
+    position: absolute;
+    top: 21.5%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    position:fixed;
+    width:120px;
+    height:70px;
+    background-color: #107a4977;
+    border-radius: 40px;
+    text-align: center;
+    padding:17px;
+    color: white;
+}
+#section_2 .visual .s_menu li a{
+    color:white;
+    font-weight: 700;
+    text-align: center;
+    margin: 30px;
+    
+}
+
+.visual .item {
+    position: absolute;
+    bottom: -57px;
+    right: 0;
+}
+
+
+/*네이버*/
+#section_2 a{
+    font-family: 'GyeonggiTitleM' ;
+    font-size: 20px;
+    color: white;
+}
+
+#section_2 a:hover{
+    color: rgba(144, 248, 84, 0.904);
+    font-size:23px;
+}
+
+
