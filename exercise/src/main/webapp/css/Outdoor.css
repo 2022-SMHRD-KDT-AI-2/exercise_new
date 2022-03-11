@@ -216,22 +216,63 @@ nav .sub_menu ul li a:hover {
   opacity: 1;
 }
 
-#section_2 .visual .s_menu {
-  position: absolute;
-  top: 20%;
-  left: 94%;
-  transform: translate(-50%, -50%);
-  position: fixed;
-  width: 150px;
-  height: 70px;
-  background-color: #368132;
-  border-radius: 100px;
-  text-align: center;
-  padding: 17px;
+
+#section_1 .visual {
+    width: 1000px;
+    margin: 0 auto;
+    height: 100vh;
+    position: relative;
 }
-#section_2 .visual .s_menu li a {
-  color: white;
-  font-weight: 700;
-  text-align: center;
-  margin: 30px;
+
+.visual .slogan {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+#section_2 .visual .s_menu{
+    position: absolute;
+    top: 21.5%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    position:fixed;
+    width:120px;
+    height:70px;
+    background-color: #368132;
+    border-radius: 40px;
+    text-align: center;
+    padding:17px;
+    color: white;
+}
+#section_2 .visual .s_menu li a{
+    color:white;
+    font-weight: 700;
+    text-align: center;
+    margin: 30px;
+    
+}
+
+.visual .item {
+    position: absolute;
+    bottom: -57px;
+    right: 0;
+}
+
+
+/*³×ÀÌ¹ö*/
+#section_2 a{
+    font-family: 'GyeonggiTitleM' ;
+    font-size: 20px;
+    color: white;
+    algin-center:center;
+ 
+}
+
+#section_2 a:hover{
+    color: rgba(144, 248, 84, 0.904);
+    font-size:23px;
+}
+#account{
+    margin-top: 6px;
+}
+

@@ -95,17 +95,22 @@
             <section id="section_2">
                 <div class="visual">
                     <div class="s_menu">
-                        <ul>
-                            <li><a href="">초급</a></li>
-                            <li><a href="">중급</a></li>
-                            <li><a href="">야외체육시설</a></li>
-                        </ul>
+                        <div id="account" class="sc_login">
+                            <div class="login_msg"></div>
+                            <c:if test="${empty memVO}">
+                            <a href="${context}/loginForm.do" class="link_login" data-clk="log_off.login">로그인</a><br>
+                       		<br><a href="${context}/signUp.do" class="link_join" data-clk="log_off.registration">회원가입</a>
+                            </c:if>
+                            <c:if test="${!empty memVO}">
+                            <label>${memVO.memId}</label><br>
+                            <a href="${context}/index.jsp" class="link_join" data-clk="log_off.logout" onclick="goOut()">로그아웃</a>
+                            </c:if>
+                        </div>
                     </div>
                     <div class="item">
                         <img src="img/visual_item.png" alt="">
                     </div>
                 </div>
-                <!-- cate_img 구조 중요!! 사진에 마우스오버 시 다른 이미지 나오게 만들기위해 span으로 나올 사진 적용해놓음 -->
             </section>
 
 
