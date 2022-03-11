@@ -19,11 +19,10 @@
 <body>
     <!-- header -->
     <div id="header">
-         <a><img src="./img/logo2.jpg" id="logo"></a>
+         <a href="${context}/index.jsp"><img src="./img/logo2.jpg" id="logo"></a>
     </div>
     <!-- wrapper -->
     <div id="wrapper">
-
         <!-- content-->
         <div id="content">
 		<form action="${context}/memberInsert.do" method="post">
