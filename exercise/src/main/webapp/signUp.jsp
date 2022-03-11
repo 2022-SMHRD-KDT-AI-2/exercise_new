@@ -115,6 +115,7 @@ pageContext.setAttribute("context", request.getContextPath());
 				</div>
 
 				<!-- JOIN BTN-->
+				<!-- JOIN BTN-->
 				<div class="btn_area">
 					<button type="submit" id="btnJoin">
 						<span>가입하기</span>
@@ -171,7 +172,6 @@ pageContext.setAttribute("context", request.getContextPath());
 
 		}
 	</script>
-
 
 </body>
 </html>
