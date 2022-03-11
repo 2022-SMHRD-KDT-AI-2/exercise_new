@@ -3,12 +3,16 @@
 <%
 	pageContext.setAttribute("context", request.getContextPath());
 %>
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="EUC-KR">
 <title>커뮤니티</title>
 <link rel="stylesheet" type="text/css" href="./css/community.css">
+<link
+        href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Jua&family=Sunflower:wght@500&display=swap"
+        rel="stylesheet">
 </head>
 <body>
 <div id="wrap">
