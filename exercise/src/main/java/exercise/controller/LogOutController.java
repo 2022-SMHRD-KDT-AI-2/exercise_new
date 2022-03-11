@@ -15,7 +15,7 @@ public class LogOutController implements Controller{
 		// 로그아웃 처리
 		HttpSession session=request.getSession();
 		session.invalidate(); // 세션 무효화
-		return "redirect:/survey.do";
+		return "redirect:/index.jsp";
 	}
 	
 	

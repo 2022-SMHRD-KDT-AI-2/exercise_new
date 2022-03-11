@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
-    
+<%
+	pageContext.setAttribute("context", request.getContextPath());
+%>    
 <!DOCTYPE html>
 <html>
     <head>
@@ -24,18 +26,18 @@
                     <label for="height">1.신체정보를 입력하세요</label>
                 </h3>
                     <div class="box height_id">
-                    <input type="text" id="height" class="int" maxlength="30" placeholder="키를 입력하세요">
+                    <input type="text" id="height" name="height" class="int" maxlength="30" placeholder="키를 입력하세요">
                		</div>
                 	<br>
                 	<div class="box weight_id">
-                    <input type="text" id="weight" class="int" maxlength="20" placeholder="몸무게를 입력하세요">
+                    <input type="text" id="weight" name="weight" class="int" maxlength="20" placeholder="몸무게를 입력하세요">
                 	</div>                         
              </div>
             <!-- target_weight -->
             <div><br>
                 <h3 class="request_title"><label for="goal">2.원하는 몸무게를 입력하세요.</label></h3>
                 <span class="box int_traget">
-                    <input type="text" id="target" class="int" maxlength="20">
+                    <input type="text" id="target" name="targetWeight" class="int" maxlength="20">
                 </span>
             </div>
 
@@ -46,11 +48,11 @@
 
                 <div id="athletic_wrap">
                     <div class="athletic_part">
-                        <input id="shoulder" type="radio" name="part">유산소 운동 &nbsp;
-                        <input id="arm" type="radio" name="part">무산소 운동 &nbsp;
-                        <input id="chest" type="radio" name="part">근력운동 &nbsp;<br>
-                        <input id="back" type="radio" name="part">요가 &nbsp;
-                        <input id="bae" type="radio" name="part">스트레칭<br> &nbsp;
+                        <input id="shoulder" type="radio" name="part" value="유산소 운동">유산소 운동 &nbsp;
+                        <input id="arm" type="radio" name="part" value="무산소 운동">무산소 운동 &nbsp;
+                        <input id="chest" type="radio" name="part" value="근력운동">근력운동 &nbsp;<br>
+                        <input id="back" type="radio" name="part" value="요가">요가 &nbsp;
+                        <input id="bae" type="radio" name="part" value="스트레칭">스트레칭<br> &nbsp;
                     </div>
                 </div>
             </div>
@@ -60,9 +62,9 @@
                 <h3 class="request_title"><label for="athletic_level">4.본인의 운동레벨을 선택하세요 </label></h3>
                 <div id="athletic_wrap">
                     <div class="athletic_level">
-                        <input type="radio" name="level" value="sang">상 &nbsp;
-                        <input type="radio" name="level" value="jung">중 &nbsp;
-                        <input type="radio" name="level" value="ha">하 &nbsp;<br>
+                        <input type="radio" name="level" value="상">상 &nbsp;
+                        <input type="radio" name="level" value="중">중 &nbsp;
+                        <input type="radio" name="level" value="하">하 &nbsp;<br>
                         
                     </div><br><br>
                 </div>

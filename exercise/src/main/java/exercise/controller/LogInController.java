@@ -30,7 +30,7 @@ public class LogInController implements Controller {
 			// 객체바인딩(HttpSession)
 			session.setAttribute("memVO", memVO);
 		}
-		return "redirect:/survey.do";
+		return "redirect:/index.jsp";
 	}
 	
 	

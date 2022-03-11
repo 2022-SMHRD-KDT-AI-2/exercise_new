@@ -45,9 +45,8 @@
  </select>
  
    <insert id="surveyInsert" parameterType="exercise.entity.SurveyVO">
-    insert into tbl_result(request_seq,gender,height,weight,target_weight,athletic_part
-    ,athletic_level,)
-    values(board_idx.nextval,#{memId},#{title},#{content},#{writer})
+    insert into tbl_result(request_seq,height,weight,target_weight,athletic_part,athletic_level,mb_id)
+    values(request_seq.nextval,#{height},#{weight},#{targetWeight},#{part},#{level},{memId})
   </insert> 
 
 </mapper>

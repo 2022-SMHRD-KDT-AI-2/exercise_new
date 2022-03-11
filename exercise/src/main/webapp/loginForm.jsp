@@ -16,6 +16,7 @@
     </div>
     <div id="wrapper">
         <div id="content">
+        <form class="form-inline" action="${context}/login.do" method="post">
             <!-- ID -->
             <div>
                 <h3 class="join_title">
@@ -47,7 +48,7 @@
                     <a href="${context}/signUp.do">SignUp</a>
                 </button>
             </div>
-            
+          </form>  
         </div>
     </div>
     <!-- wrapper -->
