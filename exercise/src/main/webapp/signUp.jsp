@@ -20,8 +20,6 @@
     <div id="header">
          <a><img src="./img/logo2.jpg" id="logo"></a>
     </div>
-
-
     <!-- wrapper -->
     <div id="wrapper">
 

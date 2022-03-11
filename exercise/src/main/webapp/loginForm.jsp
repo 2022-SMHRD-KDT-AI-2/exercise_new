@@ -39,7 +39,7 @@
              <div class="btn_area1">
                 <button type="submit" id="btnJoin">
                 <!-- *** Login버튼을 누르면 survey.jsp(설문조사)로 넘어갑니다 *** -->
-                    <a href="${context}/index.jsp">Login</a>
+                    <a href="${context}/index_logout.jsp">Login</a>
                 </button>
             </div><!-- 회원가입 BTN-->
              <div class="btn_area1">
