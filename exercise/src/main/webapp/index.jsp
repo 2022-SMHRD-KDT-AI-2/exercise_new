@@ -23,6 +23,10 @@
   	function goOut(){
   		location.href="/exercise/logout.do"
   	}
+  	
+  	function loginAlert(){
+  		alert("로그인이 필요합니다.")
+  	}
   </script>  
 </head>
 <body>
@@ -50,8 +54,14 @@
                     </ul>
                 </nav>
                 <ul class="h_menu">
+                    <c:if test="${empty memVO}">
+                    <li><a onclick="loginAlert()"><img src="./img/icon_7.png" alt=""></a></li>
+                    <li><a onclick="loginAlert()"><img src="./img/icon_5.png" alt=""></a></li>
+                    </c:if>
+                    <c:if test="${!empty memVO}">
                     <li><a href="/Login/index.html"><img src="./img/icon_7.png" alt=""></a></li>
                     <li><a href="/Survey/index.html"><img src="./img/icon_5.png" alt=""></a></li>
+                    </c:if>
                 </ul>
             </div>
         </header>
