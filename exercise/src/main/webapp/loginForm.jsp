@@ -29,20 +29,25 @@
             <div>
                 <h3 class="join_title"><label for="pswd1"></label></h3>
                 <span class="box int_pass">
-                    <input type="text" id="memPwd" name="memPwd" class="int" maxlength="20" placeholder="Password">
+                    <input type="password" id="memPwd" name="memPwd" class="int" maxlength="20" placeholder="Password">
                     <img src="./img/pw.png" id="pswd1_img1" class="pswdImg">
                 </span>
             </div>
 
              <!-- LOGIN BTN-->
              <div class="btn_area1">
+                <button type="submit" id="btnJoin">
+                <!-- *** Login버튼을 누르면 survey.jsp(설문조사)로 넘어갑니다 *** -->
+                    <a href="${context}/index.jsp">Login</a>
+                </button>
+            </div><!-- 회원가입 BTN-->
+             <div class="btn_area1">
                 <button type="button" id="btnJoin">
                 <!-- *** Login버튼을 누르면 survey.jsp(설문조사)로 넘어갑니다 *** -->
-                    <a href="${context}/survey.do">Login</a>
+                    <a href="${context}/signUp.do">SignUp</a>
                 </button>
             </div>
-
-
+            
         </div>
     </div>
     <!-- wrapper -->

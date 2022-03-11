@@ -1,10 +1,7 @@
-@charset "EUC-KR";
 @import url('https://fonts.googlepis.com/css?family=Nanum+Myeongjo:800&subset=korean');
 @import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-/* Roboto 100 300 400 500 700 900 */
-/* Noto Sans KR 100 300 400 500 700 900 */
 @font-face {
     font-family: 'GyeonggiTitleM';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiTitleM.woff') format('woff');
@@ -26,7 +23,6 @@
 }
 
 
-
 * {
     margin: 0;
     padding: 0;
@@ -45,18 +41,136 @@ a {
     color: inherit;
 }
 
+/* 배너*/
+
+/* header contents */
+
+#header {
+    background-color: #368132;
+    width: 100%;
+    height: 70px;
+}
+
+#header .h_cont {
+    width: 1000px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+#header .h_cont img{
+    margin-top: 10px;
+    width:120px;
+    height:55px;
+}
+
+.h_cont nav > ul > li {
+    display: inline-block;
+    margin: 0 12px;
+    position: relative;
+}
+
+.h_cont nav > ul > li > a {
+    font-size: 22px;
+    font-weight: 400;
+    color: #ebeaea;
+    transition: 0.2s;
+    font-family: 'Do Hyeon', sans-serif;
+
+}
+
+.h_cont nav > ul > li > a:hover {
+    color: #fff;
+    font-size: 24px;
+}
+
+.h_cont .h_menu {
+    position: relative;
+}
+
+#header > div > ul > li:nth-child(1) > a > img{
+    width:30px;
+    height:30px;
+
+}
+#header > div > ul > li:nth-child(2) > a > img{
+    width:30px;
+    height:30px;
+}
+#header > div > ul > li:nth-child(3) > a > img{
+    width:30px;
+    height:30px;
+}
+  /*배너 이름 스타일 */
+  .h_cont > .gnb > ul > li > a{
+    color:black;
+    font-size: 25px;
+  }
+ 
+  /* 배너 이름 정렬 */
+  .gnb > ul > li {
+    display: inline-block;
+    margin-left: 300px;
+    font-weight:bold;
+    font-size:large;
+  }
+  #header > div > ul > li:nth-child(1) > a > img{
+    width:30px;
+    height:30px;
+
+}
+#header > div > ul > li:nth-child(2) > a > img{
+    width:30px;
+    height:30px;
+}
+#header > div > ul > li:nth-child(3) > a > img{
+    width:30px;
+    height:30px;
+}
+.h_cont .h_menu  {
+    margin-left:20px;
+}
+.h_cont .h_menu li {
+    display: inline-block;
+    margin-left: 7px;
+    font-family: 'GyeonggiTitleM';
+}
+
+
+
+.h_cont .h_menu li:first-child {
+    margin: 0;
+}
+
+.h_cont .h_menu li a {
+    font-size: 0.9333rem;
+    font-weight: 500;
+    color: #dedede;
+    transition: 0.2s;
+   
+}
+
+.h_cont .h_menu li a:hover {
+    color: #fff;
+}
+
+/*----------------------------*/
+/* 커뮤니티 */
+
 .board_wrap {
     width: 1000px;
-    margin: 100px auto;
+    margin-left:450px;
+    margin-top:60px;
 }
 
 .board_title strong{
-    margin-bottom: 30px;
-    color: #090B0D;
+    color: black;
+    
 }
 
 .board_title strong {
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-family: 'IBMPlexSansKR-Bold';
 }
 
@@ -65,6 +179,26 @@ a {
     font-size: 1.6rem;
     font-family: 'IBMPlexSansKR-Regular';
 }
+/* 커뮤니티 파일 업로드 */
+.button {
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+    font-size:8px;
+    text-align:center;
+    font-family:'IBMPlexSansKR-Regular';
+}
+label {
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family:'IBMPlexSansKR-Regular';
+}
+
+/* 못생긴 기존 input 숨기기 */
+#chooseFile {
+    visibility: hidden;
+}
+
 
 .bt_wrap {
     margin-top: 30px;
@@ -146,7 +280,7 @@ a {
 }
 
 .board_list .count {
-    width: 5%;
+    width: 10%;
 }
 
 .board_page {
@@ -338,170 +472,5 @@ a {
     border: 0;
     resize: vertical;
 }
-
-
-
-
-
-
-/* 공통 */
-
-html {
-    font-size: 15px;
-}
-
-/* 15px 가장많이 사용 */
-
-* {
-    margin: 0;
-    padding: 0
-}
-
-
-
-body {
-    font-family: 'Roboto', 'Noto Sans KR', 'sans-serif';
-}
-
-ul,
-ol {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-/* header contents */
-
-/* header contents */
-
-#header {
-    background-color: #368132;
-    width: 100%;
-    height: 70px;
-}
-
-#header .h_cont {
-    width: 1000px;
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-}
-#header .h_cont img{
-    margin-top: 10px;
-    width:120px;
-    height:55px;
-}
-
-
-.h_cont nav > ul > li {
-    display: inline-block;
-    margin: 0 12px;
-    position: relative;
-}
-
-.h_cont nav > ul > li > a {
-    font-size: 22px;
-    font-weight: 400;
-    color: #ebeaea;
-    transition: 0.2s;
-    font-family: 'Do Hyeon', sans-serif;
-
-}
-
-.h_cont nav > ul > li > a:hover {
-    color: #fff;
-    font-size: 24px;
-}
-
-nav .sub_menu {
-    position: absolute;
-    left: 50%;
-    top: 20px;
-    transform: translate(-50%, 0);
-    background-color: #fff;
-    width: 100px;
-    display: none;
-}
-
-/* nav .sub_menu ul {display: flex; flex-direction: column; align-items: center;} 지움 */
-
-/* nav .sub_menu ul li {padding: 10px 0;} 지움 */
-nav .sub_menu ul li {
-    width: 100%
-}
-
-nav .sub_menu ul li a {
-    display: block;
-    width: 100%;
-    height: 38px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #135817;
-}
-
-nav .sub_menu ul li a:hover {
-    text-decoration: underline;
-}
-
-
-
-
-.h_cont .h_menu {
-    position: relative;
-}
-
-/* 가상클래스가 붙은 실질적인 아이한테 position: relative; 주는것 */
-
-
-
-/* 가상클래스 ::before 사용시 content, position: absolute;, 너비값, 높이값 꼭 써줘야됨*/
-/* transform: translate(0,-50%);로 중간에 맞춘 후 left조절 */
-
-#header > div > ul > li:nth-child(1) > a > img{
-    width:30px;
-    height:30px;
-
-}
-#header > div > ul > li:nth-child(2) > a > img{
-    width:30px;
-    height:30px;
-}
-#header > div > ul > li:nth-child(3) > a > img{
-    width:30px;
-    height:30px;
-}
-.h_cont .h_menu  {
-    margin-left:20px;
-}
-.h_cont .h_menu li {
-    display: inline-block;
-    margin-left: 7px;
-    font-family: 'GyeonggiTitleM';
-}
-
-
-
-.h_cont .h_menu li:first-child {
-    margin: 0;
-}
-
-.h_cont .h_menu li a {
-    font-size: 0.9333rem;
-    font-weight: 500;
-    color: #dedede;
-    transition: 0.2s;
-   
-}
-
-.h_cont .h_menu li a:hover {
-    color: #fff;
-}
-
-
-
 
 

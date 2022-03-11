@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
+<%
+	pageContext.setAttribute("context", request.getContextPath());
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -113,6 +116,5 @@
                 </div>
             </div>
         </div>
-
     </body>
 </html>
