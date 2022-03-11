@@ -73,7 +73,7 @@
                        		<br><a href="${context}/signUp.do" class="link_join" data-clk="log_off.registration">회원가입</a>
                             </c:if>
                             <c:if test="${!empty memVO}">
-                            <label>${memVO.memNick}</label><br>
+                            <label></label><br>
                             <a href="${context}/index.jsp" class="link_join" data-clk="log_off.logout" onclick="goOut()">로그아웃</a>
                             </c:if>
                         </div>
