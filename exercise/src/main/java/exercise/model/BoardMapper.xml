@@ -35,8 +35,8 @@
   </select> -->
   
   <insert id="memberInsert" parameterType="exercise.entity.MemberVO">
-    insert into tbl_member(memId,memPwd,memNick,memAddr,gender)
-    values(#{memId},#{memPwd},#{memNick},#{memAddr},#{gender})
+    insert into tbl_member(memId,memPwd,memNick,memAddr,memAddr1,gender)
+    values(#{memId},#{memPwd},#{memNick},#{memAddr},#{memAddr1},#{gender})
   </insert>
   
  <select id="checkLogin"  parameterType="exercise.entity.MemberVO"
