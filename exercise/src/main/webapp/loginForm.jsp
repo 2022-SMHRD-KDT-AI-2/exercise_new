@@ -3,6 +3,7 @@
 <%
 	pageContext.setAttribute("context", request.getContextPath());
 %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,18 +35,25 @@
                     <img src="./img/pw.png" id="pswd1_img1" class="pswdImg">
                 </span>
             </div>
+            
+            <!-- ID 잘못 입력 -->
+            <c:if test = "${result == 0 }">
+                <div class = "login_warn">사용자 ID 또는 비밀번호를 잘못 입력하셨습니다.</div>
+            </c:if>
 
              <!-- LOGIN BTN-->
              <div class="btn_area1">
                 <button type="submit" id="btnJoin">
                 <!-- *** Login버튼을 누르면 survey.jsp(설문조사)로 넘어갑니다 *** -->
-                    <a>Login</a>
-                </button>
-            </div><!-- 회원가입 BTN-->
+                    <a href="${context}/index.jsp">Login</a>
+                </button>               
+            </div>
+           
+            <!-- 회원가입 BTN-->
              <div class="btn_area1">
-                <button type="button" id="btnJoin" onclick = "location.href = '${context}/signUp.do' ">
+                <button type="button" id="btnJoin">
                 <!-- *** Login버튼을 누르면 survey.jsp(설문조사)로 넘어갑니다 *** -->
-                    <a>SignUp</a>
+                    <a href="${context}/signUp.do">SignUp</a>
                 </button>
             </div>
           </form>  

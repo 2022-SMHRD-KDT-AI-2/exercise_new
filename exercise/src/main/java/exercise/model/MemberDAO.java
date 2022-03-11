@@ -29,10 +29,10 @@ public class MemberDAO {
 	      session.close();// ¹Ý³³(*)
 	      return cnt;
 	}
-	
+	// Áßº¹Ã¼Å©??
 	public int checkId(MemberVO vo) {
 		  SqlSession session = sqlSessionFactory.openSession();  
-	      int cnt=session.insert("checkId", vo);
+	      int cnt=session.insert("checkid", vo);
 	      session.commit();
 	      session.close();// ¹Ý³³(*)
 	      return cnt;
@@ -45,4 +45,7 @@ public class MemberDAO {
 		return memVO;
 		
 	}
+	
+	
+	
 }
