@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <%
 	pageContext.setAttribute("context", request.getContextPath());
 %>
@@ -22,23 +22,23 @@
     <div id="wrap">
         <header id="header">
             <div class="h_cont">
-                <h1><a href="${context}/index.jsp"><img src="img/logo_1.png" alt="·Î°í"></a></h1>
+                <h1><a href="${context}/index.jsp"><img src="img/logo_1.png" alt="ë¡œê³ "></a></h1>
                 <nav>
                        <ul>
                         <li>
                             <a href="${context}/index.jsp">Home</a>
                         </li>
                         <li>
-                            <a href="${context}/challenge.jsp">¿îµ¿ ÃßÃµ ÇÁ·Î±×·¥</a>
+                            <a href="${context}/challenge.jsp">ìš´ë™ ì¶”ì²œ í”„ë¡œê·¸ëž¨</a>
                         </li>
                         <li>
-                            <a href="${context}/Outdoor.jsp">¾ß¿Ü Ã¼À°½Ã¼³</a>
+                            <a href="${context}/Outdoor.jsp">ì•¼ì™¸ ì²´ìœ¡ì‹œì„¤</a>
                         </li>
                         <li>
-                            <a href="/Sales_site/index.html">¿îµ¿ ¿ëÇ°</a>
+                            <a href="/Sales_site/index.html">ìš´ë™ ìš©í’ˆ</a>
                         </li>
                         <li>
-                            <a href="${context}/community.jsp">Ä¿¹Â´ÏÆ¼</a>
+                            <a href="${context}/community.jsp">ì»¤ë®¤ë‹ˆí‹°</a>
                         </li>
                     </ul>
                 </nav>
@@ -55,15 +55,15 @@
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                        <div class="text_box"><a href="">³Ê¸¦ »ó´ë·Î È¥Àã¸Á¸£ ¾ðÁ¦±îÁö ÇÒ¼öÀÕÀ»±î?<br>¸®µðÈÄ_Familly sory <br>
-                                Á¶È¸¼ö2.3¸¸È¸ 19½Ã°£Àü</a></div>
+                        <div class="text_box"><a href="">ë„ˆë¥¼ ìƒëŒ€ë¡œ í˜¼ìž£ë§ë¥´ ì–¸ì œê¹Œì§€ í• ìˆ˜ìž‡ì„ê¹Œ?<br>ë¦¬ë””í›„_Familly sory <br>
+                                ì¡°íšŒìˆ˜2.3ë§ŒíšŒ 19ì‹œê°„ì „</a></div>
                     </li>
                     <li><iframe width="540" height="315" src="https://www.youtube.com/embed/e4WnrhXTjg8"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                        <div class="text_box"><a href="">³Ê¸¦ »ó´ë·Î È¥Àã¸Á¸£ ¾ðÁ¦±îÁö ÇÒ¼öÀÕÀ»±î?<br>¸®µðÈÄ_Familly sory <br>
-                                Á¶È¸¼ö2.3¸¸È¸ 19½Ã°£Àü</a></div>
+                        <div class="text_box"><a href="">ë„ˆë¥¼ ìƒëŒ€ë¡œ í˜¼ìž£ë§ë¥´ ì–¸ì œê¹Œì§€ í• ìˆ˜ìž‡ì„ê¹Œ?<br>ë¦¬ë””í›„_Familly sory <br>
+                                ì¡°íšŒìˆ˜2.3ë§ŒíšŒ 19ì‹œê°„ì „</a></div>
                     </li>
                    
                 </ul>
@@ -72,15 +72,15 @@
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                        <div class="text_box"><a href="">³Ê¸¦ »ó´ë·Î È¥Àã¸Á¸£ ¾ðÁ¦±îÁö ÇÒ¼öÀÕÀ»±î?<br>¸®µðÈÄ_Familly sory <br>
-                                Á¶È¸¼ö2.3¸¸È¸ 19½Ã°£Àü</a></div>
+                        <div class="text_box"><a href="">ë„ˆë¥¼ ìƒëŒ€ë¡œ í˜¼ìž£ë§ë¥´ ì–¸ì œê¹Œì§€ í• ìˆ˜ìž‡ì„ê¹Œ?<br>ë¦¬ë””í›„_Familly sory <br>
+                                ì¡°íšŒìˆ˜2.3ë§ŒíšŒ 19ì‹œê°„ì „</a></div>
                     </li>
                     <li><iframe width="540" height="315" src="https://www.youtube.com/embed/e4WnrhXTjg8"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                        <div class="text_box"><a href="">³Ê¸¦ »ó´ë·Î È¥Àã¸Á¸£ ¾ðÁ¦±îÁö ÇÒ¼öÀÕÀ»±î?<br>¸®µðÈÄ_Familly sory <br>
-                                Á¶È¸¼ö2.3¸¸È¸ 19½Ã°£Àü</a></div>
+                        <div class="text_box"><a href="">ë„ˆë¥¼ ìƒëŒ€ë¡œ í˜¼ìž£ë§ë¥´ ì–¸ì œê¹Œì§€ í• ìˆ˜ìž‡ì„ê¹Œ?<br>ë¦¬ë””í›„_Familly sory <br>
+                                ì¡°íšŒìˆ˜2.3ë§ŒíšŒ 19ì‹œê°„ì „</a></div>
                     </li>
                 </ul>
                 <ul class="video_3">
@@ -88,15 +88,15 @@
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                        <div class="text_box"><a href="">³Ê¸¦ »ó´ë·Î È¥Àã¸Á¸£ ¾ðÁ¦±îÁö ÇÒ¼öÀÕÀ»±î?<br>¸®µðÈÄ_Familly sory <br>
-                                Á¶È¸¼ö2.3¸¸È¸ 19½Ã°£Àü</a></div>
+                        <div class="text_box"><a href="">ë„ˆë¥¼ ìƒëŒ€ë¡œ í˜¼ìž£ë§ë¥´ ì–¸ì œê¹Œì§€ í• ìˆ˜ìž‡ì„ê¹Œ?<br>ë¦¬ë””í›„_Familly sory <br>
+                                ì¡°íšŒìˆ˜2.3ë§ŒíšŒ 19ì‹œê°„ì „</a></div>
                     </li>
                     <li><iframe width="540" height="315" src="https://www.youtube.com/embed/e4WnrhXTjg8"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                        <div class="text_box"><a href="">³Ê¸¦ »ó´ë·Î È¥Àã¸Á¸£ ¾ðÁ¦±îÁö ÇÒ¼öÀÕÀ»±î?<br>¸®µðÈÄ_Familly sory <br>
-                                Á¶È¸¼ö2.3¸¸È¸ 19½Ã°£Àü</a></div>
+                        <div class="text_box"><a href="">ë„ˆë¥¼ ìƒëŒ€ë¡œ í˜¼ìž£ë§ë¥´ ì–¸ì œê¹Œì§€ í• ìˆ˜ìž‡ì„ê¹Œ?<br>ë¦¬ë””í›„_Familly sory <br>
+                                ì¡°íšŒìˆ˜2.3ë§ŒíšŒ 19ì‹œê°„ì „</a></div>
                     </li>
                    
                 </ul>
@@ -107,12 +107,12 @@
                         <div id="account" class="sc_login">
                             <div class="login_msg"></div>
                             <c:if test="${empty memVO}">
-                            <a href="${context}/loginForm.do" class="link_login" data-clk="log_off.login">·Î±×ÀÎ</a><br>
-                       		<br><a href="${context}/signUp.do" class="link_join" data-clk="log_off.registration">È¸¿ø°¡ÀÔ</a>
+                            <a href="${context}/loginForm.do" class="link_login" data-clk="log_off.login">ë¡œê·¸ì¸</a><br>
+                       		<br><a href="${context}/signUp.do" class="link_join" data-clk="log_off.registration">íšŒì›ê°€ìž…</a>
                             </c:if>
                             <c:if test="${!empty memVO}">
                             <label>${memVO.memId}</label><br>
-                            <a href="${context}/index.jsp" class="link_join" data-clk="log_off.logout" onclick="goOut()">·Î±×¾Æ¿ô</a>
+                            <a href="${context}/index.jsp" class="link_join" data-clk="log_off.logout" onclick="goOut()">ë¡œê·¸ì•„ì›ƒ</a>
                             </c:if>
                         </div>
                     </div>
