@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import exercise.entity.SurveyVO;
+import exercise.model.SurveyDAO;
 
 public class SurveyInsertController implements Controller{
 	@Override
@@ -25,8 +26,9 @@ public class SurveyInsertController implements Controller{
 		vo.setPart(part);
 		vo.setLevel(level);
 		vo.setMemId(memId);
-		
-		return null;
+		SurveyDAO dao = new SurveyDAO();
+		dao.surveyInsert(vo);
+		return "redirect:/index.jsp";
 	} 
  
 }

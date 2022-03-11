@@ -28,6 +28,6 @@ public String requestHandler(HttpServletRequest request, HttpServletResponse res
 	vo.setMemAddr1(memAddr1);
 	MemberDAO dao = new MemberDAO();
 	dao.memberInsert(vo);
-	return "redirect:/login.do";
+	return "redirect:/loginForm.do";
 }
 }
