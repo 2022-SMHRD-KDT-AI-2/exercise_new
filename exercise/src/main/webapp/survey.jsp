@@ -7,7 +7,6 @@
         <meta charset="UTF-8">
         <title>설문조사</title>
         <link rel="stylesheet" href="./css/survey.css">
-        
   	</head>
   <body>
     <!-- header -->

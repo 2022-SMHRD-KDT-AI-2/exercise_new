@@ -194,8 +194,6 @@ nav .sub_menu ul li a:hover {
     position: relative;
 }
 
-/* 섹션_1에 높이값이랑 동일하게 줘야됨 */
-
 .visual .slogan {
     position: absolute;
     top: 60%;
@@ -228,60 +226,6 @@ nav .sub_menu ul li a:hover {
     position: absolute;
     bottom: -57px;
     right: 0;
-}
-
-/* vh 사용시 퍼센트 대신 bottom: px값으로 조절 */
-
-
-#container #section_2 {
-    width: 1000px;
-    margin: 80px auto;
-}
-
-#section_2 h2 {
-    font-size: 1.467rem;
-    text-align: center;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-#section_2 .pr_menu {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 60px;
-}
-
-/* 플렉스는 li에 주는게 아님 */
-
-
-
-/* 건너뛸수있는건 인라인요소 뿐 때문에 a태그 건너뛰고 li에 지정 */
-
-#section_2 .cate_img li img {
-    display: block;
-    transition: 0.2s;
-}
-
-#section_2 .cate_img li:hover a > img {
-    opacity: 0.6;
-}
-
-/* a태그 바로 밑에 있는 이미지가 오파시티 60% */
-
-#section_2 .cate_img li a span {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-
-#section_2 .cate_img li:hover span img {
-    opacity: 1;
-}
-
-#section_2 .cate_img li a span img {
-    opacity: 0;
 }
 
 

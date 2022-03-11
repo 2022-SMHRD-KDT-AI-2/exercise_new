@@ -53,16 +53,15 @@
                     <div class="slogan">
                         <img src="img/Logo.png" alt="글자슬로건">
                     </div>
-
                 </div>
             </section>
             <section id="section_2">
                 <div class="visual">
                     <div class="s_menu">
                         <div id="account" class="sc_login">
-                            <p class="login_msg"></p>
+                            <div class="login_msg"></div>
                             <a href="${context}/loginForm.do" class="link_login" data-clk="log_off.login">로그인</a><br>
-                        <br><a href="${context}/signUp.do" class="link_join" data-clk="log_off.registration">회원가입</a>
+                       		<br><a href="${context}/signUp.do" class="link_join" data-clk="log_off.registration">회원가입</a>
                             </div>
                         </div>
                     </div>
