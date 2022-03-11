@@ -3,8 +3,8 @@ function categoryChange(e) {
   var good_b = ["광산구","남구","동구","서구","북구"];
   var target = document.getElementById("good");
  
-  if(e.value == "a") var d = good_a;
-  else if(e.value == "b") var d = good_b;
+  if(e.value == "서울특별시") var d = good_a;
+  else if(e.value == "광주광역시") var d = good_b;
  
   target.options.length = 0;
  

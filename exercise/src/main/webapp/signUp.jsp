@@ -96,13 +96,13 @@
                  
                     
                     <div class="box1">
-                    	<select onchange="categoryChange(this)">
+                    	<select onchange="categoryChange(this)" name="memAddr">
 							  <option>지역</option>
-							  <option value="a">서울특별시</option>
-							  <option value="b">광주광역시</option>
+							  <option value="서울특별시">서울특별시</option>
+							  <option value="광주광역시">광주광역시</option>
 							</select>
 					<div class="box2">
-							<select id="good">
+							<select id="good" name="memAddr1">
 							<option>자치구</option>
 							</select>
 					</div>
