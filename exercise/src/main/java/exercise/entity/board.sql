@@ -41,6 +41,6 @@ select * from MEMBER;
 delete from MEMBER
 drop table member;
 
-
-
+select * from TBL_RESULT;
+create sequence request_seq;
 select * from tbl_member;

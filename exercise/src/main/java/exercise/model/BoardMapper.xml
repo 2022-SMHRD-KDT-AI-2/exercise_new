@@ -35,18 +35,18 @@
   </select> -->
   
   <insert id="memberInsert" parameterType="exercise.entity.MemberVO">
-    insert into tbl_member(mb_id,mb_pw,mb_nick,mb_addr,gender)
+    insert into tbl_member(memId,memPwd,memNick,memAddr,gender)
     values(#{memId},#{memPwd},#{memNick},#{memAddr},#{gender})
   </insert>
   
  <select id="checkLogin"  parameterType="exercise.entity.MemberVO"
                            resultType="exercise.entity.MemberVO">
-     select * from tbl_member where mb_pw=#{memPwd} and mb_id=#{memId} 
+     select * from tbl_member where memPwd=#{memPwd} and memId=#{memId} 
  </select>
  
    <insert id="surveyInsert" parameterType="exercise.entity.SurveyVO">
-    insert into tbl_result(request_seq,height,weight,target_weight,athletic_part,athletic_level,mb_id)
-    values(request_seq.nextval,#{height},#{weight},#{targetWeight},#{part},#{level},{memId})
+    insert into tbl_result(request_seq,height,weight,targetWeight,athleticPart,athleticLevel,memId)
+    values(request_seq.nextval,#{height},#{weight},#{targetWeight},#{athleticPart},#{athleticLevel},#{memId})
   </insert> 
 
 </mapper>

@@ -1,12 +1,12 @@
 package exercise.entity;
 
 public class SurveyVO {
-	private int seq;
+	private int request_seq;
 	private int height;
 	private int weight;
 	private int targetWeight;
-	private String part;
-	private String level;
+	private String athleticPart;
+	private String athleticLevel;
 	private String memId;
 
 	
@@ -15,25 +15,27 @@ public class SurveyVO {
 	}
 
 
-	public SurveyVO(int seq, int height, int weight, int targetWeight, String part, String level, String memId) {
+	public SurveyVO(int request_seq, int height, int weight, int targetWeight, String athleticPart, String athleticLevel, String memId) {
 		super();
-		this.seq = seq;
+		this.request_seq = request_seq;
 		this.height = height;
 		this.weight = weight;
 		this.targetWeight = targetWeight;
-		this.part = part;
-		this.level = level;
+		this.athleticPart = athleticPart;
+		this.athleticLevel = athleticLevel;
 		this.memId = memId;
 	}
 
 
-	public int getSeq() {
-		return seq;
+
+
+	public int getRequest_seq() {
+		return request_seq;
 	}
 
 
-	public void setSeq(int seq) {
-		this.seq = seq;
+	public void setRequest_seq(int request_seq) {
+		this.request_seq = request_seq;
 	}
 
 
@@ -67,23 +69,25 @@ public class SurveyVO {
 	}
 
 
-	public String getPart() {
-		return part;
+	
+
+	public String getAthleticPart() {
+		return athleticPart;
 	}
 
 
-	public void setPart(String part) {
-		this.part = part;
+	public void setAthleticPart(String athleticPart) {
+		this.athleticPart = athleticPart;
 	}
 
 
-	public String getLevel() {
-		return level;
+	public String getAthleticLevel() {
+		return athleticLevel;
 	}
 
 
-	public void setLevel(String level) {
-		this.level = level;
+	public void setAthleticLevel(String athleticLevel) {
+		this.athleticLevel = athleticLevel;
 	}
 
 

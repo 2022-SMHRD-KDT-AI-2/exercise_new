@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%
 	pageContext.setAttribute("context", request.getContextPath());
 %>    
@@ -22,6 +23,7 @@
          <form action="${context}/surveyInsert.do" method="post">      
             <!-- height, weight-->
 			<div>
+                 <input type="hidden" name="memId" value="${memVO.memId}">
                 <h3 class="request_title">
                     <label for="height">1.신체정보를 입력하세요</label>
                 </h3>
@@ -48,11 +50,11 @@
 
                 <div id="athletic_wrap">
                     <div class="athletic_part">
-                        <input id="shoulder" type="radio" name="part" value="유산소 운동">유산소 운동 &nbsp;
-                        <input id="arm" type="radio" name="part" value="무산소 운동">무산소 운동 &nbsp;
-                        <input id="chest" type="radio" name="part" value="근력운동">근력운동 &nbsp;<br>
-                        <input id="back" type="radio" name="part" value="요가">요가 &nbsp;
-                        <input id="bae" type="radio" name="part" value="스트레칭">스트레칭<br> &nbsp;
+                        <input id="shoulder" type="radio" name="athleticPart" value="유산소 운동">유산소 운동 &nbsp;
+                        <input id="arm" type="radio" name="athleticPart" value="무산소 운동">무산소 운동 &nbsp;
+                        <input id="chest" type="radio" name="athleticPart" value="근력운동">근력운동 &nbsp;<br>
+                        <input id="back" type="radio" name="athleticPart" value="요가">요가 &nbsp;
+                        <input id="bae" type="radio" name="athleticPart" value="스트레칭">스트레칭<br> &nbsp;
                     </div>
                 </div>
             </div>
@@ -62,9 +64,9 @@
                 <h3 class="request_title"><label for="athletic_level">4.본인의 운동레벨을 선택하세요 </label></h3>
                 <div id="athletic_wrap">
                     <div class="athletic_level">
-                        <input type="radio" name="level" value="상">상 &nbsp;
-                        <input type="radio" name="level" value="중">중 &nbsp;
-                        <input type="radio" name="level" value="하">하 &nbsp;<br>
+                        <input type="radio" name="athleticLevel" value="상">상 &nbsp;
+                        <input type="radio" name="athleticLevel" value="중">중 &nbsp;
+                        <input type="radio" name="athleticLevel" value="하">하 &nbsp;<br>
                         
                     </div><br><br>
                 </div>

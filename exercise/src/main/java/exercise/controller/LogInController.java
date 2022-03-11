@@ -29,6 +29,7 @@ public class LogInController implements Controller {
 			HttpSession session= request.getSession(); // 
 			// 객체바인딩(HttpSession)
 			session.setAttribute("memVO", memVO);
+			System.out.println("로그인 성공!");
 		}
 		return "redirect:/index.jsp";
 	}

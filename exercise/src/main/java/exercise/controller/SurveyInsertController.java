@@ -16,18 +16,20 @@ public class SurveyInsertController implements Controller{
 		int height = Integer.parseInt(request.getParameter("height"));
 		int weight = Integer.parseInt(request.getParameter("weight"));
 		int targetWeight = Integer.parseInt(request.getParameter("targetWeight"));
-		String part = request.getParameter("part");
-		String level = request.getParameter("level");
+		String athleticPart = request.getParameter("athleticPart");
+		String athleticLevel = request.getParameter("athleticLevel");
 		String memId = request.getParameter("memId");
 		SurveyVO vo = new SurveyVO();
 		vo.setHeight(height);
 		vo.setWeight(weight);
 		vo.setTargetWeight(targetWeight);
-		vo.setPart(part);
-		vo.setLevel(level);
+		vo.setAthleticPart(athleticPart);
+		vo.setAthleticLevel(athleticLevel);
 		vo.setMemId(memId);
+		System.out.println(memId);
 		SurveyDAO dao = new SurveyDAO();
 		dao.surveyInsert(vo);
+		
 		return "redirect:/index.jsp";
 	} 
  
