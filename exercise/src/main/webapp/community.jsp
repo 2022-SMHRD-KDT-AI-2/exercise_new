@@ -39,8 +39,8 @@
                     </ul>
                 </nav>
                 <ul class="h_menu">
-                    <li><a href="/Sign up/index.html"><img src="./img/icon_7.png" alt=""></a></li>
-                    <li><a href="/Login/index.html"><img src="./img/icon_5.png" alt=""></a></li>
+                    <li><a href="#"><img src="./img/icon_7.png" alt=""></a></li>
+                    <li><a href="${context}/survey.jsp"><img src="./img/icon_5.png" alt=""></a></li>
                 </ul>
             </div>
         </header>

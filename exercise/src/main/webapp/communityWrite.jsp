@@ -23,7 +23,7 @@
         <div id="wrap">
             <header id="header">
                 <div class="h_cont">
-                    <h1><a href="/Main/index.html"><img src="./img/logo_1.png" alt="로고"></a></h1>
+                    <h1><a href="${context}/index.jsp"><img src="./img/logo_1.png" alt="로고"></a></h1>
                     <nav>
                         <ul>
                             <li>
