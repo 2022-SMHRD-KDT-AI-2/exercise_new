@@ -93,29 +93,21 @@
                     <label for="addr">주소</label>
                 </h3>
                 <div class="addr">
-                    <div class="box1">
-                        <select id="memAddr" name="memAddr" class="sel" onchange="categoryChange(this)">
-                            <option id="input_city">지역</option>
-                            <option  value="seoul">서울특별시</option>
-                            <option  value="gwang">광주광역시</option>
-                        </select>
-                    </div>
+                 
                     
-                    <div class="box2">
+                    <div class="box1">
                     	<select onchange="categoryChange(this)">
 							  <option>지역</option>
 							  <option value="a">서울특별시</option>
 							  <option value="b">광주광역시</option>
 							</select>
-							 
+					<div class="box2">
 							<select id="good">
 							<option>자치구</option>
 							</select>
+					</div>
                     
-                    
-                    
-                       
-                      
+      
                                
                     </div>
                 </div>
