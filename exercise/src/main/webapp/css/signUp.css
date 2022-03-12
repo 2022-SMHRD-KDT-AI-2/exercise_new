@@ -31,12 +31,18 @@ a{
 #logo {
     width: 350px;
     height:183px;
+    margin-top: -100px;
 }
 
 #header {
-    padding-top: 20px;
+     padding-top: 18px;
     text-align: center;
+    margin-top:20px;
+    margin-left: 55px;
 }
+
+
+
 #wrapper {
     position: relative;
 }
@@ -46,8 +52,8 @@ a{
     left: 50%;
     transform: translate(-50%,0%);
     width: 300px;
-
 }
+
 .join_title{
     font-size: 18px;
 }

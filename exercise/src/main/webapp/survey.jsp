@@ -9,6 +9,7 @@
     <head>
         <meta charset="UTF-8">
         <title>설문조사</title>
+        <script type="text/javascript" src="./js/jquery.city.js"></script>
         <link rel="stylesheet" href="./css/survey.css">
   	</head>
   <body>
@@ -24,26 +25,19 @@
             <!-- height, weight-->
 			<div>
                  <input type="hidden" name="memId" value="${memVO.memId}">
-                <h3 class="request_title">
-                    <label for="height">1.신체정보를 입력하세요</label>
-                </h3>
-                    <div class="box height_id">
-                    <input type="text" id="height" name="height" class="int" maxlength="30" placeholder="키를 입력하세요">
-               		</div>
-                	<br>
-                	<div class="box weight_id">
-                    <input type="text" id="weight" name="weight" class="int" maxlength="20" placeholder="몸무게를 입력하세요">
-                	</div>                         
-             </div>
-            <!-- target_weight -->
-            <div><br>
-                <h3 class="request_title"><label for="goal">2.원하는 몸무게를 입력하세요.</label></h3>
-                <span class="box int_traget">
-                    <input type="text" id="target" name="targetWeight" class="int" maxlength="20">
-                </span>
-            </div>
-
-
+         <!-- GENDER(성별) -->
+				<div>
+					<h3 class="join_title">
+						<label for="gender">성별</label>
+					</h3>
+					<span class="box gender_code"> <select id="gender"
+						name="gender" class="sel">
+							<option>성별</option>
+							<option value="남자">남자</option>
+							<option value="여자">여자</option>
+					</select>
+					</span>
+				</div>
             <!-- athletic_part -->
             <div><br>
                 <h3 class="request_title"><label for="athletic_part">3.원하는 운동종류를 선택하세요.</label></h3>
@@ -71,6 +65,31 @@
                     </div><br><br>
                 </div>
             </div>
+            
+            <!--ADDR(주소)-->
+
+				<div id="bir_mm">
+					<h3 class="join_title">
+						<label for="addr">주소</label>
+					</h3>
+					<div class="addr">
+
+
+						<div class="box1">
+							<select onchange="categoryChange(this)" name="memAddr">
+								<option>지역</option>
+								<option value="서울특별시">서울특별시</option>
+								<option value="광주광역시">광주광역시</option>
+							</select>
+							<div class="box2">
+								<select id="good" name="memAddr1">
+									<option>자치구</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+            
 
             <!--정보 불러오기-->
             <div id="reinfo_wrap">
