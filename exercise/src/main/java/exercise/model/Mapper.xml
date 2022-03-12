@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="exercise.model.BoardMapper">
+<mapper namespace="exercise.model.Mapper">
   <!-- <select id="selectAll" resultType="exercise.entity.BoardVO">
     select * from board order by idx desc
   </select>
