@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import exercise.model.BoardDAO;
+import exercise.model.CommunityDAO;
 
 @WebServlet("*.do")
 public class FrontController extends HttpServlet {
@@ -24,7 +24,7 @@ public class FrontController extends HttpServlet {
 		String command = reqPath.substring(cpath.length());
 		System.out.println(command);
 		//2. 요청에 따른 분기작업(if~else~)
-		BoardDAO dao = new BoardDAO();
+		CommunityDAO dao = new CommunityDAO();
 		//***View의 경로를 저장하는 변수***
 		String nextView = null;
 		Controller controller = null;

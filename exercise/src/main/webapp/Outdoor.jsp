@@ -36,7 +36,7 @@
                             <a href="#">운동 용품</a>
                         </li>
                         <li>
-                            <a href="${context}/community.jsp">커뮤니티</a>
+                            <a href="${context}/communityList.jsp">커뮤니티</a>
                         </li>
                     </ul>
                 </nav>
