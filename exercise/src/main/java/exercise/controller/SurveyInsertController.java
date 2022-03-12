@@ -30,7 +30,7 @@ public class SurveyInsertController implements Controller{
 		SurveyDAO dao = new SurveyDAO();
 		dao.surveyInsert(vo);
 		
-		return "redirect:/challenge.jsp";
+		return "flask";
 	} 
  
 }

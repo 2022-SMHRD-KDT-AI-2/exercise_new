@@ -37,7 +37,10 @@ public class FrontController extends HttpServlet {
 				//redirect
 				nextView = nextView.split(":")[1];
 				response.sendRedirect("/exercise"+nextView);
-			} else {
+			}else if(nextView.indexOf("flask")!=-1) {
+				response.sendRedirect("http://121.147.185.152:9000/youtubeSearch?num=1");
+			}
+			else {
 				//뷰의논리적인이름(boardList)->뷰의물리적인이름(경로)으로 변경시키는 API : ViewResolver
 				//forward
 				RequestDispatcher rd = request.getRequestDispatcher(ViewResolver.makeURL(nextView));
