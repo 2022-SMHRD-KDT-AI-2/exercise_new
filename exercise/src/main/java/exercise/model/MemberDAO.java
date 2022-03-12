@@ -30,12 +30,11 @@ public class MemberDAO {
 	      return cnt;
 	}
 	// 중복체크??
-	public int checkId(MemberVO vo) {
+	public MemberVO checkId(MemberVO vo) {
 		  SqlSession session = sqlSessionFactory.openSession();  
-	      int cnt=session.insert("checkid", vo);
-	      session.commit();
+		  MemberVO memVO = session.selectOne("checkId", vo);
 	      session.close();// 반납(*)
-	      return cnt;
+	      return memVO;
 	}
 	
 	public MemberVO checkLogin(MemberVO vo) {

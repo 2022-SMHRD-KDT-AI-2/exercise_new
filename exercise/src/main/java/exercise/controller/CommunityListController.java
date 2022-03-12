@@ -7,18 +7,15 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import exercise.entity.BoardVO;
-import exercise.model.BoardDAO;
+import exercise.entity.CommunityVO;
+import exercise.model.CommunityDAO;
 
-public class BoardListController implements Controller {
-	@Override
+public class CommunityListController implements Controller {
 	public String requestHandler(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-			BoardDAO dao = new BoardDAO();
-			List<BoardVO> list=dao.selectAll();
-			request.setAttribute("list", list);
-			return "boardList";
-
-}
-
+		CommunityDAO dao = new CommunityDAO();
+		List<CommunityVO> list = dao.selectAll();
+		request.setAttribute("list", list);
+		return "communitydList";
+	}
 }

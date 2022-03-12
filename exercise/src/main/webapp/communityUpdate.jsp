@@ -27,7 +27,7 @@
                     <h1><a href="${context}/index.jsp"><img src="./img/logo_1.png" alt="로고"></a></h1>
                     <nav>
                         <ul>
-                            <li>
+                             <li>
                             <a href="${context}/index.jsp">Home</a>
                         </li>
                         <li>
@@ -40,7 +40,7 @@
                             <a href="#">운동 용품</a>
                         </li>
                         <li>
-                            <a href="${context}/community.jsp">커뮤니티</a>
+                            <a href="${context}/communityList.jsp">커뮤니티</a>
                         </li>
                         </ul>
                     </nav>
@@ -108,8 +108,8 @@
                     </div>
                 </div>
                 <div class="bt_wrap">
-                    <a href="${context}/community.jsp" class="on">등록</a>
-                    <a href="${context}/community.jsp">취소</a>
+                    <a href="${context}/communityWrite.jsp" class="on">등록</a>
+                    <a href="${context}/communityList.jsp">취소</a>
                 </div>
             </div>
         </div>

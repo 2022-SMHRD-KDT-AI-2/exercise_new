@@ -11,6 +11,7 @@ import exercise.entity.MemberVO;
 import exercise.model.MemberDAO;
 
 public class CheckIdController implements Controller {
+	
 @Override
 public String requestHandler(HttpServletRequest request, HttpServletResponse response)
 		throws ServletException, IOException {
@@ -18,11 +19,11 @@ public String requestHandler(HttpServletRequest request, HttpServletResponse res
 	String memId = request.getParameter("memId");
 	MemberVO vo = new MemberVO();
 	vo.setMemId(memId);
-	// Model??
+	// Model
 	MemberDAO dao=new MemberDAO();
-	int cnt = dao.checkId(vo);
+	MemberVO memVO = dao.checkId(vo);
 	
-	return "cnt";
+	return "checkId";
 	
 }
 }

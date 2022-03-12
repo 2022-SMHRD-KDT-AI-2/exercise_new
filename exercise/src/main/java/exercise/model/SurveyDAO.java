@@ -7,7 +7,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
-import exercise.entity.BoardVO;
+import exercise.entity.CommunityVO;
 import exercise.entity.SurveyVO;
 
 public class SurveyDAO {

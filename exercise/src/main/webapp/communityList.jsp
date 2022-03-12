@@ -75,12 +75,32 @@
                 <div class="board_list">
                     <div class="top">
                         <div class="num">번호</div>
-                        <div class="category">분류</div>
                         <div class="title">제목</div>
-                        <div class="writer">글쓴이</div>
+                        <div class="writer">작성자</div>
                         <div class="date">작성일</div>
                         <div class="count">조회</div>
                     </div>
+                    <!--  -->
+                    <c:forEach var="vo" items="${list}">
+	    	  	  <div>
+	    	        <div>${vo.idx}</div>
+	    	        <div><a href="/web/communityContent.do?idx=${vo.idx}">${vo.title}</a></div>
+	    	        <div>${vo.article_seq}</div>
+	    	        <div>${vo.articletitle}</div>
+	    	        <div>${vo.articleconent}</div>
+	    	        <div>${vo.articlefile}</div>
+	    	        <div>${vo.articledate}</div>
+	    	        <div>${vo.memId}</div>
+		    	    </div>
+	    	  </c:forEach>
+	    	  <c:if test="${!empty memVO}">
+		    	  <tr>
+		    	    <td colspan="5">
+		    	    <button class="btn btn-success btn-sm" onclick="location.href='/web/boardForm.do'">글쓰기</button>
+		    	    </td>
+		    	  </tr>
+	    	  </c:if>
+                    
                     <div>
                         <div class="num">5</div>
                         <div class="category">분류</div>
@@ -89,38 +109,7 @@
                         <div class="date">2021.1.15</div>
                         <div class="count">33</div>
                     </div>
-                    <div>
-                        <div class="num">4</div>
-                        <div class="category">분류</div>
-                        <div class="title"><a href="${context}/communityContent.jsp">설문조사를 다시 하고 싶습니다.</a></div>
-                        <div class="writer">김유진</div>
-                        <div class="date">2021.1.15</div>
-                        <div class="count">33</div>
-                    </div>
-                    <div>
-                        <div class="num">3</div>
-                        <div class="category">분류</div>
-                        <div class="title"><a href="${context}/communityContent.jsp">다른 운동을 추천받을 수 있나요?</a></div>
-                        <div class="writer">윤중열</div>
-                        <div class="date">2021.1.15</div>
-                        <div class="count">33</div>
-                    </div>
-                    <div>
-                        <div class="num">2</div>
-                        <div class="category">분류</div>
-                        <div class="title"><a href="${context}/communityContent.jsp">회원 정보를 수정하고 싶어요.</a></div>
-                        <div class="writer">이상현</div>
-                        <div class="date">2021.1.15</div>
-                        <div class="count">33</div>
-                    </div>
-                    <div>
-                        <div class="num">1</div>
-                        <div class="category">분류</div>
-                        <div class="title"><a href="${context}/communityContent.jsp">사용방법에 관해 문의드립니다.</a></div>
-                        <div class="writer">장강근</div>
-                        <div class="date">2021.1.15</div>
-                        <div class="count">33</div>
-                    </div>
+                    
                 </div>
                 <div class="board_page">
                     <a href="#" class="bt first">&lt;&lt;</a>
@@ -134,7 +123,7 @@
                     <a href="#" class="bt last">&gt;&gt;</a>
                 </div>
                 <div class="bt_wrap">
-                    <a href="${context}/communityWrite.jsp" class="on">등록</a>
+                    <a href="${context}/communityContent.jsp" class="on">등록</a>
                     <!--<a href="#">수정</a>-->
                 </div>
             </div>

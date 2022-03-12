@@ -17,7 +17,7 @@ pageContext.setAttribute("context", request.getContextPath());
 	href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Jua&family=Sunflower:wght@500&display=swap"
 	rel="stylesheet">
 
-<script src="/webjars/jquery/dist/jquery.min.js"></script>
+
 </head>
 <body>
 	<!-- header -->
@@ -37,7 +37,7 @@ pageContext.setAttribute("context", request.getContextPath());
 					</h3>
 					<span class="box int_nick"> <input type="text" id="memNick"
 						name="memNick" class="int" maxlength="20"> <input
-						type="button" class="btn_ck" id="btn_nick" value="중복확인" onclick="openIdChk()">
+						type="button" class="btn_ck" id="btn_nick" value="중복확인" onclick="CheckId()">
 						<input type="hidden" name="idDuplication" value="idUncheck">
 					</span> <span class="error_next_box"></span>
 				</div>
@@ -50,7 +50,7 @@ pageContext.setAttribute("context", request.getContextPath());
 
 					<span class="box int_id"> <input type="text" id="memId"
 						name="memId" class="int" maxlength="20"> <input
-						type="button" class="btn_ck" id="btn_id" value="중복확인" onclick="checkid()">
+						type="button" class="btn_ck" id="btn_id" value="중복확인" onclick="CheckId()">
 						<input type="hidden" name="idDuplication" value="idUncheck">
 					</span>
 				</div>
@@ -144,7 +144,7 @@ pageContext.setAttribute("context", request.getContextPath());
 			}
 		})
 
-		function checkid(id) {
+/* 	function checkid(id) {
 			$.ajax({
 				type : "post",
 				url : 'checkId.do',
@@ -155,7 +155,7 @@ pageContext.setAttribute("context", request.getContextPath());
 				error : function(){
 					alert("실패");
 				}
-			});
+			}); */
 			
 			//alert("idCheckFunc");
 

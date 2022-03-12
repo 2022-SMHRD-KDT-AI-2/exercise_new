@@ -9,13 +9,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
 // Servlet -> POJO
-public class BoardFormController implements Controller {
+public class CommunityFormController implements Controller {
 	@Override
 	public String requestHandler(HttpServletRequest request, HttpServletResponse response)
 								throws ServletException, IOException {
-		return "boardForm";
+		return "communityForm";
 	}
 
 }
