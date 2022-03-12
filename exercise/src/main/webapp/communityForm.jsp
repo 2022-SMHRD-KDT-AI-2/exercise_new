@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <%
-	pageContext.setAttribute("context", request.getContextPath());
+   pageContext.setAttribute("context", request.getContextPath());
 %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
@@ -59,7 +59,7 @@
                             <div class="login_msg"></div>
                             <c:if test="${empty memVO}">
                             <a href="${context}/loginForm.do" class="link_login" data-clk="log_off.login">로그인</a><br>
-                       		<br><a href="${context}/signUp.do" class="link_join" data-clk="log_off.registration">회원가입</a>
+                             <br><a href="${context}/signUp.do" class="link_join" data-clk="log_off.registration">회원가입</a>
                             </c:if>
                             <c:if test="${!empty memVO}">
                             <label>${memVO.memId}</label><br>

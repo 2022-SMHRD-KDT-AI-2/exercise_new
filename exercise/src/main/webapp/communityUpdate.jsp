@@ -108,7 +108,7 @@
                     </div>
                 </div>
                 <div class="bt_wrap">
-                    <a href="${context}/communityWrite.jsp" class="on">등록</a>
+                    <a href="${context}/communityList.jsp" class="on">등록</a>
                     <a href="${context}/communityList.jsp">취소</a>
                 </div>
             </div>

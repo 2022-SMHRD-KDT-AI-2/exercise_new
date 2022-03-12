@@ -38,7 +38,7 @@ public class MemberDAO {
 	}
 	
 	public MemberVO checkLogin(MemberVO vo) {
-		SqlSession session=sqlSessionFactory.openSession();
+		SqlSession session = sqlSessionFactory.openSession();  
 		MemberVO memVO = session.selectOne("checkLogin", vo);
 		session.close();
 		return memVO;

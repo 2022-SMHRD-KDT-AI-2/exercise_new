@@ -6,13 +6,7 @@ public class HandlerMapping {
 	private HashMap<String, Controller> mappings;
 	public HandlerMapping() {
 		mappings = new HashMap<String, Controller>();
-		mappings.put("/communityList.do", new CommunityListController());
-		mappings.put("/communityForm.do", new CommunityFormController());
-		mappings.put("/communityInsert.do", new CommunityInsertController());
-		mappings.put("/communityContent.do", new CommunityContentController());
-		mappings.put("/communityDelete.do", new CommunityDeleteController());
-		mappings.put("/communityUpdateForm.do", new CommunityUpdateFormController());
-		mappings.put("/communityUpdate.do", new CommunityUpdateController());
+		
 		//새로운 요청이 발생하면 여기서부터 출발	
 		mappings.put("/signUp.do", new SignUPController());
 		mappings.put("/memberInsert.do", new MemberInsertController());
@@ -27,6 +21,14 @@ public class HandlerMapping {
 		
        mappings.put("/login.do", new LogInController());
        mappings.put("/logout.do", new LogOutController());
+       
+       mappings.put("/communityList.do", new CommunityListController());
+		mappings.put("/communityForm.do", new CommunityFormController());
+		mappings.put("/communityInsert.do", new CommunityInsertController());
+		mappings.put("/communityContent.do", new CommunityContentController());
+		mappings.put("/communityDelete.do", new CommunityDeleteController());
+		mappings.put("/communityUpdateForm.do", new CommunityUpdateFormController());
+		mappings.put("/communityUpdate.do", new CommunityUpdateController());
 	}
 	public Controller getController(String key) {
 		return mappings.get(key);

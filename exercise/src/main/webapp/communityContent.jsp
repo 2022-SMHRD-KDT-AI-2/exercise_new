@@ -20,7 +20,6 @@
         rel="stylesheet">
     </head>
     <body>
-      
         <div id="wrap">
             <header id="header">
                 <div class="h_cont">
@@ -86,8 +85,8 @@
                     </div>
                     <div class="info">
                         <dl>
-                            <dt>글쓴이</dt>
-                            <dd><input type="text" placeholder="글쓴이 입력"></dd>
+                            <dt>작성자</dt>
+                            <dd><input type="text" placeholder="작성자 입력"></dd>
                         </dl>
                         <dl>
                             <dt>비밀번호</dt>
