@@ -22,7 +22,7 @@
 <%
 	String url = request.getParameter("num");
 
-	url.split(",");
+	String[] urlS = url.split(",");
 %>
     <div id="wrap">
         <header id="header">
@@ -56,14 +56,14 @@
         <div id="container">
             <section id="section_1">
                 <ul class="video_1">
-                    <li><iframe width="540" height="315" src="https://www.youtube.com/embed/e4WnrhXTjg8"
+                    <li><iframe width="540" height="315" src="<%=urlS[1]%>"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                         <div class="text_box"><a href="">너를 상대로 혼잣망르 언제까지 할수잇을까?<br>리디후_Familly sory <br>
                                 조회수2.3만회 19시간전</a></div>
                     </li>
-                    <li><iframe width="540" height="315" src="https://www.youtube.com/embed/e4WnrhXTjg8"
+                    <li><iframe width="540" height="315" src="<%=urlS[2]%>"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
@@ -73,14 +73,14 @@
                    
                 </ul>
                 <ul class="video_2">
-                    <li><iframe width="540" height="315" src="https://www.youtube.com/embed/e4WnrhXTjg8"
+                    <li><iframe width="540" height="315" src="<%=urlS[3]%>"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                         <div class="text_box"><a href="">너를 상대로 혼잣망르 언제까지 할수잇을까?<br>리디후_Familly sory <br>
                                 조회수2.3만회 19시간전</a></div>
                     </li>
-                    <li><iframe width="540" height="315" src="https://www.youtube.com/embed/e4WnrhXTjg8"
+                    <li><iframe width="540" height="315" src="<%=urlS[4]%>"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
@@ -89,14 +89,48 @@
                     </li>
                 </ul>
                 <ul class="video_3">
-                    <li><iframe width="540" height="315" src="https://www.youtube.com/embed/e4WnrhXTjg8"
+                    <li><iframe width="540" height="315" src="<%=urlS[5]%>"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                         <div class="text_box"><a href="">너를 상대로 혼잣망르 언제까지 할수잇을까?<br>리디후_Familly sory <br>
                                 조회수2.3만회 19시간전</a></div>
                     </li>
-                    <li><iframe width="540" height="315" src="https://www.youtube.com/embed/e4WnrhXTjg8"
+                    <li><iframe width="540" height="315" src="<%=urlS[6]%>"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <div class="text_box"><a href="">너를 상대로 혼잣망르 언제까지 할수잇을까?<br>리디후_Familly sory <br>
+                                조회수2.3만회 19시간전</a></div>
+                    </li>
+                   
+                </ul>
+                <ul class="video_4">
+                    <li><iframe width="540" height="315" src="<%=urlS[7]%>"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <div class="text_box"><a href="">너를 상대로 혼잣망르 언제까지 할수잇을까?<br>리디후_Familly sory <br>
+                                조회수2.3만회 19시간전</a></div>
+                    </li>
+                    <li><iframe width="540" height="315" src="<%=urlS[8]%>"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <div class="text_box"><a href="">너를 상대로 혼잣망르 언제까지 할수잇을까?<br>리디후_Familly sory <br>
+                                조회수2.3만회 19시간전</a></div>
+                    </li>
+                   
+                </ul>
+                <ul class="video_5">
+                    <li><iframe width="540" height="315" src="<%=urlS[9]%>"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <div class="text_box"><a href="">너를 상대로 혼잣망르 언제까지 할수잇을까?<br>리디후_Familly sory <br>
+                                조회수2.3만회 19시간전</a></div>
+                    </li>
+                    <li><iframe width="540" height="315" src="<%=urlS[10]%>"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
