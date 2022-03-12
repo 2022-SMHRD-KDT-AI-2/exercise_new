@@ -19,6 +19,11 @@
 </head>
 
 <body>
+<%
+	String url = request.getParameter("num");
+
+	url.split(",");
+%>
     <div id="wrap">
         <header id="header">
             <div class="h_cont">
