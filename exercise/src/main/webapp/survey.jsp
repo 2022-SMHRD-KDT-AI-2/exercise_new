@@ -25,7 +25,7 @@
             <!-- height, weight-->
 			<div>
                  <input type="hidden" name="memId" value="${memVO.memId}">
-         <!-- GENDER(성별) -->
+         <!-- ------GENDER(성별) -->
 				<div>
 					<h3 class="join_title">
 						<label for="gender">성별</label>
