@@ -16,6 +16,6 @@ public class CommunityListController implements Controller {
 		CommunityDAO dao = new CommunityDAO();
 		List<CommunityVO> list = dao.selectAll();
 		request.setAttribute("list", list);
-		return "communitydList";
+		return "communityList";
 	}
 }

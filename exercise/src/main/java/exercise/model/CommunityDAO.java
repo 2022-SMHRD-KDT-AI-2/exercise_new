@@ -38,18 +38,18 @@ public class CommunityDAO {
 		      return cnt;
 		   }
 		// 
-		public CommunityVO getByIdx(int idx) {
+		public CommunityVO getBySeq(int article_seq) {
 			SqlSession session=sqlSessionFactory.openSession();
-			CommunityVO vo = session.selectOne("getByIdx", idx);
+			CommunityVO vo = session.selectOne("getBySeq", article_seq);
 			session.close();
 			return vo;
 		}
 		
 		// 주어진 idx에 해당하는 게시판을 삭제하는 메소드
-		public void communityDelete(int idx) {
+		public void communityDelete(int article_seq) {
 			// SqlSession = Connection + Statement
 			SqlSession session=sqlSessionFactory.openSession();
-			session.delete("communityDelete", idx);
+			session.delete("communityDelete", article_seq);
 			session.commit();
 			session.close();
 		}
@@ -62,9 +62,9 @@ public class CommunityDAO {
 		}
 		
 		//  조회수 누적 메소드 addCount()
-		public void addCount(int idx) {
+		public void addCount(int article_seq) {
 			SqlSession session=sqlSessionFactory.openSession();
-			session.update("addCount", idx);
+			session.update("addCount", article_seq);
 			session.commit();
 			session.close();
 		}

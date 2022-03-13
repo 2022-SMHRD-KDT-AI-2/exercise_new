@@ -1,34 +1,32 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <%
-   pageContext.setAttribute("context", request.getContextPath());
+	pageContext.setAttribute("context", request.getContextPath());
 %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
+<head>
+    <html lang="ko"><head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>커뮤니티보기</title>
-        <link rel="stylesheet" type="text/css" href="./css/community.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Jua&family=Sunflower:wght@500&display=swap"
-            rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커뮤니티</title>
+    <link rel="stylesheet" href="./css/community.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Jua&family=Sunflower:wght@500&display=swap"
+        rel="stylesheet">
     </head>
-
     <body>
-
         <div id="wrap">
             <header id="header">
                 <div class="h_cont">
                     <h1><a href="${context}/index.jsp"><img src="./img/logo_1.png" alt="로고"></a></h1>
                     <nav>
                         <ul>
-                             <li>
+                            <li>
                             <a href="${context}/index.jsp">Home</a>
                         </li>
                         <li>
@@ -59,7 +57,7 @@
                             <div class="login_msg"></div>
                             <c:if test="${empty memVO}">
                             <a href="${context}/loginForm.do" class="link_login" data-clk="log_off.login">로그인</a><br>
-                             <br><a href="${context}/signUp.do" class="link_join" data-clk="log_off.registration">회원가입</a>
+                       		<br><a href="${context}/signUp.do" class="link_join" data-clk="log_off.registration">회원가입</a>
                             </c:if>
                             <c:if test="${!empty memVO}">
                             <label>${memVO.memId}</label><br>
@@ -72,56 +70,53 @@
                     </div>
                 </div>
             </section>
-
         <div class="board_wrap">
             <div class="board_title">
                 <strong>커뮤니티</strong>
-                <p>자유롭게 이야기하세요.</p><br><br>
+                <p>자유롭게 이야기하세요</p><br><br>
             </div>
-            <div class="board_view_wrap">
-                <div class="board_view">
+            <div class="board_write_wrap">
+               <form method="post" name="form">
+               <input type="hidden" name="memId" value="${memVO.memId}">
+                <div class="board_write">
+ 
                     <div class="title">
-
+                        <dl>
+                            <dt>제목</dt>
+                            <dd><input type="text" name="articleTitle" placeholder="제목 입력"></dd>
+                        </dl>
                     </div>
                     <div class="info">
                         <dl>
-                            <dt>번호</dt>
-                            <dd>1</dd>
+                            <dt>작성자</dt>
+                            <dd><input type="text" name ="articleWriter"  placeholder="작성자 입력" readonly value="${memVO.memNick}"></dd>
                         </dl>
                         <dl>
-                            <dt>글쓴이</dt>
-                            <dd>박소연</dd>
-                        </dl>
-                        <dl>
-                            <dt>작성일</dt>
-                            <dd>2021.1.16</dd>
-                        </dl>
-                        <dl>
-                            <dt>조회</dt>
-                            <dd>33</dd>
+                            <dt>비밀번호</dt>
+                            <dd><input type="password" placeholder="비밀번호 입력"></dd>
                         </dl>
                     </div>
-                    <div class="cont">
-                        글 내용이 들어갑니다<br>
-                        글 내용이 들어갑니다<br>
-                        글 내용이 들어갑니다<br>
-                        글 내용이 들어갑니다<br>
-                        글 내용이 들어갑니다<br>
-                        글 내용이 들어갑니다<br>
-                        글 내용이 들어갑니다<br>
 
+                        <div class="button">
+                            <label for="chooseFile" onclick="javascript: form.enctype='multipart/form-data';"/>
+                                사진을 업로드하세요
+                            </label>
+                        </div>
+                        <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
+                    <hr>
+                    <div class="cont">
+                        <textarea name ="articleContent" placeholder="내용 입력"></textarea>
                     </div>
                 </div>
                 <div class="bt_wrap">
-                    <a href="${context}/communityList.jsp" class="on">목록</a>
-                    <a href="${context}/communityUpdate.jsp">수정</a>
+                    <button type="submit" onclick="javascript: form.action='/exercise/communityInsert.do';"/ >등록</button>
+      				<button type="reset" >취소</button>
                 </div>
+ 			</form>
             </div>
+            
         </div>
-
-    </body>
-
-    </html>
+    
+    </body></html>
 </body>
-
 </html>

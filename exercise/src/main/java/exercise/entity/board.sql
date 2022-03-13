@@ -40,7 +40,7 @@ insert into MEMBER values('smhrd03','smhrd03', 'º≠¥Î»Ò');
 select * from MEMBER;
 delete from MEMBER
 drop table member;
-
+create sequence article_seq;
 select * from TBL_RESULT;
 create sequence request_seq;
 select * from tbl_member;

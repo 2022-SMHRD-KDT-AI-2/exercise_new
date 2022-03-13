@@ -82,39 +82,17 @@
                     </div>
                     <!--  -->
                     <c:forEach var="vo" items="${list}">
-	    	  	  <%-- 
-	    	  	  <div>
-	    	        <div>${vo.idx}</div>
-	    	        <div><a href="/web/communityContent.do?idx=${vo.idx}">${vo.articletitle}</a></div>
-	    	        <div>${vo.article_seq}</div>
-	    	        <div>${vo.articletitle}</div>
-	    	        <div>${vo.articleconent}</div>
-	    	        <div>${vo.articlefile}</div>
-	    	        <div>${vo.articledate}</div>
-	    	        <div>${vo.memId}</div>
-		    	    </div>
-		    	    --%>
+	
                     <div>
-                    	<div>${vo.idx}</div>
                         <div class="num">${vo.article_seq}</div>
-                        <div class="title"><a href="${vo.articletitle}/communityContent.jsp">챌린지방 관련 문의드립니다.</a></div>
+                        <div class="title"><a href="${context}/communityContent.do?article_seq=${vo.article_seq}">${vo.articleTitle}</a></div>
                         <div class="writer">${vo.memId}</div>
-                        <div class="date">${vo.articledate}</div>
+                        <div class="date">${vo.articleDate.substring(0,10)}</div>
                         <div class="count">${vo.count}</div>
                     </div>
 	    	  </c:forEach>
 	    	  
-	    	  
-	    	  <%--            
-                    <div>
-                        <div class="num">5</div>
-                        <div class="category">분류</div>
-                        <div class="title"><a href="${context}/communityContent.jsp">챌린지방 관련 문의드립니다.</a></div>
-                        <div class="writer">박소연</div>
-                        <div class="date">2021.1.15</div>
-                        <div class="count">33</div>
-                    </div>
-                    --%>      
+	      
              </div>
                 <div class="board_page">
                     <a href="#" class="bt first">&lt;&lt;</a>
@@ -129,7 +107,7 @@
                 </div>
                 <c:if test="${!empty memVO}">
                 <div class="bt_wrap">
-                    <a href="${context}/communityContent.jsp" class="on">등록</a>
+                    <a href="${context}/communityForm.do" class="on">등록</a>
                     <!--<a href="#">수정</a>-->
                 </div>
                 </c:if>

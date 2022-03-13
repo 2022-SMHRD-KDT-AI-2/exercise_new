@@ -1,3 +1,4 @@
+<%@page import="exercise.entity.CommunityVO"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <%
@@ -40,7 +41,7 @@
                             <a href="#">운동 용품</a>
                         </li>
                         <li>
-                            <a href="${context}/communityList.jsp">커뮤니티</a>
+                            <a href="${context}/communityList.do">커뮤니티</a>
                         </li>
                         </ul>
                     </nav>
@@ -72,45 +73,49 @@
                 </div>
             </section>
         <div class="board_wrap">
+         <form method="post" name="form">
             <div class="board_title">
                 <strong>커뮤니티</strong>
                 <p>자유롭게 이야기하세요</p><br><br>
             </div>
+            <input type="hidden" name="article_seq" value="${vo.article_seq}">
             <div class="board_write_wrap">
                 <div class="board_write">
                     <div class="title">
                         <dl>
                             <dt>제목</dt>
-                            <dd><input type="text" placeholder="제목 입력"></dd>
+                            <dd><input type="text" name="articleTitle" placeholder="제목 입력" value="${vo.articleTitle}"></dd>
                         </dl>
                     </div>
                     <div class="info">
                         <dl>
                             <dt>글쓴이</dt>
-                            <dd><input type="text" placeholder="글쓴이 입력"></dd>
+                            <dd><input type="text" name="articleWriter" placeholder="글쓴이 입력" readonly="readonly" value="${vo.articleWriter}"></dd>
                         </dl>
                         <dl>
                             <dt>비밀번호</dt>
                             <dd><input type="password" placeholder="비밀번호 입력"></dd>
                         </dl>
                     </div>
-                    <form method="post" enctype="multipart/form-data">
+                   
                         <div class="button">
-                            <label for="chooseFile">
+                            <label for="chooseFile" onclick="javascript: form.enctype='multipart/form-data';"/>
                                 사진을 업로드하세요
                             </label>
                         </div>
                         <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
-                    </form>
+                    
                     <hr>
                     <div class="cont">
-                        <textarea placeholder="내용 입력"></textarea>
+                        <textarea name="articleContent" placeholder="내용 입력">${vo.articleContent}</textarea>
                     </div>
                 </div>
-                <div class="bt_wrap">
-                    <a href="${context}/communityList.jsp" class="on">등록</a>
-                    <a href="${context}/communityList.jsp">취소</a>
+                 <div class="bt_wrap">
+                    <button type="submit" onclick="javascript: form.action='/exercise/communityUpdate.do';"/ >수정</button>
+      				<button type="reset" >취소</button>
+      				<button type="button"  onclick="location.href='${context}/communityList.do'">리스트</button>
                 </div>
+ 			</form>
             </div>
         </div>
     

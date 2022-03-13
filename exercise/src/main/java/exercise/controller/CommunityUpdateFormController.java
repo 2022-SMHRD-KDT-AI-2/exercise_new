@@ -14,9 +14,9 @@ public class CommunityUpdateFormController implements Controller {
 	@Override
 	public String requestHandler(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		int idx = Integer.parseInt(request.getParameter("idx"));
+		int article_seq = Integer.parseInt(request.getParameter("article_seq"));
 		CommunityDAO dao = new CommunityDAO();
-		CommunityVO vo = dao.getByIdx(idx);
+		CommunityVO vo = dao.getBySeq(article_seq);
 		request.setAttribute("vo", vo);
 		return "communityUpdate";
 	}

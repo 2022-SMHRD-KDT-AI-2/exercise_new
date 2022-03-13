@@ -58,6 +58,32 @@
   	update tbl_result set height=#{height}, weight=#{weight}, targetWeight=#{targetWeight}, athleticPart=#{athleticPart},
   	athleticLevel=#{athleticLevel} where memId=#{memId}
   </update> 
+  
+   <insert id="communityInsert" parameterType="exercise.entity.CommunityVO">
+    insert into tbl_community(article_seq,articleTitle,articleContent,memId,articleWriter)
+    values(article_seq.nextval,#{articleTitle},#{articleContent},#{memId},#{articleWriter})
+  </insert>
+  
+  <select id="selectAll" resultType="exercise.entity.CommunityVO">
+    select * from tbl_community order by article_seq desc
+  </select>
+  
+  <select id = "getBySeq" parameterType="int" resultType = "exercise.entity.CommunityVO">
+  	select * from tbl_community where article_seq = #{article_seq}
+  </select>
+  
+   <update id="addCount" parameterType="int">
+     update tbl_community 
+     set count=count+1
+     where article_seq=#{article_seq}
+  </update>
 
+  <update id="communityUpdate" parameterType="exercise.entity.CommunityVO">
+  	update tbl_community set articleTitle=#{articleTitle}, articleContent=#{articleContent} where article_seq=#{article_seq}
+  </update>
+  
+   <delete id="communityDelete" parameterType="int">
+  	delete from tbl_community where article_seq = #{article_seq}
+  </delete>
 </mapper>
 
