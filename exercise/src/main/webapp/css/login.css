@@ -28,8 +28,8 @@ a{
     text-decoration: none;
 }
 #logo {
-    width: 350px;
-    height:183px;
+    width: 360px;
+    height:186px;
     margin-top: auto;
 }
 
@@ -40,10 +40,6 @@ a{
     margin-left: 55px;
 }
 
-#header img{
-    height: 190px;
-    margin-bottom: 10px;
-}
 #wrapper {
     position: relative;
 }
@@ -54,7 +50,6 @@ a{
     transform: translate(-50%,0%);
     width: 460px;
 }
-
 
 /* ÀÔ·ÂÆû */
 

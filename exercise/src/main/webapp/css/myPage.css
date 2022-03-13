@@ -138,10 +138,66 @@ a {
 .h_cont .h_menu li a:hover {
     color: #fff;
 }
-/* 가상클래스가 붙은 실질적인 아이한테 position: relative; 주는것 */
+/*-----------오른쪽 내비------------*/
 
-/* 가상클래스 ::before 사용시 content, position: absolute;, 너비값, 높이값 꼭 써줘야됨*/
-/* transform: translate(0,-50%);로 중간에 맞춘 후 left조절 */
+
+#section_2 .visual .s_menu{
+    position: absolute;
+    top: 20%;
+    left: 94%;
+    transform: translate(-50%, -50%);
+    position:fixed;
+    width:150px;
+    height:70px;
+    background-color: #368132;
+    border-radius: 100px;
+    text-align: center;
+    padding:17px;
+}
+#section_2 .visual .s_menu li a{
+    color:white;
+    font-weight: 700;
+    text-align: center;
+    margin: 30px;
+}
+
+#section_2 .visual .s_menu{
+    position: absolute;
+    top: 21.5%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    position:fixed;
+    width:120px;
+    height:70px;
+    background-color: #368132;
+    border-radius: 40px;
+    text-align: center;
+    padding:17px;
+    color: white;
+}
+#section_2 .visual .s_menu li a{
+    color:white;
+    font-weight: 700;
+    text-align: center;
+    margin: 30px;
+}
+
+#section_2 a{
+    font-family: 'GyeonggiTitleM' ;
+    font-size: 20px;
+    color: white;
+}
+
+#section_2 a:hover{
+    color: rgba(144, 248, 84, 0.904);
+    font-size:23px;
+}
+#account{
+    margin-top: 6px;
+}
+
+
+/*--------------------------------*/
 
 #header > div > ul > li:nth-child(1) > a > img {
   width: 30px;
@@ -249,24 +305,26 @@ a {
 
 #section_2 .visual .s_menu {
   position: absolute;
-  top: 20%;
-  left: 94%;
   transform: translate(-50%, -50%);
   position: fixed;
-  width: 150px;
-  height: 70px;
+  width: 120px;
+  height: 67px;
   background-color: #368132;
-  border-radius: 100px;
+  border-radius: 40px;
   text-align: center;
-  padding: 17px;
+
+  margin-right: 500px;
 }
 #section_2 .visual .s_menu li a {
   color: white;
   font-weight: 700;
   text-align: center;
-  margin: 30px;
+  margin-right: 30px;
 }
-
+#section_2 > div > div.s_menu{
+  margin-right:-100px;
+ 
+}
 
 
 /* BMI */
@@ -383,13 +441,13 @@ button[type=submit]{
 
 /*체육시설*/
 .outdoor{
-  margin-top:-510px;
+  margin-top:-540px;
   margin-right:-500px;
 }
 
 .outdoor> ul{
-  margin-left:1150px;
   margin-top:40px;
+  margin-left:1030px;
   font-family: 'SUIT-Medium';
   font-size: 18px;
   text-align: left;
@@ -397,7 +455,7 @@ button[type=submit]{
 
 /*video*/
 .video{
-  margin-top:70px;
+  margin-top:110px;
   width:100%
 }
 

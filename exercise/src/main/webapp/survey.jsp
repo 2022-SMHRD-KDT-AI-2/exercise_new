@@ -27,20 +27,18 @@
                  <input type="hidden" name="memId" value="${memVO.memId}">
          <!-- ------GENDER(성별) -->
 				<div>
-					<h3 class="join_title">
-						<label for="gender">성별</label>
-					</h3>
-					<span class="box gender_code"> <select id="gender"
-						name="gender" class="sel">
+                    <h3 class="request_title"><label for="gender">1.성별을 선택하세요</label></h3>
+					<span class="box gender_code"> 
+                    <select id="gender" name="gender" class="sel">
 							<option>성별</option>
 							<option value="남자">남자</option>
 							<option value="여자">여자</option>
 					</select>
 					</span>
-				</div>
+				</div><br>
             <!-- athletic_part -->
             <div><br>
-                <h3 class="request_title"><label for="athletic_part">3.원하는 운동종류를 선택하세요.</label></h3>
+                <h3 class="request_title"><label for="athletic_part">2.원하는 운동종류를 선택하세요</label></h3>
 
                 <div id="athletic_wrap">
                     <div class="athletic_part">
@@ -55,26 +53,22 @@
 
             <!-- athletic_level-->
             <div>
-                <h3 class="request_title"><label for="athletic_level">4.본인의 운동레벨을 선택하세요 </label></h3>
+                <h3 class="request_title"><label for="athletic_level">3.본인의 운동레벨을 선택하세요</label></h3>
                 <div id="athletic_wrap">
                     <div class="athletic_level">
                         <input type="radio" name="athleticLevel" value="상">상 &nbsp;
                         <input type="radio" name="athleticLevel" value="중">중 &nbsp;
                         <input type="radio" name="athleticLevel" value="하">하 &nbsp;<br>
                         
-                    </div><br><br>
+                    </div><br>
                 </div>
             </div>
             
             <!--ADDR(주소)-->
 
 				<div id="bir_mm">
-					<h3 class="join_title">
-						<label for="addr">주소</label>
-					</h3>
+					<h3 class="request_title"><label for="addr">4.주소를 선택하세요</label></h3>
 					<div class="addr">
-
-
 						<div class="box1">
 							<select onchange="categoryChange(this)" name="memAddr">
 								<option>지역</option>
@@ -82,13 +76,13 @@
 								<option value="광주광역시">광주광역시</option>
 							</select>
 							<div class="box2">
-								<select id="good" name="memAddr1">
+								<select id="good" name="memAddr1" class="sel">
 									<option>자치구</option>
 								</select>
 							</div>
 						</div>
 					</div>
-				</div>
+				</div><br>
             
 
             <!--정보 불러오기-->
@@ -105,7 +99,6 @@
                     </button>
             </div>
             </form>
-
     </div>
     <script src="main.js"></script>
 </body>

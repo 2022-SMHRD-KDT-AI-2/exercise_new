@@ -25,13 +25,15 @@ a{
 body {
     margin: 0;
     height: 100%;
+    width:100%;
     background: #f5f6f7;
     font-family: 'IBMPlexSansKR-Regular';
 }
 #logo {
-    width: 400px;
-    height:200px;
+    width: 360px;
+    height:183px;
     margin-top: auto;
+    margin-left: 30px;
 }
 
 #header {
@@ -54,30 +56,63 @@ body {
 }
 
 .request_title{
-    font-size:19px;
+    font-size:20px;
 }
 .request_title option{
 	font-size:30px;
 }
 
-#height{
-    align-items: center;
+
+#gender{
+    font-size:18px;
+    border-style:hidden;
+    width: 105px;
+    margin-left:-8px;
+    margin-top:-100px;
+    text-align: center;
+    font-family: 'IBMPlexSansKR-Regular';
 }
 
 
 .athletic_part{
     font-size: 18px;
 }
-.athletic_period{
-    margin-top:10px;
-    font-size: 18px;
-}
+
 .athletic_level{
     margin-top:10px;
     font-size: 18px;
 }
-.info{
-    font-size:20px;
+
+/*자치구 상자*/
+.box1 span{
+    width:120px;
+    margin-left:100px;
+    padding:0 0 -10px 0;
+}
+.box2 span{
+    width:120px;
+    margin-top:-40px;
+    margin-left:220px;
+    padding:0 0 -10px 0;
+}
+
+/*자치구 옵션*/
+#addr{
+    width: 110px;
+    height:25px;
+    font-size:17px;
+    border-style:hidden;
+    text-align: center;
+    margin-left:-11px;
+}
+
+#good{
+    width: 110px;
+    height:25px;
+    font-size:17px;
+    border-style:hidden;
+    text-align: center;
+    margin-left:-11px;
 }
 
 /* 입력폼 */
@@ -90,22 +125,21 @@ input:focus {
 
 h3 {
     margin: 19px 0 8px;
-    font-size: 16px;
-    font-weight: 700;
-    
+    font-size: 20px;
+    font-weight: 700;   
 }
 
 
 .box {
     display: block;
-    width: 160px;
+    width: 120px;
     height: 40px;
     border: solid 1px #dadada;
-    padding: 10px 14px 10px 14px;
+    padding: 8px 14px 10px 14px;
     box-sizing: border-box;
     background: #fff;
     border-radius: 9.8px;
-    margin-left: 150px;
+    margin-left: 170px;
     margin-bottom: -15px;
 }
 
@@ -131,7 +165,9 @@ input {
 .box.int_height {
     padding-right: 40px;
 }
-
+.info{
+    font-size:19px;
+}
 
 /* 버튼 */
 .btn_area {
@@ -139,7 +175,7 @@ input {
 }
 
 #btnJoin{
-    width: 100%;
+    width: 350px;
     padding: 18px 0 17px;
     border: 0;
     cursor: pointer;

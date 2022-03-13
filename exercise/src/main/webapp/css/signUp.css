@@ -29,13 +29,14 @@ a{
     text-decoration: none;
 }
 #logo {
-    width: 350px;
-    height:183px;
-    margin-top: -100px;
+    width: 360px;
+    height:186px;
+    margin-top: 90px;
+    margin-left:-50px
 }
 
 #header {
-     padding-top: 18px;
+    padding-top: 18px;
     text-align: center;
     margin-top:20px;
     margin-left: 55px;
@@ -52,6 +53,7 @@ a{
     left: 50%;
     transform: translate(-50%,0%);
     width: 300px;
+    margin-top:-10px;
 }
 
 .join_title{
