@@ -11,19 +11,21 @@ import exercise.entity.MemberVO;
 import exercise.model.MemberDAO;
 
 public class CheckIdController implements Controller {
-	
-@Override
-public String requestHandler(HttpServletRequest request, HttpServletResponse response)
-		throws ServletException, IOException {
-	
-	String memId = request.getParameter("memId");
-	MemberVO vo = new MemberVO();
-	vo.setMemId(memId);
-	// Model
-	MemberDAO dao=new MemberDAO();
-	MemberVO memVO = dao.checkId(vo);
-	
-	return "checkId";
-	
-}
+
+	public String requestHandler(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		String memId=request.getParameter("id"); // ¾ê°¡ nullÀÎ°Ô ¾Æ´Ò±î¿ä
+		System.out.println(memId);
+		MemberVO vo = new MemberVO();
+		MemberDAO dao=new MemberDAO();
+		
+		vo.setMemId(memId);
+		MemberVO idck= dao.checkId(vo);
+		request.setAttribute("idck", idck);
+		System.out.println(memId);
+		System.out.println(idck);
+		
+		return null;
+		
+	}
 }

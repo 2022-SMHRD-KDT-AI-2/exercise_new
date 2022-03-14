@@ -44,10 +44,12 @@
      select * from tbl_member where memPwd=#{memPwd} and memId=#{memId} 
  </select>
  
- <select id="checkId"  parameterType="exercise.entity.MemberVO"
+ <!-- ID중복확인 -->
+	<select id="checkId" parameterType="exercise.entity.MemberVO"
                            resultType="exercise.entity.MemberVO">
-     select * from tbl_member where memId=#{memId} 
- </select>
+		select count(*) from tbl_member
+		where memId=#{memId} 
+	</select>
  
    <insert id="surveyInsert" parameterType="exercise.entity.SurveyVO">
     insert into tbl_result(request_seq,height,weight,targetWeight,athleticPart,athleticLevel,memId)
