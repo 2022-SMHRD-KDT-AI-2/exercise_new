@@ -76,7 +76,7 @@
                 <p>자유롭게 이야기하세요</p><br><br>
             </div>
             <div class="board_write_wrap">
-               <form method="post" name="form">
+               <form method="post" name="form" action="${context}/communityInsert.do" >
                <input type="hidden" name="memId" value="${memVO.memId}">
                 <div class="board_write">
  
@@ -98,7 +98,7 @@
                     </div>
 
                         <div class="button">
-                            <label for="chooseFile" onclick="javascript: form.enctype='multipart/form-data';"/>
+                            <label for="chooseFile">
                                 사진을 업로드하세요
                             </label>
                         </div>
@@ -109,14 +109,14 @@
                     </div>
                 </div>
                 <div class="bt_wrap">
-                    <button type="submit" onclick="javascript: form.action='/exercise/communityInsert.do';"/ >등록</button>
+                    <button type="submit">등록</button>
       				<button type="reset" >취소</button>
                 </div>
  			</form>
             </div>
             
         </div>
-    
+    	
     </body></html>
 </body>
 </html>

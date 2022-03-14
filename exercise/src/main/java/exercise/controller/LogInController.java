@@ -31,6 +31,7 @@ public class LogInController implements Controller {
 			HttpSession session= request.getSession(); // 
 			// 객체바인딩(HttpSession)
 			session.setAttribute("memVO", memVO);
+			session.setAttribute("memId", memVO.getMemId());
 			System.out.println("로그인 성공!");
 		}
 		else if(memVO==null) { // 실패

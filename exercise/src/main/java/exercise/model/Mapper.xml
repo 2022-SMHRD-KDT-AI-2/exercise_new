@@ -85,5 +85,7 @@
    <delete id="communityDelete" parameterType="int">
   	delete from tbl_community where article_seq = #{article_seq}
   </delete>
+  
+
 </mapper>
 
