@@ -31,14 +31,6 @@ public class MemberDAO {
 		return cnt;
 	}
 
-// 중복체크??
-//	public int checkId(MemberVO vo) {
-//		SqlSession session = sqlSessionFactory.openSession();
-//		MemberVO memVO = session.selectOne("checkId", vo);
-//		session.close();// 반납(*)
-//		return int;
-//	}
-
 // ID중복체크	
 	public MemberVO checkId(MemberVO vo) {
 		SqlSession session = sqlSessionFactory.openSession();
