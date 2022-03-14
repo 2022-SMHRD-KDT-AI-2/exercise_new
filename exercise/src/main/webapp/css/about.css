@@ -1,6 +1,4 @@
 @charset "EUC-KR";
-@charset "EUC-KR";
-@charset "EUC-KR";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 /* Roboto 100 300 400 500 700 900 */
@@ -342,107 +340,150 @@ a {
 
 /* 소개 페이지1*/
 
+#so1{
+  background-color:rgba(255, 255, 0, 0.096);
+  height:700px;
+  margin-top:150px;
+  margin-bottom:150px;
+}
+
+
 #so1 > div > img{
-  height:350px;
-  width:550px;
-  margin-top: 130px;
-  margin-left:380px;
+  height:480px;
+  width:480px;
+  margin-top: 70px;
+  margin-left:400px;
+}
+.gae1 > .explain_box{
+  height:300px;
+  width:730px;
+  background-color: #ebeaea;
+  padding: 30px 10px 10px 10px;
 }
 
 .gae1 > #explain{
-  margin-left:970px;
-  margin-top:-250px;
+  margin-left:1150px;
+  margin-top:-570px;
   text-align: center;
-  width:480px;
+  width:380px;
+  padding: 0 0 250px 0;
+  font-size: 19px;
 }
 
 .gae1 > #explain > h1{
   font-family:'IBMPlexSansKR-Bold';
-  font-size: 22px;
+  font-size: 30px;
 }
 
+#explain > h1 > strong{
+  color: rgba(2, 142, 235, 0.863);
+}
+.gae1 > #explain > h2{
+  font-family:'IBMPlexSansKR-Bold';
+  font-size: 25px;
+}
 .gae1> #explain > h1 > p{
   font-family:'IBMPlexSansKR-Regular';
-  font-size: 20px;
+  font-size: 24px;
 }
 
-/* 소개 페이지2 */
 
-#so2 > div > img{
-  height:350px;
-  width:550px;
-  margin-top: 180px;
-  margin-left:980px;
- 
+/* 소개페이지 5*/
+
+#so5{
+  background-color:rgba(179, 177, 177, 0.123);
+  height:700px;
+  margin-top:100px;
+  margin-bottom:100px;
 }
 
-.gae2 > #explain{
-  margin-left:370px;
-  margin-top:-250px;
+.service{
   text-align: center;
-  width:480px;
 }
-
-.gae2 > #explain > h1{
+#so5 > div > div.service > h1{
+  margin-left:80px;
+  font-size: 30px;
   font-family:'IBMPlexSansKR-Bold';
-  font-size: 22px;
+  padding-top:50px;
 }
 
-.gae2 > #explain > h1 > p{
-  font-family:'IBMPlexSansKR-Regular';
-  font-size: 20px;
+#so5 > div > div.service > strong{
+  font-size: 24px;
+  font-family:'IBMPlexSansKR-Bold';
+  color: #368132;
+  margin-right:-65px;
 }
 
-/* 소개 페이지3 */
+#so5 > div > div.service > h2{
+  font-size: 17px;
+  font-family:'IBMPlexSansKR-regular';
+  margin-left:60px;
+  padding-top: 30px;
+}
 
-#so3 > div > img{
+/*서비스1*/
+#so5 > div > div.sevice1{
+  background-color: white;
   height:350px;
-  width:550px;
-  margin-top: 272px;
-  margin-left:380px;
- 
+  width:350px;
+  margin-top:75px;
+  margin-left:400px;
+  border-radius: 28px;
 }
 
-.gae3 > #explain{
-  margin-left:970px;
-  margin-top:-250px;
+#so5 > div > div.sevice1 > div:nth-child(1) > img{
+  height: 140px;
+  width:140px;
+  margin-left:100px;
+  margin-top: 20px;
+}
+
+#tit{
   text-align: center;
-  width:480px;
-}
-
-.gae3 > #explain > h1{
   font-family:'IBMPlexSansKR-Bold';
-  font-size: 22px;
-}
-
-.gae3 > #explain > h1 > p{
-  font-family:'IBMPlexSansKR-Regular';
   font-size: 20px;
+  margin-top:10px;
 }
 
-/* 소개 페이지4 */
+#txt{
+  text-align: center;
+  font-family:'IBMPlexSansKR-regular';
+  font-size: 16px;
+  margin: 0 40px 0 40px;
+}
 
-#so4 > div > img{
+/*서비스2*/
+#so5 > div > div.sevice2{
+  background-color: white;
   height:350px;
-  width:550px;
-  margin-top: 180px;
-  margin-left:980px;
-  padding:0 0 80px 0;
+  width:350px;
+  margin-top:-348.3px;
+  margin-left:800px;
+  border-radius: 28px;
 }
 
-.gae4 > #explain{
-  margin-left:370px;
-  margin-top:-250px;
-  text-align: center;
-  width:480px;
+#so5 > div > div.sevice2 > div:nth-child(1) > img{
+  height: 140px;
+  width:140px;
+  margin-left:100px;
+  margin-top: 20px;
 }
 
-.gae4 > #explain > h1{
-  font-family:'IBMPlexSansKR-Bold';
-  font-size: 22px;
+/*서비스3*/
+#so5 > div > div.sevice3{
+  background-color: white;
+  height:350px;
+  width:350px;
+  margin-top:-348.3px;
+  margin-left:1200px;
+  border-radius: 28px;
 }
 
-.gae4 > #explain > h1 > p{
-  font-family:'IBMPlexSansKR-Regular';
-  font-size: 20px;
+#so5 > div > div.sevice3 > div:nth-child(1) > img{
+  height: 140px;
+  width:140px;
+  margin-left:100px;
+  margin-top: 20px;
 }
+
+
