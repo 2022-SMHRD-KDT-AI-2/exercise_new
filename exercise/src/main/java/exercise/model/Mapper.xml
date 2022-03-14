@@ -88,6 +88,9 @@
   	delete from tbl_community where article_seq = #{article_seq}
   </delete>
   
+   <select id = "getById" resultType = "exercise.entity.ChallengeVO">
+  	select * from tbl_challengeurl where memId = #{memId}
+  </select>
 
 </mapper>
 

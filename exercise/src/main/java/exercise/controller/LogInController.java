@@ -25,13 +25,13 @@ public class LogInController implements Controller {
 		// Model??
 		MemberDAO dao=new MemberDAO();
 		MemberVO memVO = dao.checkLogin(vo);
-		
+		String referer = request.getHeader("referer");
 		
 		if(memVO!=null) { // 성공
 			HttpSession session= request.getSession(); // 
 			// 객체바인딩(HttpSession)
 			session.setAttribute("memVO", memVO);
-			session.setAttribute("memId", memVO.getMemId());
+			session.setAttribute("memid", memVO.getMemId());
 			System.out.println("로그인 성공!");
 		}
 		else if(memVO==null) { // 실패

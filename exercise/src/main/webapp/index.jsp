@@ -40,7 +40,7 @@
                             <a href="${context}/index.jsp">Home</a>
                         </li>
                         <li>
-                            <a href="${context}/challenge.jsp">운동 추천 프로그램</a>
+                            <a href="${context}/exerciseList.do">운동 추천 프로그램</a>
                         </li>
                         <li>
                             <a href="${context}/Outdoor.jsp">야외 체육시설</a>
