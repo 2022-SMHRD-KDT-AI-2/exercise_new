@@ -37,7 +37,7 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="${context}/index.jsp">Home</a>
+                            <a href="${context}/about.do">About</a>
                         </li>
                         <li>
                             <a href="${context}/exerciseList.do">운동 추천 프로그램</a>

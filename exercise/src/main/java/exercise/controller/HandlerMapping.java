@@ -30,6 +30,7 @@ public class HandlerMapping {
 		mappings.put("/communityUpdateForm.do", new CommunityUpdateFormController());
 		mappings.put("/communityUpdate.do", new CommunityUpdateController());
 		mappings.put("/exerciseList.do", new ExerciseListController());
+		mappings.put("/about.do", new AboutController());
 
 	}
 	public Controller getController(String key) {

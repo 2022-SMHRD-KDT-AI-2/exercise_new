@@ -47,7 +47,7 @@
  <!-- ID중복확인 -->
 	<select id="checkId" parameterType="exercise.entity.MemberVO"
                            resultType="exercise.entity.MemberVO">
-		select count(*) from tbl_member
+		select * from tbl_member
 		where memId=#{memId} 
 	</select>
  

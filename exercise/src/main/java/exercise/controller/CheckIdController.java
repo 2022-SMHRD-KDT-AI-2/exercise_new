@@ -24,7 +24,7 @@ public class CheckIdController implements Controller {
 		request.setAttribute("idck", idck);
 		System.out.println(memId);
 		System.out.println(idck);
-		
+		System.out.println(idck.getMemId());
 		return null;
 		
 	}
