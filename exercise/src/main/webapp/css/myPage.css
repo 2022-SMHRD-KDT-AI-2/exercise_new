@@ -23,6 +23,18 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'IBMPlexSansKR-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'IBMPlexSansKR-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* 공통 */
 
@@ -39,6 +51,7 @@ html {
 
 body {
   font-family: "Roboto", "Noto Sans KR", "sans-serif";
+  overflow-x: hidden;
 }
 
 ul,
@@ -336,6 +349,8 @@ a {
   grid-template-rows: repeat(3,5vh) 5vh repeat(2,5vh);
   grid-gap: 5px;
   margin-left:470px;
+  font-family:'IBMPlexSansKR-Regular';
+  padding:0px;
 }
 
 
@@ -347,7 +362,9 @@ h1{
 
 body > div.container > h1{
 	margin-top:-38px;
+
 }
+
 
 #h-input{
 	margin-top:-30px;
@@ -366,8 +383,6 @@ body > div.container > div{
 	margin-top:-16px;
 	height:28px;
 }
-
-
 
 .bmi-value{
  background-color: rgba(74, 202, 24, 0.418);
@@ -441,22 +456,45 @@ button[type=submit]{
 
 /*체육시설*/
 .outdoor{
-  margin-top:-540px;
-  margin-right:-500px;
+  margin-top:-535px;
+  margin-right:-585px;
+  font-family:'IBMPlexSansKR-Regular';
+  padding:0;
 }
+
 
 .outdoor> ul{
+  height:260px;
+  width:430px;
   margin-top:40px;
-  margin-left:1030px;
-  font-family: 'SUIT-Medium';
-  font-size: 18px;
+  margin-left:1040px;
+  font-size: 19px;
   text-align: left;
+  overflow:auto;
 }
 
+.outdoor>img{
+  margin-left:1420px;
+  margin-top:-1200px;
+  height:60px;
+}
 /*video*/
 .video{
-  margin-top:110px;
-  width:100%
+  margin-top:58px;
+  width:100%;
+  font-family:'IBMPlexSansKR-Regular';
+}
+body > div.video{
+  margin-top:75px;
+}
+
+body > div.video > h1{
+  padding:0px;
+}
+body > div.video > img{
+  margin-left:1090px;
+  margin-top:-200px;
+  height:70px;
 }
 
 #section_1 > ul {
@@ -465,7 +503,7 @@ button[type=submit]{
 }
 
 #section_1 > ul > li {
-  margin: 43px 0 0 0;
+  margin: 10px 0 38px 0;
   padding: 0 15px 5px 0;
   border : 0;
   float: left;

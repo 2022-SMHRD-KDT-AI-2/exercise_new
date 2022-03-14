@@ -501,4 +501,15 @@ label {
 }
 
 
-
+/* ¹öÆ° */
+ button{
+    display: inline-block;
+    min-width: 80px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #090B0D;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    font-family: 'IBMPlexSansKR-Bold';
+    border-radius: 5px;
+}
