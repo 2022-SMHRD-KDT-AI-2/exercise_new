@@ -23,58 +23,8 @@
 </head>
 
 <body>
-<%
-	String url = request.getParameter("num");
-
-	String[] urlS = url.split(",");
-	String url1 = urlS[1];
-	String url2 = urlS[2];
-	String url3 = urlS[3];
-	String url4 = urlS[4];
-	String url5 = urlS[5];
-	String url6 = urlS[6];
-	String url7 = urlS[7];
-	String url8 = urlS[8];
-	String url9 = urlS[9];
-	String url10 = urlS[10];
-	
-	
+<%	
 	String memid = String.valueOf(session.getAttribute("memid"));
-	
- 	String urL = "jdbc:oracle:thin:@project-db-stu.ddns.net:1524:XE";
-		String user = "cgi_5_0216_2";
-		String pwd = "smhrd2";
-    	
-		Connection con = null;
-
-		PreparedStatement pstmt = null;
-
-		String sql = "";
-		// 1단계  드라이버 로딩
-
-		Class.forName("oracle.jdbc.driver.OracleDriver");
-
-		// 2단계  DB연결
-
-		con = DriverManager.getConnection(urL, user, pwd);
-		sql = "INSERT INTO TBL_CHALLENGEURL(URL1,URL2,URL3,URL4,URL5,URL6,URL7,URL8,URL9,URL10,MEMID) values(?,?,?,?,?,?,?,?,?,?,?)";
-		pstmt = con.prepareStatement(sql);
-		pstmt.setString(1, url1);
-		pstmt.setString(2, url2);
-		pstmt.setString(3, url3);
-		pstmt.setString(4, url4);
-		pstmt.setString(5, url5);
-		pstmt.setString(6, url6);
-		pstmt.setString(7, url7);
-		pstmt.setString(8, url8);
-		pstmt.setString(9, url9);
-		pstmt.setString(10, url10);
-		pstmt.setString(11, memid);
-		pstmt.executeUpdate();
-		pstmt.close();
-
-		con.close();
-	
 %>
 
     	

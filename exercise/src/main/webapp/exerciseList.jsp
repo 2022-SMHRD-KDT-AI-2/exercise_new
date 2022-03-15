@@ -59,15 +59,13 @@
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                        <div class="text_box"><a href="">너를 상대로 혼잣망르 언제까지 할수잇을까?<br>리디후_Familly sory <br>
-                                조회수2.3만회 19시간전</a></div>
+                        <div class="text_box"><a href="">${vo.name1}</a></div>
                     </li>
                     <li><iframe width="540" height="315" src="${vo.url2}"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                        <div class="text_box"><a href="">너를 상대로 혼잣망르 언제까지 할수잇을까?<br>리디후_Familly sory <br>
-                                조회수2.3만회 19시간전</a></div>
+                        <div class="text_box"><a href="">${vo.name2}</a></div>
                     </li>
                    
                 </ul>
@@ -76,15 +74,13 @@
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                        <div class="text_box"><a href="">너를 상대로 혼잣망르 언제까지 할수잇을까?<br>리디후_Familly sory <br>
-                                조회수2.3만회 19시간전</a></div>
+                        <div class="text_box"><a href="">${vo.name3}</a></div>
                     </li>
                     <li><iframe width="540" height="315" src="${vo.url4}"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                        <div class="text_box"><a href="">너를 상대로 혼잣망르 언제까지 할수잇을까?<br>리디후_Familly sory <br>
-                                조회수2.3만회 19시간전</a></div>
+                        <div class="text_box"><a href="">${vo.name4}</a></div>
                     </li>
                 </ul>
                 <ul class="video_3">
@@ -92,15 +88,13 @@
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                        <div class="text_box"><a href="">너를 상대로 혼잣망르 언제까지 할수잇을까?<br>리디후_Familly sory <br>
-                                조회수2.3만회 19시간전</a></div>
+                        <div class="text_box"><a href="">${vo.name5}</a></div>
                     </li>
                     <li><iframe width="540" height="315" src="${vo.url6}"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                        <div class="text_box"><a href="">너를 상대로 혼잣망르 언제까지 할수잇을까?<br>리디후_Familly sory <br>
-                                조회수2.3만회 19시간전</a></div>
+                        <div class="text_box"><a href="">${vo.name6}</a></div>
                     </li>
                    
                 </ul>
@@ -109,15 +103,13 @@
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                        <div class="text_box"><a href="">너를 상대로 혼잣망르 언제까지 할수잇을까?<br>리디후_Familly sory <br>
-                                조회수2.3만회 19시간전</a></div>
+                        <div class="text_box"><a href="">${vo.name7}</a></div>
                     </li>
                     <li><iframe width="540" height="315" src="${vo.url8}"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                        <div class="text_box"><a href="">너를 상대로 혼잣망르 언제까지 할수잇을까?<br>리디후_Familly sory <br>
-                                조회수2.3만회 19시간전</a></div>
+                        <div class="text_box"><a href="">${vo.name8}</a></div>
                     </li>
                    
                 </ul>
@@ -126,15 +118,13 @@
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                        <div class="text_box"><a href="">너를 상대로 혼잣망르 언제까지 할수잇을까?<br>리디후_Familly sory <br>
-                                조회수2.3만회 19시간전</a></div>
+                        <div class="text_box"><a href="">${vo.name9}</a></div>
                     </li>
                     <li><iframe width="540" height="315" src="${vo.url10}"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                        <div class="text_box"><a href="">너를 상대로 혼잣망르 언제까지 할수잇을까?<br>리디후_Familly sory <br>
-                                조회수2.3만회 19시간전</a></div>
+                        <div class="text_box"><a href="">${vo.name10}</a></div>
                     </li>
                    
                 </ul>

@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%
 	pageContext.setAttribute("context", request.getContextPath());
@@ -8,7 +8,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>¼³¹®Á¶»ç</title>
+        <title>ì„¤ë¬¸ì¡°ì‚¬</title>
         <link rel="stylesheet" href="./css/survey.css">
   	</head>
   <body>
@@ -20,66 +20,66 @@
     <div id="wrapper">
         <!-- content-->
         <div id="content">
-         <form action="http://121.147.185.152:9000/youtubeSearch" method="post">      
+         <form action="http://121.147.185.152:9000/youtubeSearch2" method="post">      
             <!-- height, weight-->
 			<div>
                  <input type="hidden" name="memId" value="${memVO.memId}">
-         <!-- GENDER(¼ºº°) -->
+         <!-- GENDER(ì„±ë³„) -->
 				<div>
-                    <h3 class="request_title"><label for="gender">1.¼ºº°À» ¼±ÅÃÇÏ¼¼¿ä</label></h3>
+                    <h3 class="request_title"><label for="gender">1.ì„±ë³„ì„ ì„ íƒí•˜ì„¸ìš”</label></h3>
 					<span class="box gender_code"> 
                     <select id="gender" name="gender" class="sel">
-							<option>¼ºº°</option>
-							<option value="³²ÀÚ">³²ÀÚ</option>
-							<option value="¿©ÀÚ">¿©ÀÚ</option>
+							<option>ì„±ë³„</option>
+							<option value="ë‚¨ìž">ë‚¨ìž</option>
+							<option value="ì—¬ìž">ì—¬ìž</option>
 					</select>
 					</span>
 				</div><br>
             <!-- athletic_part -->
             <div><br>
-                <h3 class="request_title"><label for="athletic_part">2.¿øÇÏ´Â ¿îµ¿Á¾·ù¸¦ ¼±ÅÃÇÏ¼¼¿ä</label></h3>
+                <h3 class="request_title"><label for="athletic_part">2.ì›í•˜ëŠ” ìš´ë™ì¢…ë¥˜ë¥¼ ì„ íƒí•˜ì„¸ìš”</label></h3>
                 <div id="athletic_wrap">
                     <div class="athletic_part">
-                        <input id="shoulder" type="radio" name="athleticPart" value="À¯»ê¼Ò ¿îµ¿">À¯»ê¼Ò ¿îµ¿ &nbsp;
-                        <input id="arm" type="radio" name="athleticPart" value="¹«»ê¼Ò ¿îµ¿">¹«»ê¼Ò ¿îµ¿ &nbsp;
-                        <input id="chest" type="radio" name="athleticPart" value="±Ù·Â¿îµ¿">±Ù·Â¿îµ¿ &nbsp;<br>
-                        <input id="back" type="radio" name="athleticPart" value="¿ä°¡">¿ä°¡ &nbsp;
-                        <input id="bae" type="radio" name="athleticPart" value="½ºÆ®·¹Äª">½ºÆ®·¹Äª<br> &nbsp;
+                        <input id="shoulder" type="radio" name="athleticPart" value="ìœ ì‚°ì†Œ ìš´ë™">ìœ ì‚°ì†Œ ìš´ë™ &nbsp;
+                        <input id="arm" type="radio" name="athleticPart" value="ë¬´ì‚°ì†Œ ìš´ë™">ë¬´ì‚°ì†Œ ìš´ë™ &nbsp;
+                        <input id="chest" type="radio" name="athleticPart" value="ê·¼ë ¥ìš´ë™">ê·¼ë ¥ìš´ë™ &nbsp;<br>
+                        <input id="back" type="radio" name="athleticPart" value="ìš”ê°€">ìš”ê°€ &nbsp;
+                        <input id="bae" type="radio" name="athleticPart" value="ìŠ¤íŠ¸ë ˆì¹­">ìŠ¤íŠ¸ë ˆì¹­<br> &nbsp;
                     </div>
                 </div>
             </div>
 
             <!-- athletic_level-->
             <div>
-                <h3 class="request_title"><label for="athletic_level">3.º»ÀÎÀÇ ¿îµ¿·¹º§À» ¼±ÅÃÇÏ¼¼¿ä</label></h3>
+                <h3 class="request_title"><label for="athletic_level">3.ë³¸ì¸ì˜ ìš´ë™ë ˆë²¨ì„ ì„ íƒí•˜ì„¸ìš”</label></h3>
                 <div id="athletic_wrap">
                     <div class="athletic_level">
-                        <input type="radio" name="athleticLevel" value="»ó">»ó &nbsp;
-                        <input type="radio" name="athleticLevel" value="Áß">Áß &nbsp;
-                        <input type="radio" name="athleticLevel" value="ÇÏ">ÇÏ &nbsp;<br>
+                        <input type="radio" name="athleticLevel" value="ìƒê¸‰">ìƒ &nbsp;
+                        <input type="radio" name="athleticLevel" value="ì¤‘ê¸‰">ì¤‘ &nbsp;
+                        <input type="radio" name="athleticLevel" value="ì´ˆê¸‰">í•˜ &nbsp;<br>
                         
                     </div><br>
                 </div>
             </div>
             
-            <!--ADDR(ÁÖ¼Ò)-->
+            <!--ADDR(ì£¼ì†Œ)-->
 
 				<div id="bir_mm">
-					<h3 class="request_title"><label for="addr">4.ÁÖ¼Ò¸¦ ¼±ÅÃÇÏ¼¼¿ä</label></h3>
+					<h3 class="request_title"><label for="addr">4.ì£¼ì†Œë¥¼ ì„ íƒí•˜ì„¸ìš”</label></h3>
 					<div class="addr">
 						<div class="box1">
                             <span class="box addr_code">
                                 <select onchange="categoryChange(this)" id="addr" name="memAddr" class="sel">
-                                    <option>Áö¿ª</option>
-                                    <option value="¼­¿ïÆ¯º°½Ã">¼­¿ïÆ¯º°½Ã</option>
-                                    <option value="±¤ÁÖ±¤¿ª½Ã">±¤ÁÖ±¤¿ª½Ã</option>
+                                    <option>ì§€ì—­</option>
+                                    <option value="ì„œìš¸íŠ¹ë³„ì‹œ">ì„œìš¸íŠ¹ë³„ì‹œ</option>
+                                    <option value="ê´‘ì£¼ê´‘ì—­ì‹œ">ê´‘ì£¼ê´‘ì—­ì‹œ</option>
                                 </select>
                             </span> 
                         </div>
 						<div class="box2">
                             <span class="box addr_code">
                                 <select id="good" name="memAddr1" class="sel">
-                                      <option>ÀÚÄ¡±¸</option>
+                                      <option>ìžì¹˜êµ¬</option>
                                  </select>
                             </span>
 						</div>
@@ -88,17 +88,17 @@
 
     
 
-            <!--Á¤º¸ ºÒ·¯¿À±â-->
+            <!--ì •ë³´ ë¶ˆëŸ¬ì˜¤ê¸°-->
             <div id="reinfo_wrap">
                 <div class="info">
-                    <input id="back" type="checkbox" name="back"/>&nbsp; ÀÌÀü Á¤º¸¸¦ ºÒ·¯¿Ã·¡¿ä &nbsp;
+                    <input id="back" type="checkbox" name="back"/>&nbsp; ì´ì „ ì •ë³´ë¥¼ ë¶ˆëŸ¬ì˜¬ëž˜ìš” &nbsp;
                 </div>
             </div>
             
             <!-- SUBMIT BTN-->
           	<div class="btn_area">
                     <button type="submit" id="btnJoin">
-                        <span>Á¦ÃâÇÏ±â</span>
+                        <span>ì œì¶œí•˜ê¸°</span>
                     </button>
             </div>
             </form>
@@ -108,12 +108,12 @@
     <script type="text/javascript">
     function categoryChange(e) {
     	console.log("test");
-      var good_a = [ "°­³²±¸", "°­µ¿±¸", "°­ºÏ±¸", "°­¼­±¸", "°ü¾Ç±¸", "±¤Áø±¸", "±¸·Î±¸", "±ÝÃµ±¸", "³ë¿ø±¸", "µµºÀ±¸", "µ¿´ë¹®±¸", "µ¿ÀÛ±¸", "¸¶Æ÷±¸", "¼­´ë¹®±¸", "¼­ÃÊ±¸", "¼ºµ¿±¸", "¼ººÏ±¸", "¼ÛÆÄ±¸", "¾çÃµ±¸", "¿µµîÆ÷±¸", "¿ë»ê±¸", "ÀºÆò±¸", "Á¾·Î±¸", "Áß±¸", "Áß¶û±¸" ];
-      var good_b = ["±¤»ê±¸","³²±¸","µ¿±¸","¼­±¸","ºÏ±¸"];
+      var good_a = [ "ê°•ë‚¨êµ¬", "ê°•ë™êµ¬", "ê°•ë¶êµ¬", "ê°•ì„œêµ¬", "ê´€ì•…êµ¬", "ê´‘ì§„êµ¬", "êµ¬ë¡œêµ¬", "ê¸ˆì²œêµ¬", "ë…¸ì›êµ¬", "ë„ë´‰êµ¬", "ë™ëŒ€ë¬¸êµ¬", "ë™ìž‘êµ¬", "ë§ˆí¬êµ¬", "ì„œëŒ€ë¬¸êµ¬", "ì„œì´ˆêµ¬", "ì„±ë™êµ¬", "ì„±ë¶êµ¬", "ì†¡íŒŒêµ¬", "ì–‘ì²œêµ¬", "ì˜ë“±í¬êµ¬", "ìš©ì‚°êµ¬", "ì€í‰êµ¬", "ì¢…ë¡œêµ¬", "ì¤‘êµ¬", "ì¤‘ëž‘êµ¬" ];
+      var good_b = ["ê´‘ì‚°êµ¬","ë‚¨êµ¬","ë™êµ¬","ì„œêµ¬","ë¶êµ¬"];
       var target = document.getElementById("good");
      
-      if(e.value == "¼­¿ïÆ¯º°½Ã") var d = good_a;
-      else if(e.value == "±¤ÁÖ±¤¿ª½Ã") var d = good_b;
+      if(e.value == "ì„œìš¸íŠ¹ë³„ì‹œ") var d = good_a;
+      else if(e.value == "ê´‘ì£¼ê´‘ì—­ì‹œ") var d = good_b;
      
       target.options.length = 0;
      

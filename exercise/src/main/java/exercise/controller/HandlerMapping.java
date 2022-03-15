@@ -31,6 +31,7 @@ public class HandlerMapping {
 		mappings.put("/communityUpdate.do", new CommunityUpdateController());
 		mappings.put("/exerciseList.do", new ExerciseListController());
 		mappings.put("/about.do", new AboutController());
+		mappings.put("/challenge.do", new ChallengeController());
 
 	}
 	public Controller getController(String key) {
