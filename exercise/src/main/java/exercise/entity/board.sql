@@ -22,7 +22,7 @@ values(board_idx.nextval, '게시판 연습', '게시판 연습', '윤중열');
 insert into board(idx, title, content, writer)
 values(board_idx.nextval, '게시판 연습', '게시판 연습', '서대희');
 
-select * from board;
+select * from tbl_goods;
 
 delete from board;
 
@@ -41,6 +41,6 @@ select * from MEMBER;
 delete from MEMBER
 drop table member;
 create sequence article_seq;
-select * from TBL_RESULT;
+select * from tbl_goods;
 create sequence request_seq;
 select * from tbl_member;

@@ -9,6 +9,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import exercise.entity.GoodsVO;
+import exercise.entity.SurveyVO;
 
 public class GoodsDAO {
 	private static SqlSessionFactory sqlSessionFactory;
@@ -21,11 +22,11 @@ public class GoodsDAO {
 				e.printStackTrace();
 			}
 		}
-		public List<GoodsVO> selectAll() {
-			SqlSession session = sqlSessionFactory.openSession();
-			List<exercise.entity.GoodsVO> list = session.selectList("selectAll");
+		public void Goods(GoodsVO vo) {
+			SqlSession session=sqlSessionFactory.openSession();
+			session.update("Goods", vo);
+			session.commit();
 			session.close();
-			return list;
 		}
 
 }
