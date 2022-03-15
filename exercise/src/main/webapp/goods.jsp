@@ -56,18 +56,17 @@
         <div class='banner-img'></div>
         <h1 class="name">상품명</h1>
         <p class="description">가격</p>
-        <p class="description">배송비</p>
+        <p class="description2">배송비</p>
       </div>
 
      <c:forEach var="vo" items="${list}">
 		 <div>
-        <h1 class="name">${vo.g_seq}</h1>
-        <p class="description">${vo.g_pice}</p>
-        <p class="description">${vo.g_delivery}</p>
+        <h1 class="name"><a href="${context}/goods.do?g_seq=${vo.g_seq}">${vo.g_seq}</a></h1>
+        <p class="description"><a href="${context}/goods.do?g_price=${vo.g_price}">${vo.g_price}</a></p>
+        <p class="description2"><a href="${context}/goods.do?g_delivery=${vo.g_delivery}">${vo.g_delivery}</a></p>
 		 </div>
     </c:forEach>
-   <!--    
-      
+   <!--       
       <div class="container">
         <div class='banner-img'></div>
         <h1 class="name"><a href="#">상품명</a></h1>

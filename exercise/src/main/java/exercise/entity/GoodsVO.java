@@ -1,5 +1,5 @@
 package exercise.entity;
-
+// 용품순번, 용품명, 용품가격, 용품 배송비, 용품이미지
 public class GoodsVO {
 	private int g_seq;
 	private String g_name;
