@@ -17,13 +17,13 @@ pageContext.setAttribute("context", request.getContextPath());
 	rel="stylesheet">
 <script src="/webjars/jquery/dist/jquery.min.js"></script>
 
-	<script>
+<!-- 	<script>
 	function checkId(){
 		let id=document.getElementById('memId').value; //
 		location.href="/exercise/checkId.do?id="+id;
 	}
 	
-	</script>
+	</script> -->
 </head>
 <body>
 	<!-- header -->
@@ -42,7 +42,7 @@ pageContext.setAttribute("context", request.getContextPath());
 					</h3>
 					<span class="box int_nick"> <input type="text" id="memNick"
 						name="memNick" class="int" maxlength="20"> <input
-						type="button" class="btn_ck" id="btn_nick" value="중복확인" onclick="openIdChk()">
+						type="button" class="btn_ck" id="btn_nick" value="중복확인">
 						<input type="hidden" name="idDuplication" value="idUncheck">
 					</span> <span class="error_next_box"></span>
 				</div>
@@ -98,8 +98,31 @@ pageContext.setAttribute("context", request.getContextPath());
 
 	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script>
+    	$('#btn_nick').on("click",function(){
+    		var nick = $('#memNick').val();
+    		
+    		$.ajax({
+    			url : "checkId.do?",
+    			data:{"memNick":nick},
+    			success : function(nick){
+    				if(nick=='memNick'){
+    				alert('사용할 수 없는 닉네임입니다');
+    				}
+    				else{
+    					alert('사용할 수 있는 닉네임입니다');
+    				}
+    			},
+    			error : function(){
+    				alert('error');
+    			} 
+    		});  
+    	});
+    </script>
+
+
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
     	$('#btn_id').on("click",function(){
-    		/* console.log("test"); */
     		var id = $('#memId').val();
     		
     		$.ajax({

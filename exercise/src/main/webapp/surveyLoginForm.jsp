@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Login</title>
+<title>surveyLoginForm</title>
 <link rel="stylesheet" type="text/css" href="./css/login.css">
 </head>
 <body>
