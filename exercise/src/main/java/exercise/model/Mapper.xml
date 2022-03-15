@@ -50,16 +50,7 @@
 		select * from tbl_member
 		where memId=#{memId} 
 	</select>
- 
-   <insert id="surveyInsert" parameterType="exercise.entity.SurveyVO">
-    insert into tbl_result(request_seq,height,weight,targetWeight,athleticPart,athleticLevel,memId)
-    values(request_seq.nextval,#{height},#{weight},#{targetWeight},#{athleticPart},#{athleticLevel},#{memId})
-  </insert>
-  
-  <update id="surveyUpdate" parameterType="exercise.entity.SurveyVO">
-  	update tbl_result set height=#{height}, weight=#{weight}, targetWeight=#{targetWeight}, athleticPart=#{athleticPart},
-  	athleticLevel=#{athleticLevel} where memId=#{memId}
-  </update> 
+
   
    <insert id="communityInsert" parameterType="exercise.entity.CommunityVO">
     insert into tbl_community(article_seq,articleTitle,articleContent,memId,articleWriter)
@@ -89,7 +80,7 @@
   </delete>
   
    <select id = "getById" resultType = "exercise.entity.ChallengeVO">
-  	select * from tbl_challengeurl where memId = #{memId}
+  	select * from tbl_result where memId = #{memId}
   </select>
 
 </mapper>
