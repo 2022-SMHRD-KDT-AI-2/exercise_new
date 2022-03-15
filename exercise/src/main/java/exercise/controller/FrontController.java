@@ -1,6 +1,8 @@
 package exercise.controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -31,12 +33,16 @@ public class FrontController extends HttpServlet {
 		HandlerMapping mapping = new HandlerMapping();
 		controller = mapping.getController(command);
 		nextView = controller.requestHandler(request, response); 
+		System.out.println("testNextView"+nextView);
+		
 		//여기서 nextView의 정보를 보고 => forward or redirect를 하기
 		if(nextView!=null) {
 			if (nextView.indexOf("redirect:")!=-1) {
 				//redirect
 				nextView = nextView.split(":")[1];
+				
 				response.sendRedirect("/exercise"+nextView);
+				
 			}else if(nextView.indexOf("flask")!=-1) {
 				response.sendRedirect("http://121.147.185.152:9000/youtubeSearch?num=1");
 			}
@@ -44,8 +50,18 @@ public class FrontController extends HttpServlet {
 				//뷰의논리적인이름(boardList)->뷰의물리적인이름(경로)으로 변경시키는 API : ViewResolver
 				//forward
 				RequestDispatcher rd = request.getRequestDispatcher(ViewResolver.makeURL(nextView));
+			
 				rd.forward(request, response);
+			
+			
 			}	
+		}
+		else {
+			System.out.println("test");
+			//response.sendRedirect("signUp.jsp");
+//			PrintWriter out = response.getWriter();
+//			out.print("test");
+			
 		}
 	}
 

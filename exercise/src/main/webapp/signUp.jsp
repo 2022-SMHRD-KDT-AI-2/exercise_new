@@ -19,9 +19,10 @@ pageContext.setAttribute("context", request.getContextPath());
 
 	<script>
 	function checkId(){
-		let id=document.getElementById('memId').value; // id값이 id인 HTML 요소도 없네요
+		let id=document.getElementById('memId').value; //
 		location.href="/exercise/checkId.do?id="+id;
 	}
+	
 	</script>
 </head>
 <body>
@@ -53,15 +54,11 @@ pageContext.setAttribute("context", request.getContextPath());
 				<span class="box int_id"> <input type="text" id="memId"
 						name="memId" class="int" maxlength="20"> 
 				<input
-						type="button" class="btn_ck" id="btn_id" value="중복확인" onclick="checkId()"> 
+						type="button" class="btn_ck" id="btn_id" value="중복확인"> 
 						<input type="hidden" name="idDuplication" value="idUncheck">
 					</span>
 				</div>
-<!-- 				
-				<div class="box int_id">
-				 <input type="text" id="memId" name="memId" class="int" maxlength="20"> 
-				<button method = "post" id = "checkId" type="button" class = "btn_ck", onclick="checkId()">중복확인</button>
-				</div> -->
+
 
 				<!-- PW1 -->
 				<div>
@@ -101,21 +98,22 @@ pageContext.setAttribute("context", request.getContextPath());
 
 	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script>
-    	$('#btn_id').click(function(){
+    	$('#btn_id').on("click",function(){
+    		/* console.log("test"); */
     		var id = $('#memId').val();
+    		
     		$.ajax({
-    			url : "checkId.do",
-    			type : 'get',
-    			data : {'memId',memId},
+    			url : "checkId.do?",
+    			data:{"memId":id},
     			success : function(){
-    				alert('suc')
-    			}
+    				console.log("inputId");
+    				alert('suc');
+    			},
     			error : function(){
     				alert('error');
     			} 
-    		});   
-    	});  	
-    	
+    		});  
+    	});
     	/* function resultJSON(data) {
     		if(data.check == 'true') {
     			$('#idResult').test('사용할 수 있는 아이디 입니다.');
