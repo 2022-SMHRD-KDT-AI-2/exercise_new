@@ -17,7 +17,7 @@ public class CheckIdController implements Controller {
 			throws ServletException, IOException {
 		
 		String memId=request.getParameter("id"); // 
-		System.out.println("test"+memId);
+//		System.out.println("test"+memId);
 		MemberVO vo = new MemberVO();
 		MemberDAO dao=new MemberDAO();
 		
@@ -25,9 +25,7 @@ public class CheckIdController implements Controller {
 		request.setAttribute("memId", memId);
 		
 		PrintWriter out = response.getWriter();
-		//out.println();
 		
-		//response.sendRedirect("signUp.jsp");
 		return null;		
 	}
 }

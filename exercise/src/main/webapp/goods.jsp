@@ -3,6 +3,7 @@
 <%
 	pageContext.setAttribute("context", request.getContextPath());
 %>    
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -53,10 +54,20 @@
       
       <div class="container">
         <div class='banner-img'></div>
-        <h1 class="name"><a href="#">상품명</a></h1>
+        <h1 class="name">상품명</h1>
         <p class="description">가격</p>
         <p class="description">배송비</p>
       </div>
+
+     <c:forEach var="vo" items="${list}">
+		 <div>
+        <h1 class="name">${vo.g_seq}</h1>
+        <p class="description">${vo.g_pice}</p>
+        <p class="description">${vo.g_delivery}</p>
+		 </div>
+    </c:forEach>
+   <!--    
+      
       <div class="container">
         <div class='banner-img'></div>
         <h1 class="name"><a href="#">상품명</a></h1>
@@ -90,9 +101,8 @@
         <h1 class="name"><a href="#">상품명</a></h1>
         <p class="description">가격</p>
         <p class="description">배송비</p>
-      </div>
-     
-     
+      </div> -->
+
                 </section>
             <section id="section_2">
                 <div class="visual">
