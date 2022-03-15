@@ -105,24 +105,19 @@ pageContext.setAttribute("context", request.getContextPath());
     		$.ajax({
     			url : "checkId.do?",
     			data:{"memId":id},
-    			success : function(){
-    				console.log("inputId");
-    				alert('suc');
+    			success : function(id){
+    				if(id=='memId'){
+    				alert('사용할 수 없는 아이디입니다');
+    				}
+    				else{
+    					alert('사용할 수 있는 아이디입니다');
+    				}
     			},
     			error : function(){
     				alert('error');
     			} 
     		});  
     	});
-    	/* function resultJSON(data) {
-    		if(data.check == 'true') {
-    			$('#idResult').test('사용할 수 있는 아이디 입니다.');
-    			$('#idResult').css('color','blue');
-    		} else {
-    			$('#idResult').test('사용할 수 없는 아이디 입니다.');
-    			$('#idResult').css('color','red');
-    		}
-    	} */
     </script>
 </body>
 </html>
