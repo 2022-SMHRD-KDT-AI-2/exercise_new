@@ -60,7 +60,25 @@
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                        <div class="text_box"><a href="">${vo.name1}</a></div>
+                         <div class="s1_cont">
+                             <ul class="text_box">
+                                 <li>제목 :<a href="">${vo.name1}</a></li> 
+                                 <li>채널명  :</li> 
+                                 <li>조회수  :</li> 
+                              </ul>
+                              <ul class="text_2">
+                                  <li> <div class="icon">
+                                     <svg class="heart-main" viewBox="0 0 512 512" width="10" title="heart">
+                                      <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+                                 </svg>
+                            <svg class="heart-background" viewBox="0 0 512 512" width="100" title="heart">
+                          <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+                         </svg>
+                             </div>
+                             </li>
+                              </ul>
+                             </div>
+                        
                     </li>
                     <li><iframe width="540" height="315" src="${vo.url2}"
                             title="YouTube video player" frameborder="0"
@@ -76,23 +94,7 @@
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>                 
                         <div class="text_box"><a href="">${vo.name3}</a></div>
-                        <div class="s1_cont">
-                             <ul class="text_box">
-                                 <li>제목 :<a href="">${vo.name3}</a></li> 
-                                 <li>채널명  :</li> 
-                                 <li>조회수  :</li> 
-                              </ul>
-                              <ul class="text_2">
-                                  <li> <div class="icon">
-                                     <svg class="heart-main" viewBox="0 0 512 512" width="10" title="heart">
-                                      <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
-                                 </svg>
-                            <svg class="heart-background" viewBox="0 0 512 512" width="100" title="heart">
-                          <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
-                         </svg>
-                             </div></li>
-                              </ul>
-                             </div>
+                       
                     </li>
                     <li><iframe width="540" height="315" src="${vo.url4}"
                             title="YouTube video player" frameborder="0"
