@@ -62,7 +62,7 @@
         <div class="name"><a href="${vo.g_url}"> ${vo.g_name}</a></div>
         
         <div class="description">가격 : ${vo.g_price}</div>
-        <div class="description2">배송비 : ${vo.g_delivery}</div>
+        <div class="description2"> ${vo.g_delivery}</div>
       
       </div>
       </c:forEach>
