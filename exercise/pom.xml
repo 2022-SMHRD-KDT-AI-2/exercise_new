@@ -7,6 +7,9 @@
 	<name>exerciserecommendation Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	
+	<properties>
+		<failOnMissingWebXml>false</failOnMissingWebXml>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -60,13 +63,6 @@
     		<groupId>servlets.com</groupId>
     		<artifactId>cos</artifactId>
     		<version>05Nov2002</version>
-		</dependency>
-		
-		<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-servlet-api -->
-		<dependency>
-		    <groupId>org.apache.tomcat</groupId>
-		    <artifactId>tomcat-servlet-api</artifactId>
-		    <version>8.5.75</version>
 		</dependency>
 
 	</dependencies>
