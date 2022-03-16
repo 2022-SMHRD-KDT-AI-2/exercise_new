@@ -80,6 +80,9 @@
   <select id = "selectOutdoor" resultType = "exercise.entity.OutdoorVO">
   	select * from tbl_outdoor
   </select>
+  <select id = "selectPark" resultType = "exercise.entity.ParkVO">
+  	select * from tbl_park
+  </select>
 
 </mapper>
 

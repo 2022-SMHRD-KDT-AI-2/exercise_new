@@ -10,8 +10,8 @@ import javax.servlet.http.HttpSession;
 
 import exercise.entity.ChallengeVO;
 import exercise.entity.OutdoorVO;
+import exercise.entity.ParkVO;
 import exercise.entity.RunningVO;
-import exercise.entity.ChallengeVO;
 import exercise.model.ChallengeDAO;
 import exercise.model.OutdoorDAO;
 
@@ -21,11 +21,17 @@ public String requestHandler(HttpServletRequest request, HttpServletResponse res
 		throws ServletException, IOException {
 	HttpSession session = request.getSession();
 	String memId=String.valueOf(session.getAttribute("memid"));
+	
 	OutdoorDAO dao = new OutdoorDAO();
 	List<RunningVO> list = dao.selectRun();
 	request.setAttribute("list", list);
+	
 	List<OutdoorVO> outdoorList = dao.selectOutdoor();
 	request.setAttribute("outdoorList", outdoorList);
+
+	List<ParkVO> parkList = dao.selectPark();
+	request.setAttribute("parkList", parkList);
+	
 	ChallengeDAO chalDao = new ChallengeDAO();
 	ChallengeVO chalVo=chalDao.getById(memId);
 	request.setAttribute("chalVo", chalVo);

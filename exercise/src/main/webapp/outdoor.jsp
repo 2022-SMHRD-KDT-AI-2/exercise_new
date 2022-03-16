@@ -72,7 +72,8 @@
         <div class="card_boxs">
             <div class="cards">
                   <div class="text_box">
-            <h2 class="name"><a href="#">시설명: ${vo.o_name}</a></h2>
+            <h2 class="name"><a href="#">체육시설</a></h2>
+            <p class="description">이름: $${vo.o_name}</p>
             <p class="description">주소: ${vo.o_address}</p>
             <div class="heart">
                 <div class="icon">
@@ -169,13 +170,14 @@
         
     <div class="park">
     
-       <c:forEach var="vo" items="${list}">
-       <c:if test="${chalVo.memAddr1 eq vo.memId}">
+       <c:forEach var="vo" items="${parkList}">
+       <c:if test="${chalVo.memAddr1 eq vo.park_area}">
         <div class="card_boxs">
             <div class="cards">
                   <div class="text_box">
-            <h2 class="name"><a href="#">공원명</a></h2>
-            <p class="description">주소:</p>
+            <h2 class="name"><a href="#">공원</a></h2>
+            <p class="description">이름: ${vo.park_name}</p>
+            <p class="description">주소: ${vo.park_addr}</p>
             <div class="heart">
                 <div class="icon">
                     <svg class="heart-main" viewBox="0 0 512 512" width="10" title="heart">
