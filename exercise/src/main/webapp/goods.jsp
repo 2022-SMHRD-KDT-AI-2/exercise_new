@@ -62,7 +62,7 @@
       
          <c:forEach var="vo" items="${list}">
          <div>
-             <div class="name">${vo.g_name}</div>
+             <div class="name"><a href="#">${vo.g_name}</div>
              <div class="description">${vo.g_price}</div>
              <div class="description2">${vo.g_delivery}</div>
          </div>
