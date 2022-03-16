@@ -60,7 +60,7 @@
   </select>
  
 <!-- 운동용품 goods -->
-    <select id="goods" resultType="exercise.entity.GoodsVO">
+    <select id="selectAllg" resultType="exercise.entity.GoodsVO">
      select * from tbl_goods order by g_seq desc
   </select>
   

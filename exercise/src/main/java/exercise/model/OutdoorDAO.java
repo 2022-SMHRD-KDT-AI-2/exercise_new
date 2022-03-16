@@ -8,6 +8,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
+import exercise.entity.ChallengeVO;
 import exercise.entity.CommunityVO;
 import exercise.entity.RunningVO;
 
@@ -25,11 +26,12 @@ public class OutdoorDAO {
 	
 	
 	
-	public List<RunningVO> getByIdRun(String memId) {
+	public RunningVO getByIdRun(String memId) {
 		SqlSession session = sqlSessionFactory.openSession();
 		System.out.println("check : " + memId);
-		List<RunningVO> list = session.selectList("getByIdRun");
+		RunningVO vo = session.selectOne("getByIdRun", memId);
+		//List<RunningVO> list = session.selectList("getByIdRun");
 		session.close();
-		return list;
+		return vo;
 	}
 }

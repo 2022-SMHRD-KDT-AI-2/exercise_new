@@ -46,7 +46,7 @@
                             <a href="http://121.147.185.152:9000/running?memId=${memVO.memId}">야외 체육시설</a>
                         </li>
                         <li>
-                            <a href="${context}/goods.jsp">운동 용품</a>
+                            <a href="${context}/goods.do">운동 용품</a>
                         </li>
                         <li>
                             <a href="${context}/communityList.do">커뮤니티</a>

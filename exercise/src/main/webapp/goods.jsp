@@ -1,5 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@page import="java.util.List"%>
+<%@page import="exercise.entity.GoodsVO"%>
+<%@page import="java.util.ArrayList"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <%
 	pageContext.setAttribute("context", request.getContextPath());
 %>    
@@ -21,23 +24,23 @@
 	 <div id="wrap">
         <header id="header">
             <div class="h_cont">
-                <h1><a href="${context}/index.jsp"><img src="img/logo_1.png" alt="�ΰ�"></a></h1>
+                <h1><a href="${context}/index.jsp"><img src="img/logo_1.png" alt="로고"></a></h1>
                 <nav>
                        <ul>
                         <li>
                             <a href="${context}/index.jsp">Home</a>
                         </li>
                         <li>
-                            <a href="${context}/challenge.jsp">� ��õ ���α׷�</a>
+                            <a href="${context}/challenge.jsp">운동 추천 프로그램</a>
                         </li>
                         <li>
-                            <a href="${context}/Outdoor.jsp">�߿� ü���ü�</a>
+                            <a href="${context}/Outdoor.jsp">야외 체육시설</a>
                         </li>
                         <li>
-                            <a href="${context}/goods.jsp">� ��ǰ</a>
+                            <a href="${context}/goods.jsp">운동 용품</a>
                         </li>
                         <li>
-                            <a href="${context}/communityList.jsp">Ŀ�´�Ƽ</a>
+                            <a href="${context}/communityList.jsp">커뮤니티</a>
                         </li>
                     </ul>
                 </nav>
@@ -52,55 +55,59 @@
             <section id="section_1">
                       
     <div class="wrapper-flex">     
+      <c:forEach var="vo" items="${list}">
       <div class="container">
       
         <div class='banner-img'></div>
-        <div class="name">��ǰ�� : </div>
-        <div class="description">���� : </div>
-        <div class="description2">��ۺ� : </div>
-      </div>
+        <div class="name">상품명 : ${vo.g_name}</div>
+        <div class="description">가격 : ${vo.g_price}</div>
+        <div class="description2">배송비 : ${vo.g_delivery}</div>
       
-         <c:forEach var="vo" items="${list}">
+      </div>
+      </c:forEach>
+       <!--  
          <div>
              <div class="name"><a href="#">${vo.g_name}</div>
              <div class="description">${vo.g_price}</div>
              <div class="description2">${vo.g_delivery}</div>
+             <input type="hidden" name="g_seq" value="${vo.g_seq}">
+             <input type="hidden" name="g_image" value="${vo.g_image}">
          </div>
-	</c:forEach>
+	-->  
    <!--       
       <div class="container">
         <div class='banner-img'></div>
-        <h1 class="name"><a href="#">��ǰ��</a></h1>
-        <p class="description">����</p>
-        <p class="description">��ۺ�</p>
+        <h1 class="name"><a href="#">상품명</a></h1>
+        <p class="description">가격</p>
+        <p class="description">배송비</p>
       </div>
      
       <div class="container">
         <div class='banner-img'></div>
-        <h1 class="name"><a href="#">��ǰ��</a></h1>
-        <p class="description">����</p>
-        <p class="description">��ۺ�</p>
+        <h1 class="name"><a href="#">상품명</a></h1>
+        <p class="description">가격</p>
+        <p class="description">배송비</p>
       </div>
      
       <div class="container">
         <div class='banner-img'></div>
-        <h1 class="name"><a href="#">��ǰ��</a></h1>
-        <p class="description">����</p>
-        <p class="description">��ۺ�</p>
+        <h1 class="name"><a href="#">상품명</a></h1>
+        <p class="description">가격</p>
+        <p class="description">배송비</p>
       </div>
      
       <div class="container">
         <div class='banner-img'></div>
-        <h1 class="name"><a href="#">��ǰ��</a></h1>
-        <p class="description">����</p>
-        <p class="description">��ۺ�</p>
+        <h1 class="name"><a href="#">상품명</a></h1>
+        <p class="description">가격</p>
+        <p class="description">배송비</p>
       </div>
      
       <div class="container">
         <div class='banner-img'></div>
-        <h1 class="name"><a href="#">��ǰ��</a></h1>
-        <p class="description">����</p>
-        <p class="description">��ۺ�</p>
+        <h1 class="name"><a href="#">상품명</a></h1>
+        <p class="description">가격</p>
+        <p class="description">배송비</p>
       </div> -->
      </div>
 
@@ -111,12 +118,12 @@
                         <div id="account" class="sc_login">
                             <div class="login_msg"></div>
                             <c:if test="${empty memVO}">
-                            <a href="${context}/loginForm.do" class="link_login" data-clk="log_off.login">�α���</a><br>
-                       		<br><a href="${context}/signUp.do" class="link_join" data-clk="log_off.registration">ȸ������</a>
+                            <a href="${context}/loginForm.do" class="link_login" data-clk="log_off.login">로그인</a><br>
+                       		<br><a href="${context}/signUp.do" class="link_join" data-clk="log_off.registration">회원가입</a>
                             </c:if>
                             <c:if test="${!empty memVO}">
                             <label>${memVO.memId}</label><br>
-                            <a href="${context}/index.jsp" class="link_join" data-clk="log_off.logout" onclick="goOut()">�α׾ƿ�</a>
+                            <a href="${context}/index.jsp" class="link_join" data-clk="log_off.logout" onclick="goOut()">로그아웃</a>
                             </c:if>
                         </div>
                     </div>

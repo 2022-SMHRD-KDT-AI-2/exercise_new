@@ -19,9 +19,9 @@ public String requestHandler(HttpServletRequest request, HttpServletResponse res
 	
 	String memId=String.valueOf(session.getAttribute("memid")); 
 	System.out.println(memId);
-	OutdoorDAO dao = new OutdoorDAO();		
-	List<RunningVO> list = dao.getByIdRun(memId);
-	request.setAttribute("list", list);
+	OutdoorDAO dao = new OutdoorDAO();
+	RunningVO vo = dao.getByIdRun(memId);
+	request.setAttribute("vo", vo);
 	
 	
 	return "outdoor";

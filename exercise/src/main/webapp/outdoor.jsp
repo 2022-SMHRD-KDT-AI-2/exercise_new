@@ -126,7 +126,7 @@
         
         </div>
     </div>
-    <c:forEach var="vo" items="${list}">
+
     <div class="running">
         <div class="card_boxs">
             <div class="cards">
@@ -150,7 +150,7 @@
         </div>
         
         </div>
-        </c:forEach>
+
         
     <div class="park">
         <div class="card_boxs">
