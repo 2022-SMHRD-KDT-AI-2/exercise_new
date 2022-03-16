@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <title>About</title>
-    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/about2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" >
     <link
@@ -54,7 +54,7 @@
                     <li><a onclick="loginAlert()"><img src="./img/icon_5.png" alt=""></a></li>
                     </c:if>
                     <c:if test="${!empty memVO}">
-                    <li><a href="/Login/index.html"><img src="./img/icon_7.png" alt=""></a></li>
+                    <li><a href="${context}/myPage.jsp"><img src="./img/icon_7.png" alt=""></a></li>
                     <li><a href="${context}/surveyUpdateForm.do"><img src="./img/icon_5.png" alt=""></a></li>
                     </c:if>
                 </ul>
@@ -79,23 +79,6 @@
             </div>
             <div class="item">
                 <img src="img/visual_item.png" alt="">
-            </div>
-        </div>
-    </section>
-
-    <section id="so1">
-        <div class ="gae1">
-            <img src="img/running.png"> 
-            <div class="vl"></div>
-            <div id="explain">
-                <h1>헬시플레저는 <strong>Healthy(건강한) Pleasure(기쁨)</strong>을 뜻하는 말</h1><h2>로 건강 관리의 즐거움을 의미합니다.</h2><br><br>
-                <p>  ‘현재의 행복을 중심으로 지속 가능한 건강 관리’라는 비전을 바탕으로 
-						펜데믹 상황에 안전하게 운동할 수 있는 서비스를 고려하였습니다.<br><br>
-
-					집에서 손쉽게 할 수 있는 홈트레이닝 영상을 제공할 뿐만 아니라 
-					감염 위험성이 적은 실외 체육시설 및 공원의 정보를 제공함으로써 
-					보다 안전하고 즐거운 건강 증진을 독려합니다. 
-                </p>
             </div>
         </div>
     </section>
