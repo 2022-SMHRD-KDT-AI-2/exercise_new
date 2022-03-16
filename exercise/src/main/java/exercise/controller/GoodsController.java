@@ -12,7 +12,7 @@ import exercise.model.GoodsDAO;
 
 public class GoodsController implements Controller {
 	public String requestHandler(HttpServletRequest request, HttpServletResponse response)
-														throws ServletException, IOException {
+			throws ServletException, IOException {
 		GoodsDAO dao = new GoodsDAO();
         List<GoodsVO> list = dao.goods();
         request.setAttribute("list", list);
