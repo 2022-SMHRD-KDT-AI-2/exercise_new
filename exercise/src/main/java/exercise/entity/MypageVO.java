@@ -1,21 +1,35 @@
 package exercise.entity;
 
 public class MypageVO {
+	private int my_seq;
 	private String memId;
 	private String like_video;
-	private String like_outdoor;
 	private String like_video_name;
 	
 	public MypageVO() {
 		
 	}
 	
-	public MypageVO(String memId, String like_video, String like_outdoor, String like_video_name) {
+	public MypageVO(int my_seq, String memId, String like_video, String like_video_name) {
 		super();
+		this.my_seq = my_seq;
 		this.memId = memId;
 		this.like_video = like_video;
-		this.like_outdoor = like_outdoor;
 		this.like_video_name = like_video_name;
+	}
+
+
+
+
+
+
+
+	public int getMy_seq() {
+		return my_seq;
+	}
+
+	public void setMy_seq(int my_seq) {
+		this.my_seq = my_seq;
 	}
 
 	public String getMemId() {
@@ -34,13 +48,6 @@ public class MypageVO {
 		this.like_video = like_video;
 	}
 
-	public String getLike_outdoor() {
-		return like_outdoor;
-	}
-
-	public void setLike_outdoor(String like_outdoor) {
-		this.like_outdoor = like_outdoor;
-	}
 
 	public String getLike_video_name() {
 		return like_video_name;

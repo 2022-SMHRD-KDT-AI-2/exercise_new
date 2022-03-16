@@ -25,13 +25,10 @@ public class OutdoorDAO {
 	}
 	
 	
-	
-	public RunningVO getByIdRun(String memId) {
+	public List<RunningVO> selectRun() {
 		SqlSession session = sqlSessionFactory.openSession();
-		System.out.println("check : " + memId);
-		RunningVO vo = session.selectOne("getByIdRun", memId);
-		//List<RunningVO> list = session.selectList("getByIdRun");
+		List<RunningVO> list = session.selectList("selectRun");
 		session.close();
-		return vo;
+		return list;
 	}
 }

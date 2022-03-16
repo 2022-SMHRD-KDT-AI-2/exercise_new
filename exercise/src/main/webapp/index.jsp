@@ -43,7 +43,7 @@
                             <a href="${context}/challenge.do">운동 추천 프로그램</a>
                         </li>
                         <li>
-                            <a href="http://121.147.185.152:9000/running?memId=${memVO.memId}">야외 체육시설</a>
+                            <a href="http://project-jupyter-2.ddns.net:8852/running?memId=${memVO.memId}">야외 체육시설</a>
                         </li>
                         <li>
                             <a href="${context}/goods.do">운동 용품</a>

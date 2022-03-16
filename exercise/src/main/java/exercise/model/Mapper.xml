@@ -64,10 +64,14 @@
      select * from tbl_goods order by g_seq desc
   </select>
   
-   <select id = "getByIdRun" resultType = "exercise.entity.RunningVO">
-  	select * from tbl_running_course where memId = #{memId}
+   <select id = "selectRun" resultType = "exercise.entity.RunningVO">
+  	select * from tbl_running_course order by c_seq desc
   </select>
-
+	
+	<insert id="mypageInsert" parameterType="exercise.entity.MypageVO">
+    insert into tbl_mypage(my_seq,like_video,memId,like_video_name)
+    values(my_seq.nextval,#{like_video},#{memId},#{like_video_name})
+  </insert>
 
 </mapper>
 

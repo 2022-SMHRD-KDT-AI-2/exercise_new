@@ -20,7 +20,7 @@
     <div id="wrapper">
         <!-- content-->
         <div id="content">
-         <form action="http://121.147.185.152:9000/youtubeSearch" method="post">      
+         <form action="http://project-jupyter-2.ddns.net:8852/youtubeSearch" method="post">      
             <!-- height, weight-->
 			<div>
                  <input type="hidden" name="memId" value="${memVO.memId}">

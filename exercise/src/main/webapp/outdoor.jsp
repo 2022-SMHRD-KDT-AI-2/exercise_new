@@ -128,9 +128,12 @@
     </div>
 
     <div class="running">
+        <c:forEach var="vo" items="${list}">
+        <c:if test="${memVO.memId eq vo.memId}">
         <div class="card_boxs">
             <div class="cards">
                   <div class="text_box">
+             
             <h2 class="name"><a href="#">러닝코스</a></h2>
             <p class="description">이름: ${vo.c_name}</p>
             <span class="description">주소: ${vo.c_addr}</span>
@@ -150,6 +153,8 @@
         </div>
         
         </div>
+        </c:if>
+        </c:forEach>
 
         
     <div class="park">
