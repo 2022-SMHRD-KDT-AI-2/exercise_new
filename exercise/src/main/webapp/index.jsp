@@ -40,10 +40,10 @@
                             <a href="${context}/about.do">About</a>
                         </li>
                         <li>
-                            <a href="${context}/challenge.jsp">운동 추천 프로그램</a>
+                            <a href="${context}/challenge.do">운동 추천 프로그램</a>
                         </li>
                         <li>
-                            <a href="${context}/Outdoor.jsp">야외 체육시설</a>
+                            <a href="http://121.147.185.152:9000/running?memId=${memVO.memId}">야외 체육시설</a>
                         </li>
                         <li>
                             <a href="${context}/goods.jsp">운동 용품</a>

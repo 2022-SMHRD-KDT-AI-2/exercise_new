@@ -63,6 +63,10 @@
     <select id="goods" resultType="exercise.entity.GoodsVO">
      select * from tbl_goods order by g_seq desc
   </select>
+  
+   <select id = "getByIdRun" resultType = "exercise.entity.RunningVO">
+  	select * from tbl_running_course where memId = #{memId}
+  </select>
 
 
 </mapper>

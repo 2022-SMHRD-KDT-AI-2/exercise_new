@@ -34,6 +34,7 @@ public class HandlerMapping {
 		mappings.put("/challenge.do", new ChallengeController());
 		
 		mappings.put("/goods.do", new GoodsController());
+		mappings.put("/outdoor.do", new OutdoorController());
 
 	}
 	public Controller getController(String key) {
