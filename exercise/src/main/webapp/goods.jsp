@@ -89,12 +89,6 @@
         <p class="description">배송비</p>
       </div>
      
-      <div class="container">
-        <div class='banner-img'></div>
-        <h1 class="name"><a href="#">상품명</a></h1>
-        <p class="description">가격</p>
-        <p class="description">배송비</p>
-      </div>
      
       <div class="container">
         <div class='banner-img'></div>
