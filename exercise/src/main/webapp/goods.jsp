@@ -53,6 +53,7 @@
                       
     <div class="wrapper-flex">     
       <div class="container">
+      
         <div class='banner-img'></div>
         <div class="name">상품명 : </div>
         <div class="description">가격 : </div>
