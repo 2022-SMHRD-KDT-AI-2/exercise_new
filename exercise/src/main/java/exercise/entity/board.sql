@@ -53,10 +53,10 @@ select * from MEMBER;
 delete from MEMBER
 drop table member;
 create sequence article_seq;
-select * from tbl_goods;
+select * from TBL_RUNNING_COURSE;
 create sequence request_seq;
 
-select * from TBL_GOODS;
+select * from TBL_goods;
 create sequence g_seq;
 
 
