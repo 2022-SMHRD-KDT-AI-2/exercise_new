@@ -4,8 +4,9 @@ public class GoodsVO {
 	private int g_seq;
 	private String g_name;
 	private int g_price;
-	private String g_delivery;
 	private String g_image;
+	private String g_delivery;
+	private String g_url;
 
 	
 	public GoodsVO() {
@@ -13,13 +14,14 @@ public class GoodsVO {
 	}
 
 
-	public GoodsVO(int g_seq, String g_name, int g_price, String g_delivery, String g_image) {
+	public GoodsVO(int g_seq, String g_name, int g_price, String g_image, String g_delivery, String g_url) {
 		super();
 		this.g_seq = g_seq;
 		this.g_name = g_name;
 		this.g_price = g_price;
-		this.g_delivery = g_delivery;
 		this.g_image = g_image;
+		this.g_delivery = g_delivery;
+		this.g_url = g_url;
 	}
 
 
@@ -52,17 +54,6 @@ public class GoodsVO {
 		this.g_price = g_price;
 	}
 
-
-	public String getG_delivery() {
-		return g_delivery;
-	}
-
-
-	public void setG_delivery(String g_delivery) {
-		this.g_delivery = g_delivery;
-	}
-
-
 	public String getG_image() {
 		return g_image;
 	}
@@ -70,6 +61,24 @@ public class GoodsVO {
 
 	public void setG_image(String g_image) {
 		this.g_image = g_image;
+	}
+
+	public String getG_delivery() {
+		return g_delivery;
+	}
+	
+	
+	public void setG_delivery(String g_delivery) {
+		this.g_delivery = g_delivery;
+	}
+
+	public String getG_url() {
+		return g_url;
+	}
+
+
+	public void setG_url(String g_url) {
+		this.g_url = g_url;
 	}
 	
 	

@@ -60,6 +60,7 @@
       
         <div class='banner-img'></div>
         <div class="name">상품명 : ${vo.g_name}</div>
+        <a href="${vo.g_url}">상세정보</a>
         <div class="description">가격 : ${vo.g_price}</div>
         <div class="description2">배송비 : ${vo.g_delivery}</div>
       
