@@ -61,8 +61,8 @@
         <div class='banner-img'><img src="${vo.g_image}"></div>
         <div class="name"><a href="${vo.g_url}"> ${vo.g_name}</a></div>
         
-        <div class="description">가격 : ${vo.g_price}</div>
-        <div class="description2"> ${vo.g_delivery} 원 </div>
+        <div class="description">가격 : ${vo.g_price} 원</div>
+        <div class="description2"> ${vo.g_delivery}</div>
       
       </div>
       </c:forEach>
