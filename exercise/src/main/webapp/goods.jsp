@@ -66,44 +66,7 @@
       
       </div>
       </c:forEach>
-       <!--  
-         <div>
-             <div class="name"><a href="#">${vo.g_name}</div>
-             <div class="description">${vo.g_price}</div>
-             <div class="description2">${vo.g_delivery}</div>
-             <input type="hidden" name="g_seq" value="${vo.g_seq}">
-             <input type="hidden" name="g_image" value="${vo.g_image}">
-         </div>
-	-->  
-   <!--       
-      <div class="container">
-        <div class='banner-img'></div>
-        <h1 class="name"><a href="#">상품명</a></h1>
-        <p class="description">가격</p>
-        <p class="description">배송비</p>
-      </div>
-     
-      <div class="container">
-        <div class='banner-img'></div>
-        <h1 class="name"><a href="#">상품명</a></h1>
-        <p class="description">가격</p>
-        <p class="description">배송비</p>
-      </div>
-     
-     
-      <div class="container">
-        <div class='banner-img'></div>
-        <h1 class="name"><a href="#">상품명</a></h1>
-        <p class="description">가격</p>
-        <p class="description">배송비</p>
-      </div>
-     
-      <div class="container">
-        <div class='banner-img'></div>
-        <h1 class="name"><a href="#">상품명</a></h1>
-        <p class="description">가격</p>
-        <p class="description">배송비</p>
-      </div> -->
+      
      </div>
 
                 </section>
