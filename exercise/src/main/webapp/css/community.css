@@ -445,19 +445,7 @@ label {
     border: 0;
     resize: vertical;
 }
-#section_2 .visual .s_menu{
-    position: absolute;
-    top: 20%;
-    left: 94%;
-    transform: translate(-50%, -50%);
-    position:fixed;
-    width:150px;
-    height:110px;
-    background-color: #368132;
-    border-radius: 100px;
-    text-align: center;
-    padding:17px;
-}
+
 #section_2 .visual .s_menu li a{
     color:white;
     font-weight: 700;
