@@ -75,7 +75,7 @@
 		<finalName>exercise</finalName>
 		<pluginManagement>
 			    <plugins>
-			   			<!-- 서버 배포 셋팅 -->
+			   			<!-- 서버 배포 셋팅a -->
 					    <plugin>
 							    <groupId>org.apache.tomcat.maven</groupId>
 							    <artifactId>tomcat7-maven-plugin</artifactId>
