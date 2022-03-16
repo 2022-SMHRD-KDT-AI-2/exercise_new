@@ -1,4 +1,6 @@
+<%@page import="exercise.entity.ChallengeVO"%>
 <%@page import="exercise.entity.RunningVO"%>
+<%@page import="exercise.entity.OutdoorVO"%>
 <%@page import="java.util.List"%>
 <%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
@@ -6,6 +8,7 @@
 <%
 	pageContext.setAttribute("context", request.getContextPath());
 %>
+
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
@@ -50,7 +53,7 @@
             </div>
         </header>
         
-            <section id="section_1">
+   <section id="section_1">
 
     <div class="wrapper-flex">
         <div class="nav">
@@ -62,11 +65,37 @@
         </div>
    <div class="s1_cont">
        <div class="fa">
+       
+       <c:forEach var="vo" items="${outdoorList}">
+        <c:if test="${chalVo.memAddr1 eq vo.o_address}">
+        
         <div class="card_boxs">
             <div class="cards">
                   <div class="text_box">
+            <h2 class="name"><a href="#">시설명: ${vo.o_name}</a></h2>
+            <p class="description">주소: ${vo.o_address}</p>
+            <div class="heart">
+                <div class="icon">
+                    <svg class="heart-main" viewBox="0 0 512 512" width="10" title="heart">
+                     <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+                </svg>
+           <svg class="heart-background" viewBox="0 0 512 512" width="100" title="heart">
+         <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+        </svg>
+            </div>
+           </div>
+          </div>
+        </div>
+        
+        </div>
+       
+       </c:if>
+       </c:forEach>
+        <!-- <div class="card_boxs">
+            <div class="cards">
+                  <div class="text_box">
             <h2 class="name"><a href="#">시설명</a></h2>
-            <p class="description">주소:</p>
+            <p class="description">주소:${chalVo.memAddr1}</p>
             <p class="description">이용시간:</p>
             <p class="description">전화번호:</p>
             <div class="heart">
@@ -103,33 +132,14 @@
           </div>
         </div>
         
-        </div>
-        <div class="card_boxs">
-            <div class="cards">
-                  <div class="text_box">
-            <h2 class="name"><a href="#">시설명</a></h2>
-            <p class="description">주소:</p>
-            <p class="description">이용시간:</p>
-            <p class="description">전화번호:</p>
-            <div class="heart">
-                <div class="icon">
-                    <svg class="heart-main" viewBox="0 0 512 512" width="10" title="heart">
-                     <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
-                </svg>
-           <svg class="heart-background" viewBox="0 0 512 512" width="100" title="heart">
-         <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
-        </svg>
-            </div>
-           </div>
-          </div>
-        </div>
-        
-        </div>
+        </div>-->
     </div>
 
     <div class="running">
+    
         <c:forEach var="vo" items="${list}">
         <c:if test="${memVO.memId eq vo.memId}">
+        
         <div class="card_boxs">
             <div class="cards">
                   <div class="text_box">
@@ -155,10 +165,35 @@
         </div>
         </c:if>
         </c:forEach>
-
+		</div>
         
     <div class="park">
+    
+       <c:forEach var="vo" items="${list}">
+       <c:if test="${chalVo.memAddr1 eq vo.memId}">
         <div class="card_boxs">
+            <div class="cards">
+                  <div class="text_box">
+            <h2 class="name"><a href="#">공원명</a></h2>
+            <p class="description">주소:</p>
+            <div class="heart">
+                <div class="icon">
+                    <svg class="heart-main" viewBox="0 0 512 512" width="10" title="heart">
+                     <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+                </svg>
+           <svg class="heart-background" viewBox="0 0 512 512" width="100" title="heart">
+         <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+        </svg>
+            </div>
+           </div>
+          </div>
+        </div>
+        
+        </div>
+        </c:if>
+        </c:forEach>
+        
+        <!--<div class="card_boxs">
             <div class="cards">
                   <div class="text_box">
             <h2 class="name"><a href="#">공원명</a></h2>
@@ -195,35 +230,16 @@
           </div>
         </div>
         
-        </div>
-        <div class="card_boxs">
-            <div class="cards">
-                  <div class="text_box">
-            <h2 class="name"><a href="#">공원명</a></h2>
-            <p class="description">주소:</p>
-            <div class="heart">
-                <div class="icon">
-                    <svg class="heart-main" viewBox="0 0 512 512" width="10" title="heart">
-                     <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
-                </svg>
-           <svg class="heart-background" viewBox="0 0 512 512" width="100" title="heart">
-         <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
-        </svg>
-            </div>
-           </div>
-          </div>
-        </div>
-        
-        </div>
+        </div>-->
     </div>
+    
+    
     </div>
     </div>
        </div>
   
-
-
-    </div>
-                </section>
+	</section>
+	
             <section id="section_2">
                 <div class="visual">
                     <div class="s_menu">

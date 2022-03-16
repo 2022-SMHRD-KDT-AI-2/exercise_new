@@ -23,6 +23,8 @@ public class ChallengeVO {
 	private String name8;
 	private String name9;
 	private String name10;
+	
+	private String memAddr1;
 
 	
 	public ChallengeVO() {
@@ -33,7 +35,7 @@ public class ChallengeVO {
 
 	public ChallengeVO(String url1, String url2, String url3, String url4, String url5, String url6, String url7,
 			String url8, String url9, String url10, String memId, String name1, String name2, String name3,
-			String name4, String name5, String name6, String name7, String name8, String name9, String name10) {
+			String name4, String name5, String name6, String name7, String name8, String name9, String name10, String memAddr1) {
 		super();
 		this.url1 = url1;
 		this.url2 = url2;
@@ -56,7 +58,20 @@ public class ChallengeVO {
 		this.name8 = name8;
 		this.name9 = name9;
 		this.name10 = name10;
+		this.memAddr1 = memAddr1;
 
+	}
+
+
+
+	public String getMemAddr1() {
+		return memAddr1;
+	}
+
+
+
+	public void setMemAddr1(String memAddr1) {
+		this.memAddr1 = memAddr1;
 	}
 
 

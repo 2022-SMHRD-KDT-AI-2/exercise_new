@@ -10,6 +10,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import exercise.entity.ChallengeVO;
 import exercise.entity.CommunityVO;
+import exercise.entity.OutdoorVO;
 import exercise.entity.RunningVO;
 
 public class OutdoorDAO {
@@ -31,4 +32,13 @@ public class OutdoorDAO {
 		session.close();
 		return list;
 	}
+	
+	public List<OutdoorVO> selectOutdoor() {
+		SqlSession session = sqlSessionFactory.openSession();
+		List<OutdoorVO> outdoorList = session.selectList("selectOutdoor");
+		session.close();
+		return outdoorList;
+	}
+	
+
 }

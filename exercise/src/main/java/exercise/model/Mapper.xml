@@ -76,6 +76,10 @@
     <select id = "selectExercise" resultType = "exercise.entity.MypageVO">
   	select * from tbl_mypage
   </select>
+  
+  <select id = "selectOutdoor" resultType = "exercise.entity.OutdoorVO">
+  	select * from tbl_outdoor
+  </select>
 
 </mapper>
 
