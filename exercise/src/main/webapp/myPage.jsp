@@ -1,3 +1,6 @@
+<%@page import="exercise.entity.MypageVO"%>
+<%@page import="java.util.List"%>
+<%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <%
@@ -120,14 +123,18 @@
             <img src="./img/youtube.png">
             <section id="section_1">
                 <ul class="video_1">
-                    <li><iframe width="360" height="230" src="https://www.youtube.com/embed/e4WnrhXTjg8"
+                   <c:forEach var="vo" items="${list}">
+        		   <c:if test="${memVO.memId eq vo.memId}">
+                    <li><iframe width="360" height="230" src="${vo.like_video}"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                        <div class="text_box"><a href="">너를 상대로 혼잣망르 언제까지 할수잇을까?<br>리디후_Familly sory <br>
-                                조회수2.3만회 19시간전</a></div>
+                        <div class="text_box"><a href="">${vo.like_video_name}</a></div>
                     </li>
-                    <li><iframe width="360" height="230" src="https://www.youtube.com/embed/e4WnrhXTjg8"
+                   </c:if>
+        		   </c:forEach>
+                    
+                  <!--   <li><iframe width="360" height="230" src="https://www.youtube.com/embed/e4WnrhXTjg8"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
@@ -161,7 +168,7 @@
                 allowfullscreen></iframe>
             <div class="text_box"><a href="">너를 상대로 혼잣망르 언제까지 할수잇을까?<br>리디후_Familly sory <br>
                     조회수2.3만회 19시간전</a></div>
-        </li>
+        </li>-->
                    
         </ul>
         </div>

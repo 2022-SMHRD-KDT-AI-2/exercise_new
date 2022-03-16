@@ -72,6 +72,10 @@
     insert into tbl_mypage(my_seq,like_video,memId,like_video_name)
     values(my_seq.nextval,#{like_video},#{memId},#{like_video_name})
   </insert>
+    
+    <select id = "selectExercise" resultType = "exercise.entity.MypageVO">
+  	select * from tbl_mypage
+  </select>
 
 </mapper>
 
