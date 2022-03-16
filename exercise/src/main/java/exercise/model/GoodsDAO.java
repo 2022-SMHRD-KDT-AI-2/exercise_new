@@ -9,24 +9,24 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import exercise.entity.GoodsVO;
-import exercise.entity.SurveyVO;
 
 public class GoodsDAO {
 	private static SqlSessionFactory sqlSessionFactory;
-	static {
-			try {
-				String resource = "exercise/model/config.xml";
-				InputStream inputStream = Resources.getResourceAsStream(resource);
-				sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-		}
-		public void Goods(GoodsVO vo) {
-			SqlSession session=sqlSessionFactory.openSession();
-			session.update("Goods", vo);
-			session.commit();
-			session.close();
-		}
+	   static {
+	         try {
+	           String resource = "exercise/model/config.xml";
+	           InputStream inputStream = Resources.getResourceAsStream(resource);
+	           sqlSessionFactory=new SqlSessionFactoryBuilder().build(inputStream);
+	         }catch(Exception e) {
+	            e.printStackTrace();
+	         }
+	      }
+			   public List<GoodsVO> goods() {
+				      SqlSession session=sqlSessionFactory.openSession();
+				      List<GoodsVO> list=session.selectList("selectAllg");
+				      session.close(); // ¹Ý³³ÇÏ±â
+				      return list;   
+				   }
 
-}
+	}
+

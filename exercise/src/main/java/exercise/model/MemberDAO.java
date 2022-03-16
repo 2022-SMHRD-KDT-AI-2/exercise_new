@@ -38,6 +38,14 @@ public class MemberDAO {
 		session.close();
 		return result;
 	}
+	
+// NICK중복체크	
+	public MemberVO checkNick(MemberVO vo) {
+		SqlSession session = sqlSessionFactory.openSession();
+		MemberVO result = session.selectOne("checkNick", vo);
+		session.close();
+		return result;
+	}
 
 	public MemberVO checkLogin(MemberVO vo) {
 		SqlSession session = sqlSessionFactory.openSession();

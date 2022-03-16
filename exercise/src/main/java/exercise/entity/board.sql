@@ -43,4 +43,6 @@ drop table member;
 create sequence article_seq;
 select * from tbl_goods;
 create sequence request_seq;
-select * from tbl_member;
+select * from TBL_GOODS;
+
+commit

@@ -7,10 +7,7 @@ public class GoodsVO {
 	private int g_delivery;
 	private String g_image;
 
-	public GoodsVO() {
-
-	}
-
+	public GoodsVO() {}
 	public GoodsVO(int g_seq, String g_name, int g_price, int g_delivery, String g_image) {
 		super();
 		this.g_seq = g_seq;
@@ -19,7 +16,7 @@ public class GoodsVO {
 		this.g_price = g_delivery;
 		this.g_image = g_image;
 	}
-
+	// getter/setter method
 	public int getG_seq() {
 		return g_seq;
 	}

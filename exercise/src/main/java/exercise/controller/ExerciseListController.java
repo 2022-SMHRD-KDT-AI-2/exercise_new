@@ -22,7 +22,7 @@ public String requestHandler(HttpServletRequest request, HttpServletResponse res
 	ChallengeDAO dao = new ChallengeDAO();
 	ChallengeVO vo=dao.getById(memId);		
 	request.setAttribute("vo", vo); 
-	//
+	
 	return "exerciseList";
 }
 }

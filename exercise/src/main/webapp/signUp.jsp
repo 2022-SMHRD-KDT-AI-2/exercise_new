@@ -105,11 +105,11 @@ pageContext.setAttribute("context", request.getContextPath());
     			url : "checkId.do?",
     			data:{"memNick":nick},
     			success : function(nick){
-    				if(nick=='memNick'){
-    				alert('사용할 수 없는 닉네임입니다');
+    				if(nick==0){
+    					alert('사용할 수 있는 닉네임입니다');
     				}
     				else{
-    					alert('사용할 수 있는 닉네임입니다');
+    				alert('사용할 수 없는 닉네임입니다');
     				}
     			},
     			error : function(){
@@ -129,11 +129,11 @@ pageContext.setAttribute("context", request.getContextPath());
     			url : "checkId.do?",
     			data:{"memId":id},
     			success : function(id){
-    				if(id=='memId'){
-    				alert('사용할 수 없는 아이디입니다');
+    				if(id==0){
+    					alert('사용할 수 있는 아이디입니다');
     				}
     				else{
-    					alert('사용할 수 있는 아이디입니다');
+    				alert('사용할 수 없는 아이디입니다');
     				}
     			},
     			error : function(){

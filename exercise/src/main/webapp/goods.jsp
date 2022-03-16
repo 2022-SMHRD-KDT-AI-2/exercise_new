@@ -50,21 +50,22 @@
         
         <div id="container">
             <section id="section_1">
+                      
     <div class="wrapper-flex">     
       <div class="container">
         <div class='banner-img'></div>
-        <h1 class="name">상품명<a href="goods.do?g_name=${vo.g_name1}"></a></h1>
-        <p class="description">가격</p>
-        <p class="description2">배송비</p>
+        <div class="name">상품명 : </div>
+        <div class="description">가격 : </div>
+        <div class="description2">배송비 : </div>
       </div>
-<%-- 
-     <c:forEach var="vo" items="${list}">
-		 <div>
-        <h1 class="name"><a href="${context}/goods.do?g_seq=${vo.g_name}">${vo.g_name}</a></h1>
-        <p class="description"><a href="${context}/goods.do?g_price=${vo.g_price}">${vo.g_price}</a></p>
-        <p class="description2"><a href="${context}/goods.do?g_delivery=${vo.g_delivery}">${vo.g_delivery}</a></p>
-		 </div>
-    </c:forEach> --%>
+      
+         <c:forEach var="vo" items="${list}">
+         <div>
+             <div class="name">${vo.g_name}</div>
+             <div class="description">${vo.g_price}</div>
+             <div class="description2">${vo.g_delivery}</div>
+         </div>
+	</c:forEach>
    <!--       
       <div class="container">
         <div class='banner-img'></div>
@@ -100,6 +101,7 @@
         <p class="description">가격</p>
         <p class="description">배송비</p>
       </div> -->
+     </div>
 
                 </section>
             <section id="section_2">
