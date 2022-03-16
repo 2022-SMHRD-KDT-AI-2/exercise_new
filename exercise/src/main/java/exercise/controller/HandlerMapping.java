@@ -7,7 +7,7 @@ public class HandlerMapping {
 	public HandlerMapping() {
 		mappings = new HashMap<String, Controller>();
 		
-		//새로운 요청이 발생하면 여기서부터 출발	
+		//
 		mappings.put("/signUp.do", new SignUPController());
 		mappings.put("/memberInsert.do", new MemberInsertController());
 		mappings.put("/survey.do", new SurveyController());

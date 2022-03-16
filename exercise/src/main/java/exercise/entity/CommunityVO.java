@@ -1,5 +1,5 @@
 package exercise.entity;
-//게시판 : BoardVO(글 순번, 글 제목, 글 내용, 글 첨부파일, 글 작성일자, 글 작성자)
+//커뮤니티 : CommunityVO(글 순번, 글 제목, 글 내용, 글 작성일자, 글 작성자)
 public class CommunityVO {
 	private int article_seq;
 	private String articleTitle;

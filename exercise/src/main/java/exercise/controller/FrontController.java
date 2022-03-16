@@ -58,9 +58,6 @@ public class FrontController extends HttpServlet {
 		}
 		else {
 			System.out.println("test");
-			//response.sendRedirect("signUp.jsp");
-//			PrintWriter out = response.getWriter();
-//			out.print("test");
 			
 		}
 	}

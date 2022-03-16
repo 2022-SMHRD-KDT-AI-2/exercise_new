@@ -29,7 +29,7 @@ public class CommunityDAO {
 			return list;
 		}
 		
-		// 게시판등록 메서드를 정의
+		// 커뮤니티등록 메서드를 정의
 		public int communityInsert(CommunityVO vo) {
 		      SqlSession session=sqlSessionFactory.openSession();   
 		      int cnt=session.insert("communityInsert", vo);

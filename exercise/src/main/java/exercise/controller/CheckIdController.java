@@ -16,8 +16,8 @@ public class CheckIdController implements Controller {
 	public String requestHandler(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
-		String memId=request.getParameter("memId"); // 
-//		System.out.println("test"+memId);
+		String memId=request.getParameter("memId");
+		
 		MemberVO vo = new MemberVO();
 		MemberDAO dao=new MemberDAO();
 		

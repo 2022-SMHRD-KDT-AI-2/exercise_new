@@ -19,7 +19,7 @@ public String requestHandler(HttpServletRequest request, HttpServletResponse res
 	String like_outdoor = request.getParameter("like_outdoor");
 	String like_video_name = request.getParameter("like_video_name");
 	
-    MypageVO vo=new MypageVO(); //
+    MypageVO vo=new MypageVO(); 
 	vo.setMemId(memId);;
 	vo.setLike_video(like_video);;
 	vo.setLike_video_name(like_video_name);;

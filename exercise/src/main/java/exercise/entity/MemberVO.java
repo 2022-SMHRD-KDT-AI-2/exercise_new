@@ -1,5 +1,5 @@
 package exercise.entity;
-//회원(아이디, 비밀번호, 이름)
+//회원(아이디, 비밀번호, 닉네임)
 public class MemberVO {
 	private String memId;
 	private String memPwd;

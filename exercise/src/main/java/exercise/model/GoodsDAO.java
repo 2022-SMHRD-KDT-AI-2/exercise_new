@@ -24,7 +24,7 @@ public class GoodsDAO {
 			   public List<GoodsVO> selectAllg() {
 				      SqlSession session=sqlSessionFactory.openSession();
 				      List<GoodsVO> list=session.selectList("selectAllg");
-				      session.close(); // ¹Ý³³ÇÏ±â
+				      session.close(); 
 				      return list;   
 				   }
 

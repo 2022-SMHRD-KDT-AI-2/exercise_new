@@ -95,21 +95,18 @@
                 <div><img src="img/workout.png"></div>
                 <div id="tit">운동 추천 프로그램</div><br><br>
                 <div id="txt">설문조사를 통해 사용자가 원하는 운동 종류, 운동 레벨 그리고 성별까지 고려한 운동 영상을 제공합니다!</div>
-                <!--<div class="link"><a href="/?page_id=12#course">모집 중인 취업연계과정</a></div>-->
             </div> 
 
             <div class="sevice2">
                 <div><img src="img/rope.png"></div>
                 <div id="tit">야외 체육 시설</div><br><br>
                 <div id="txt">사용자의 거주 지역을 고려하여 가까운<br>체육시설뿐만 아니라 공원과 러닝코스 정보를 제공합니다!</div>
-                <!--<div class="link"><a href="/?page_id=12#course">모집 중인 취업연계과정</a></div>-->
             </div> 
 
             <div class="sevice3">
                 <div><img src="img/man.png"></div>
                 <div id="tit">마이페이지</div><br><br>
                 <div id="txt">제공한 정보 중 좋아요한 영상과 시설들을 확인할 수 있습니다! 현재 키와 몸무게를 입력하여 BMI도 확인해 보세요!</div>
-                <!--<div class="link"><a href="/?page_id=12#course">모집 중인 취업연계과정</a></div>-->
             </div> 
         </div>
     </section> 

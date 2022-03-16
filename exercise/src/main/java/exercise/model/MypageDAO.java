@@ -26,7 +26,7 @@ public class MypageDAO {
 	      SqlSession session=sqlSessionFactory.openSession();   
 	      int cnt=session.insert("MypageInsert", vo);
 	      session.commit();
-	      session.close();// ¹Ý³³(*)
+	      session.close();
 	      return cnt;
 	   }
 }

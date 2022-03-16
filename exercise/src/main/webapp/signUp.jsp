@@ -17,13 +17,7 @@ pageContext.setAttribute("context", request.getContextPath());
 	rel="stylesheet">
 <script src="/webjars/jquery/dist/jquery.min.js"></script>
 
-<!-- 	<script>
-	function checkId(){
-		let id=document.getElementById('memId').value; //
-		location.href="/exercise/checkId.do?id="+id;
-	}
-	
-	</script> -->
+
 </head>
 <body>
 	<!-- header -->

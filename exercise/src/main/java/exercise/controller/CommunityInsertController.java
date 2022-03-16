@@ -24,7 +24,7 @@ public class CommunityInsertController implements Controller {
 		vo.setArticleWriter(articleWriter);
 
 	    CommunityDAO dao = new CommunityDAO();
-	    dao.communityInsert(vo); //성공 -> 다시 리스트 페이지로 돌리기
+	    dao.communityInsert(vo); 
 	    return "redirect:/communityList.do";
 	
 	}

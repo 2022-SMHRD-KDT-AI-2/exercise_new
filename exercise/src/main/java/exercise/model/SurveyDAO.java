@@ -27,7 +27,7 @@ public class SurveyDAO {
 		  SqlSession session = sqlSessionFactory.openSession();  
 	      int cnt=session.insert("surveyInsert", vo);
 	      session.commit();
-	      session.close();// ¹Ý³³(*)
+	      session.close();
 	      return cnt;
 	}
 	

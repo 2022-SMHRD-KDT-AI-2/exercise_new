@@ -27,7 +27,7 @@ public class MemberDAO {
 		SqlSession session = sqlSessionFactory.openSession();
 		int cnt = session.insert("memberInsert", vo);
 		session.commit();
-		session.close();// ¹Ý³³(*)
+		session.close();
 		return cnt;
 	}
 
