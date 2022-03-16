@@ -192,27 +192,6 @@ a {
   margin: 30px;
 }
 
-#section_2 .visual .s_menu {
-  position: absolute;
-  top: 21.5%;
-  left: 90%;
-  transform: translate(-50%, -50%);
-  position: fixed;
-  width: 120px;
-  height: 70px;
-  background-color: #368132;
-  border-radius: 40px;
-  text-align: center;
-  padding: 17px;
-  color: white;
-}
-#section_2 .visual .s_menu li a {
-  color: white;
-  font-weight: 700;
-  text-align: center;
-  margin: 30px;
-}
-/*³×ÀÌ¹ö*/
 #section_2 a {
   font-family: "GyeonggiTitleM";
   font-size: 20px;
