@@ -239,7 +239,7 @@ body {
   width: 270px;
   margin-bottom: 1.5rem;
   margin-left: 3.5rem;
-  height: 363px;
+  height: 380px;
 }
 
 
@@ -249,21 +249,23 @@ body {
   width: 100%;
   margin:0 auto;
 }
-
 .name {
   margin-top: 1rem;
   margin-left:0.3rem;
   font-weight: 100;
   font-size: 1rem;
+  
 }
 
 .description {
-  margin: 1.2rem 0 1.2rem 1.2rem ;
+  margin: 1rem 0 1.2rem 1.2rem ;
   font-size: 1.3rem;
   font-weight:700;
   height: 1rem;
   color: black;
+  text-align:left;
 }
 .description2{
  margin: 1.2rem 0 1.2rem 1.2rem ;
+  text-align:left;
 }
