@@ -177,7 +177,8 @@
      function Calculate(){
     	    var height = document.getElementById("h-input").value;
     	    var weight = document.getElementById("w-input").value;
-    	    var result = parseFloat(weight) /(parseFloat(height)/100)**2;
+    	    var re = parseFloat(weight) /(parseFloat(height)/100)**2
+    	    var result = re.toFixed(2);
     	    
     	    
     	    
