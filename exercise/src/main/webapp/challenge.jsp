@@ -18,6 +18,18 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Jua&family=Sunflower:wght@500&display=swap"
         rel="stylesheet">
+
+
+  <script type="text/javascript">
+  	function goOut(){
+  		location.href="/exercise/logout.do"
+  	}
+  	
+  	function loginAlert(){
+  		alert("로그인이 필요합니다.")
+  	}
+  </script>
+
 </head>
 
 <body>
@@ -30,13 +42,13 @@
                 <nav>
                        <ul>
                         <li>
-                            <a href="${context}/index.jsp">Home</a>
+                            <a href="${context}/about.do">About</a>
                         </li>
                         <li>
-                            <a href="${context}/challenge.jsp">운동 추천 프로그램</a>
+                            <a href="${context}/challenge.do">운동 추천 프로그램</a>
                         </li>
                         <li>
-                            <a href="${context}/outdoor.jsp">야외 체육시설</a>
+                            <a href="http://project-jupyter-2.ddns.net:8852/running?memId=${memVO.memId}">야외 체육시설</a>
                         </li>
                         <li>
                             <a href="${context}/goods.do">운동 용품</a>
@@ -47,8 +59,14 @@
                     </ul>
                 </nav>
                 <ul class="h_menu">
-                    <li><a href="#"><img src="./img/icon_7.png" alt=""></a></li>
-                    <li><a href="#"><img src="./img/icon_5.png" alt=""></a></li>
+                    <c:if test="${empty memVO}">
+                    <li><a onclick="loginAlert()"><img src="./img/icon_7.png" alt=""></a></li>
+                    <li><a onclick="loginAlert()"><img src="./img/icon_5.png" alt=""></a></li>
+                    </c:if>
+                    <c:if test="${!empty memVO}">
+                    <li><a href="${context}/myPage.do"><img src="./img/icon_7.png" alt=""></a></li>
+                    <li><a href="${context}/surveyUpdateForm.do"><img src="./img/icon_5.png" alt=""></a></li>
+                    </c:if>
                 </ul>
             </div>
         </header>
@@ -359,7 +377,7 @@
                             </c:if>
                             <c:if test="${!empty memVO}">
                             <label>${memVO.memId}</label><br>
-                            <a href="${context}/index.jsp" class="link_join" data-clk="log_off.logout" onclick="goOut()">로그아웃</a>
+                            <a class="link_join" data-clk="log_off.logout" onclick="goOut()">로그아웃</a>
                             </c:if>
                         </div>
                     </div>

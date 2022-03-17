@@ -30,13 +30,23 @@
                     <nav>
                         <ul>
                              <li>
-                            <a href="${context}/index.jsp">Home</a>
+                            <a href="${context}/about.do">About</a>
                         </li>
                         <li>
-                            <a href="${context}/challenge.jsp">운동 추천 프로그램</a>
+                        	<c:if test="${empty memVO}">
+                            <a href="" onclick="loginAlert()">운동 추천 프로그램</a>
+                            </c:if>
+                            <c:if test="${!empty memVO}">
+                            <a href="${context}/challenge.do">운동 추천 프로그램</a>
+                            </c:if>
                         </li>
                         <li>
-                            <a href="${context}/outdoor.jsp">야외 체육시설</a>
+                        	<c:if test="${empty memVO}">
+                            <a href="" onclick="loginAlert()">야외 체육시설</a>                     
+                            </c:if>
+                            <c:if test="${!empty memVO}">
+     		                <a href="http://project-jupyter-2.ddns.net:8852/running?memId=${memVO.memId}">야외 체육시설</a>       
+                            </c:if>
                         </li>
                         <li>
                             <a href="${context}/goods.do">운동 용품</a>
@@ -47,8 +57,14 @@
                         </ul>
                     </nav>
                     <ul class="h_menu">
-                        <li><a href="#"><img src="./img/icon_7.png" alt=""></a></li>
-                        <li><a href="${context}/survey.jsp"><img src="./img/icon_5.png" alt=""></a></li>
+                        <c:if test="${empty memVO}">
+                    	<li><a onclick="loginAlert()"><img src="./img/icon_7.png" alt=""></a></li>
+                    	<li><a onclick="loginAlert()"><img src="./img/icon_5.png" alt=""></a></li>
+                    	</c:if>
+                    	<c:if test="${!empty memVO}">
+                   	 	<li><a href="${context}/myPage.do"><img src="./img/icon_7.png" alt=""></a></li>
+                    	<li><a href="${context}/surveyUpdateForm.do"><img src="./img/icon_5.png" alt=""></a></li>
+                    	</c:if>
                     </ul>
                 </div>
             </header>
@@ -64,7 +80,7 @@
                             </c:if>
                             <c:if test="${!empty memVO}">
                             <label>${memVO.memId}</label><br>
-                            <a href="${context}/index.jsp" class="link_join" data-clk="log_off.logout" onclick="goOut()">로그아웃</a>
+                            <a href="" class="link_join" data-clk="log_off.logout" onclick="goOut()">로그아웃</a>
                             </c:if>
                         </div>
                     </div>

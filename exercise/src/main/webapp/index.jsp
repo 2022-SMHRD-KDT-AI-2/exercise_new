@@ -40,10 +40,20 @@
                             <a href="${context}/about.do">About</a>
                         </li>
                         <li>
+                        	<c:if test="${empty memVO}">
+                            <a href="" onclick="loginAlert()">운동 추천 프로그램</a>
+                            </c:if>
+                            <c:if test="${!empty memVO}">
                             <a href="${context}/challenge.do">운동 추천 프로그램</a>
+                            </c:if>
                         </li>
                         <li>
-                            <a href="http://project-jupyter-2.ddns.net:8852/running?memId=${memVO.memId}">야외 체육시설</a>
+                        	<c:if test="${empty memVO}">
+                            <a href="" onclick="loginAlert()">야외 체육시설</a>                     
+                            </c:if>
+                            <c:if test="${!empty memVO}">
+     		                <a href="http://project-jupyter-2.ddns.net:8852/running?memId=${memVO.memId}">야외 체육시설</a>       
+                            </c:if>
                         </li>
                         <li>
                             <a href="${context}/goods.do">운동 용품</a>
@@ -84,7 +94,7 @@
                             </c:if>
                             <c:if test="${!empty memVO}">
                             <label>${memVO.memId}</label><br>
-                            <a href="${context}/index.jsp" class="link_join" data-clk="log_off.logout" onclick="goOut()">로그아웃</a>
+                            <a href="" class="link_join" data-clk="log_off.logout" onclick="goOut()">로그아웃</a>
                             </c:if>
                         </div>
                     </div>

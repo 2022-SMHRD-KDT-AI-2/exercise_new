@@ -23,6 +23,17 @@
               margin-top:-540px;
             }
             </style>
+
+
+  <script type="text/javascript">
+  	function goOut(){
+  		location.href="/exercise/logout.do"
+  	}
+  	
+  	function loginAlert(){
+  		alert("로그인이 필요합니다.")
+  	}
+  </script> 
 </head>
 <body>
     <div id="wrap">
@@ -31,14 +42,24 @@
                 <h1><a href="${context}/index.jsp"><img src="img/logo_1.png" alt="로고"></a></h1>
                 <nav>
                     <ul>
-                        <li>
-                            <a href="${context}/about.jsp">About</a>
+                         <li>
+                            <a href="${context}/about.do">About</a>
                         </li>
                         <li>
-                            <a href="${context}/exerciseList.do">운동 추천 프로그램</a>
+                        	<c:if test="${empty memVO}">
+                            <a href="" onclick="loginAlert()">운동 추천 프로그램</a>
+                            </c:if>
+                            <c:if test="${!empty memVO}">
+                            <a href="${context}/challenge.do">운동 추천 프로그램</a>
+                            </c:if>
                         </li>
                         <li>
-                            <a href="${context}/outdoor.jsp">야외 체육시설</a>
+                        	<c:if test="${empty memVO}">
+                            <a href="" onclick="loginAlert()">야외 체육시설</a>                     
+                            </c:if>
+                            <c:if test="${!empty memVO}">
+     		                <a href="http://project-jupyter-2.ddns.net:8852/running?memId=${memVO.memId}">야외 체육시설</a>       
+                            </c:if>
                         </li>
                         <li>
                             <a href="${context}/goods.do">운동 용품</a>
@@ -54,7 +75,7 @@
                     <li><a onclick="loginAlert()"><img src="./img/icon_5.png" alt=""></a></li>
                     </c:if>
                     <c:if test="${!empty memVO}">
-                    <li><a href="${context}/myPage.jsp"><img src="./img/icon_7.png" alt=""></a></li>
+                    <li><a href="${context}/myPage.do"><img src="./img/icon_7.png" alt=""></a></li>
                     <li><a href="${context}/surveyUpdateForm.do"><img src="./img/icon_5.png" alt=""></a></li>
                     </c:if>
                 </ul>
@@ -66,16 +87,16 @@
         <div class="visual">
             <div class="s_menu">
                 <div id="account" class="sc_login">
-                    <div class="login_msg"></div>
-                    <c:if test="${empty memVO}">
-                    <a href="${context}/loginForm.do" class="link_login" data-clk="log_off.login">로그인</a><br>
-                       <br><a href="${context}/signUp.do" class="link_join" data-clk="log_off.registration">회원가입</a>
-                    </c:if>
-                    <c:if test="${!empty memVO}">
-                    <label>${memVO.memId}</label><br>
-                    <a href="${context}/index.jsp" class="link_join" data-clk="log_off.logout" onclick="goOut()">로그아웃</a>
-                    </c:if>
-                </div>
+                            <div class="login_msg"></div>
+                            <c:if test="${empty memVO}">
+                            <a href="${context}/loginForm.do" class="link_login" data-clk="log_off.login">로그인</a><br>
+                       		<br><a href="${context}/signUp.do" class="link_join" data-clk="log_off.registration">회원가입</a>
+                            </c:if>
+                            <c:if test="${!empty memVO}">
+                            <label>${memVO.memId}</label><br>
+                            <a href="" class="link_join" data-clk="log_off.logout" onclick="goOut()">로그아웃</a>
+                            </c:if>
+                        </div>
             </div>
             <div class="item">
                 <img src="img/visual_item.png" alt="">

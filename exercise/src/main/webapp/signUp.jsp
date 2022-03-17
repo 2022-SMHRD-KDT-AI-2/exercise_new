@@ -118,6 +118,7 @@ pageContext.setAttribute("context", request.getContextPath());
     <script>
     	$('#btn_id').on("click",function(){
     		var id = $('#memId').val();
+    		console.log(id);
     		
     		$.ajax({
     			url : "checkId.do?",
