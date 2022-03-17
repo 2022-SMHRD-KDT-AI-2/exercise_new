@@ -297,7 +297,7 @@ h1 {
   margin: 1rem;
   font-size: 0.9rem;
   color: black;
-  text-align: left;
+  text-align: center;
 }
 #section_1 > div > div.s1_cont > div.fa > div > div > div > p:nth-child(4) {
   margin-bottom: 80px;
