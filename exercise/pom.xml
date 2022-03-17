@@ -95,7 +95,7 @@
 							        <update>true</update>
 							    </configuration>
 					    </plugin>
-			    </plugins>
+			    </plugins> 
     </pluginManagement>
 
 	</build>
