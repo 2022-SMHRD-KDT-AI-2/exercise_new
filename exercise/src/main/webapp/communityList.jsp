@@ -29,13 +29,13 @@
                             <a href="${context}/challenge.jsp">운동 추천 프로그램</a>
                         </li>
                         <li>
-                            <a href="${context}/Outdoor.jsp">야외 체육시설</a>
+                            <a href="${context}/outdoor.jsp">야외 체육시설</a>
                         </li>
                         <li>
                             <a href="${context}/goods.do">운동 용품</a>
                         </li>
                         <li>
-                            <a href="${context}/communityList.jsp">커뮤니티</a>
+                            <a href="${context}/communityList.do">커뮤니티</a>
                         </li>
                     </ul>
                 </nav>
