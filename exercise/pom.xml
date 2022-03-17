@@ -74,7 +74,7 @@
 		        <resource>
 		           <directory>src/main/java</directory>
 		           <includes>
-		              <include>exercise/**/*.xml</include>
+		              <include>exercise/model/*.xml</include>
 		           </includes>
 		        </resource>     
          </resources>
