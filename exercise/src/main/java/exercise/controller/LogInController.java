@@ -25,7 +25,6 @@ public class LogInController implements Controller {
 		// Model??
 		MemberDAO dao=new MemberDAO();
 		MemberVO memVO = dao.checkLogin(vo);
-		String referer = request.getHeader("referer");
 		
 		if(memVO!=null) { // ¼º°ø
 			HttpSession session= request.getSession(); // 
