@@ -36,13 +36,13 @@
                             <a href="${context}/challenge.jsp">운동 추천 프로그램</a>
                         </li>
                         <li>
-                            <a href="${context}/outdoor.jsp">야외 체육시설</a>
+                            <a href="${context}/Outdoor.jsp">야외 체육시설</a>
                         </li>
                         <li>
                             <a href="${context}/goods.do">운동 용품</a>
                         </li>
                         <li>
-                            <a href="${context}/communityList.do">커뮤니티</a>
+                            <a href="${context}/communityList.jsp">커뮤니티</a>
                         </li>
                     </ul>
                 </nav>
@@ -73,11 +73,11 @@
             <div class="cards">
                   <div class="text_box">
             <h2 class="name"><a href="#">체육시설</a></h2>
-            <p class="description">이름: $${vo.o_name}</p>
-            <p class="description">주소: ${vo.o_address}</p>
+            <p class="description" id ="out${vo.o_seq}Name">이름: $${vo.o_name}</p>
+            <p class="description" id ="out${vo.o_seq}Addr">주소: ${vo.o_address}</p>
             <div class="heart">
                 <div class="icon">
-                    <svg class="heart-main" viewBox="0 0 512 512" width="10" title="heart">
+                    <svg class="heart-main" name="out${vo.o_seq}" viewBox="0 0 512 512" width="10" title="heart">
                      <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
                 </svg>
            <svg class="heart-background" viewBox="0 0 512 512" width="100" title="heart">
@@ -137,7 +137,7 @@
     </div>
 
     <div class="running">
-    
+    <input type="hidden" name="memId" value="${memVO.memId}">
         <c:forEach var="vo" items="${list}">
         <c:if test="${memVO.memId eq vo.memId}">
         
@@ -146,13 +146,13 @@
                   <div class="text_box">
              
             <h2 class="name"><a href="#">러닝코스</a></h2>
-            <p class="description">이름: ${vo.c_name}</p>
-            <span class="description">주소: ${vo.c_addr}</span>
+            <p class="description" id="run${vo.c_seq}Name" value = "${vo.c_name}">이름: ${vo.c_name}</p>
+            <span class="description" id="run${vo.c_seq}Addr" value = "${vo.c_addr}">주소: ${vo.c_addr}</span>
             <p class="description">총 길이: ${vo.c_total_distance}</p>
             <a href="${vo.c_information}">상세정보</a>
             <div class="heart">
                 <div class="icon">
-                    <svg class="heart-main" viewBox="0 0 512 512" width="10" title="heart">
+                    <svg class="heart-main" name="run${vo.c_seq}" viewBox="0 0 512 512" width="10" title="heart">
                      <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
                 </svg>
            <svg class="heart-background" viewBox="0 0 512 512" width="100" title="heart">
@@ -266,6 +266,55 @@
         </div>
 
     </div>
+    
+    
+    
+    
+    
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+	 
+	$(".heart-main").on("click",function(){
+			var getName=String($(this).attr("name"));
+			console.log(getName)
+			
+			var myout_name = $("#"+getName+"Name").html();
+			var myout_addr = $("#"+getName+"Addr").html();
+		
+			
+			//var like_video = $("[name=url"+getName+"]").attr("src");
+			//var like_video_name = $("[name=name"+getName+"]").val();
+			console.log(myout_name)
+			console.log(myout_addr)
+			
+			$.ajax({
+				url : 'mypageOutdoorInsert.do', // 요청경로
+				
+				type : 'post', // GET or POST
+				//dataType : 'text' , // 응답받는 데이터의 형식, json데이터를 응답받을때만 사용  
+				data : {
+					memId:$("[name=memId]").val(),
+					myout_name:myout_name,
+					myout_addr:myout_addr
+
+				},
+				success : function(data) {
+					
+					alert('마이페이지에 추가 되었습니다.');
+
+				},
+				error : function() {
+		
+					 alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error)
+
+				
+			
+				}
+			});
+
+		});
+
+	</script>
 </body>
 
 </html>

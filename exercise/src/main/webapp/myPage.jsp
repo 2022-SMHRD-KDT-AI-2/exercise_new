@@ -105,16 +105,20 @@
             <h1>좋아요 표시한 야외체육시설</h1>
             <img src="./img/check.png">
             <ul id="list">
-                <li><a href="#">▷ 진월동 체육시설</a>
-                <div>&nbsp &nbsp &nbsp 광주광역 남구 진월동 화산로 106번지</div></li><br>
-            <li><a href="#">▷ 진월동 체육시설</a></li>
+                <c:forEach var="vo" items="${myOutList}">
+                <c:if test="${memVO.memId eq vo.memId}">
+                <li><a href="#">▷ ${vo.myout_name}</a>
+                <div>&nbsp &nbsp &nbsp ${vo.myout_addr}</div></li><br>
+                </c:if>
+                </c:forEach>
+            <!--<li><a href="#">▷ 진월동 체육시설</a></li>
                  <div>&nbsp &nbsp &nbsp 광주광역 남구 진월동 화산로 106번지</div></li><br>
             <li><a href="#">▷ 진월동 체육시설</a></li>
                  <div>&nbsp &nbsp &nbsp 광주광역 남구 진월동 화산로 106번지</div></li><br>
             <li><a href="#">▷ 진월동 체육시설</a></li>
                 <div>&nbsp &nbsp &nbsp 광주광역 남구 진월동 화산로 106번지</div></li><br>
             <li><a href="#">▷ 진월동 체육시설</a></li>
-            <div>&nbsp &nbsp &nbsp 광주광역 남구 진월동 화산로 106번지</div></li><br>
+            <div>&nbsp &nbsp &nbsp 광주광역 남구 진월동 화산로 106번지</div></li><br>  -->
             </ul>
         </div>
         

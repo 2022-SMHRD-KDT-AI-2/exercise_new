@@ -72,9 +72,18 @@
     insert into tbl_mypage(my_seq,like_video,memId,like_video_name)
     values(my_seq.nextval,#{like_video},#{memId},#{like_video_name})
   </insert>
+  
+  	<insert id="mypageOutInsert" parameterType="exercise.entity.MypageOutdoorVO">
+    insert into tbl_mypageoutdoor(myout_seq,myout_addr,memId,myout_name)
+    values(myout_seq.nextval,#{myout_addr},#{memId},#{myout_name})
+  </insert>
     
     <select id = "selectExercise" resultType = "exercise.entity.MypageVO">
   	select * from tbl_mypage
+  </select>
+  
+    <select id = "selectOutdoorList" resultType = "exercise.entity.MypageOutdoorVO">
+  	select * from TBL_MYPAGEOUTDOOR
   </select>
   
   <select id = "selectOutdoor" resultType = "exercise.entity.OutdoorVO">

@@ -58,6 +58,7 @@ create sequence request_seq;
 
 select * from TBL_goods;
 create sequence g_seq;
+create sequence myout_seq;
 
 
 INSERT INTO TBL_GOODS (G_SEQ, G_NAME, G_PRICE, G_DELIVERY) VALUES (1,'고무나라 풀업밴드 그린 투톤 [파워 턱걸이 철봉 헬스 고무 근력 저항 튜빙 운동 라...',10600.0,'배송비 3,000원');

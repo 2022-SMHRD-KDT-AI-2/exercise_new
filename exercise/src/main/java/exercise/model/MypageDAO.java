@@ -8,7 +8,9 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
+import exercise.entity.MypageOutdoorVO;
 import exercise.entity.MypageVO;
+import exercise.entity.OutdoorVO;
 import exercise.entity.RunningVO;
 
 public class MypageDAO {
@@ -32,10 +34,27 @@ public class MypageDAO {
 	      return cnt;
 	   }
 	
+	public int mypageOutInsert(MypageOutdoorVO vo) {
+	      SqlSession session=sqlSessionFactory.openSession();   
+	      int cnt=session.insert("mypageOutInsert", vo);
+	      session.commit();
+	      session.close();
+	      return cnt;
+	   }
+	
 	public List<MypageVO> selectExercise() {
 		SqlSession session = sqlSessionFactory.openSession();
 		List<MypageVO> list = session.selectList("selectExercise");
 		session.close();
 		return list;
 	}
+	
+	public List<MypageOutdoorVO> selectOutdoorList() {
+		SqlSession session = sqlSessionFactory.openSession();
+		List<MypageOutdoorVO> myOutList = session.selectList("selectOutdoorList");
+		session.close();
+		return myOutList;
+	}
+	
+
 }

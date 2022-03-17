@@ -7,6 +7,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import exercise.entity.MypageOutdoorVO;
 import exercise.entity.MypageVO;
 import exercise.model.MypageDAO;
 
@@ -18,6 +19,8 @@ public String requestHandler(HttpServletRequest request, HttpServletResponse res
 	List<MypageVO> list = dao.selectExercise();
 	request.setAttribute("list", list);
 	
+	List<MypageOutdoorVO> myOutList = dao.selectOutdoorList();
+	request.setAttribute("myOutList", myOutList);
 
 	return "myPage";
 }

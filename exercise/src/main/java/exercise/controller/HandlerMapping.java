@@ -36,6 +36,7 @@ public class HandlerMapping {
 		mappings.put("/goods.do", new GoodsController());
 		mappings.put("/outdoor.do", new OutdoorController());
 		mappings.put("/mypageInsert.do", new MypageInsertController());
+		mappings.put("/mypageOutdoorInsert.do", new MypageOutdoorInsertController());
 		mappings.put("/myPage.do", new MyPageController());
 
 
