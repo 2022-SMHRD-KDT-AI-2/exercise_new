@@ -377,7 +377,7 @@
                             </c:if>
                             <c:if test="${!empty memVO}">
                             <label>${memVO.memId}</label><br>
-                            <a class="link_join" data-clk="log_off.logout" onclick="goOut()">로그아웃</a>
+                            <a href="${context}/logout.do" class="link_join" data-clk="log_off.logout" >로그아웃</a>
                             </c:if>
                         </div>
                     </div>
