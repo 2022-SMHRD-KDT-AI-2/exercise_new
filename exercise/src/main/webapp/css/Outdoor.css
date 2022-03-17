@@ -12,13 +12,13 @@
   font-style: normal;
 }
 
-/* 공통 */
+/* 怨듯넻 */
 
 html {
   font-size: 15px;
 }
 
-/* 15px 가장많이 사용 */
+/* 15px 媛��λ쭖�� �ъ슜 */
 
 * {
   margin: 0;
@@ -157,7 +157,7 @@ a {
   height: 100vh;
 }
 
-/* background-size: cover; 배경 전체로 맞춤 */
+/* background-size: cover; 諛곌꼍 �꾩껜濡� 留욎땄 */
 
 #section_1 .visual {
   width: 1000px;
@@ -264,12 +264,12 @@ body {
   width: 280px;
   margin-bottom: 1.5rem;
   margin-left: 6.5rem;
-  height: 350px;
+  height: 234px;
 }
 .cards {
   position: absolute;
   background-color: #c5c8d9;
-  height: 24rem;
+  height: 17rem;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -283,8 +283,8 @@ h1 {
 .text_box {
   background-color: white;
   width: 85%;
-  margin: 21px auto;
-  height: 20.7em;
+  margin: 13.7px auto;
+  height: 13.8em;
 }
 .name {
   font-weight: bold;
@@ -310,11 +310,11 @@ h1 {
   > div
   > div
   > p:nth-child(3) {
-  margin-bottom: 110px;
+  margin-bottom: 0px;
 }
 
 #section_1 > div > div.s1_cont > div.park > div > div > div > p {
-  margin-bottom: 51px;
+  margin-bottom: 140px;
 }
 :root {
   --pink-light: #ff7eb4;
@@ -382,7 +382,7 @@ path {
     transform: scale(1);
   }
   80% {
-    fill: var(—pink);
+    fill: var(�봯ink);
     transform: scale(1.1);
   }
   90% {
@@ -390,7 +390,7 @@ path {
   }
   100% {
     stroke-dashoffset: 3100;
-    fill: var(—pink);
+    fill: var(�봯ink);
   }
 }
 
@@ -400,7 +400,7 @@ path {
     transform: scale(1);
   }
   80% {
-    fill: var(—pink-light);
+    fill: var(�봯ink-light);
     transform: scale(1.1);
     opacity: 1;
   }

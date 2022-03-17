@@ -99,8 +99,7 @@
         <div class="card_boxs">
             <div class="cards">
                   <div class="text_box">
-            <h2 class="name"><a href="#">체육시설</a></h2>
-            <p class="description" id ="out${vo.o_seq}Name">이름: $${vo.o_name}</p>
+            <h2 class="name" id ="out${vo.o_seq}Name"><a href="#">${vo.o_name}</a></h2>
             <p class="description" id ="out${vo.o_seq}Addr">주소: ${vo.o_address}</p>
             <div class="heart">
                 <div class="icon">
@@ -172,8 +171,7 @@
             <div class="cards">
                   <div class="text_box">
              
-            <h2 class="name"><a href="#">러닝코스</a></h2>
-            <p class="description" id="run${vo.c_seq}Name" value = "${vo.c_name}">이름: ${vo.c_name}</p>
+            <h2 class="name" id="run${vo.c_seq}Name" value = "${vo.c_name}"><a href="#"> ${vo.c_name}</a></h2>
             <span class="description" id="run${vo.c_seq}Addr" value = "${vo.c_addr}">주소: ${vo.c_addr}</span>
             <p class="description">총 길이: ${vo.c_total_distance}</p>
             <a href="${vo.c_information}">상세정보</a>
@@ -202,8 +200,7 @@
         <div class="card_boxs">
             <div class="cards">
                   <div class="text_box">
-            <h2 class="name"><a href="#">공원</a></h2>
-            <p class="description">이름: ${vo.park_name}</p>
+            <h2 class="name"><a href="#"> ${vo.park_name}</a></p>
             <p class="description">주소: ${vo.park_addr}</p>
             <div class="heart">
                 <div class="icon">
