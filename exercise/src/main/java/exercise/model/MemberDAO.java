@@ -32,9 +32,9 @@ public class MemberDAO {
 	}
 
 // ID중복체크	
-	public MemberVO checkId(MemberVO vo) {
+	public String checkId(String memId) {
 		SqlSession session = sqlSessionFactory.openSession();
-		MemberVO result = session.selectOne("checkId", vo);
+		String result = session.selectOne("checkId", memId);
 		session.close();
 		return result;
 	}

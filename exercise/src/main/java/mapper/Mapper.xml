@@ -15,10 +15,8 @@
  </select>
  
  <!-- ID중복확인 -->
-	<select id="checkId" parameterType="exercise.entity.MemberVO"
-                           resultType="exercise.entity.MemberVO">
-		select count(*) from tbl_member
-		where memId=#{memId} 
+	<select id="checkId" parameterType="String" resultType="String">
+		select memId from tbl_member where memId=#{memId} 
 	</select>
 	
 <!-- NICK중복확인 -->
