@@ -26,7 +26,7 @@
                     <input type="text" id="memId" name="memId" class="int" maxlength="20" placeholder="ID">
                 </span>
             </div>
-            <!-- PW -->
+            <!-- PW --->
             <div>
                 <h3 class="join_title"><label for="pswd1"></label></h3>
                 <span class="box int_pass">
