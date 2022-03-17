@@ -166,7 +166,7 @@
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
-            <div class="text_box"><a href="">너를 상대로 혼잣망르 언제까지 할수잇을까?<br>리디후_Familly sory <br>
+            <div class="text_box"><a href="">너를 상대ddd로 혼잣망르 언제까지 할수잇을까?<br>리디후_Familly sory <br>
                     조회수2.3만회 19시간전</a></div>
         </li>-->
                    
