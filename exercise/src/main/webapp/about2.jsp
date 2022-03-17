@@ -124,6 +124,7 @@
                 <div><img src="img/man.png"></div>
                 <div id="tit">마이페이지</div><br><br>
                 <div id="txt">제공한 정보 중 좋아요한 영상과 시설들을 확인할 수 있습니다! 현재 키와 몸무게를 입력하여 BMI도 확인해 보세요!</div>
+                <!--  -->
             </div> 
         </div>
     </section> 
