@@ -14,7 +14,7 @@ public class MemberDAO {
 	// 초기화블럭(프로그램 실행시 한번만 실행되는 부분)
 	static {
 		try {
-			String resource = "exercise/model/config.xml";
+			String resource = "mapper/config.xml";
 			InputStream inputStream = Resources.getResourceAsStream(resource);
 			sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
 		} catch (Exception e) {

@@ -15,7 +15,7 @@ public class CommunityDAO {
 	private static SqlSessionFactory sqlSessionFactory;
 	static {
 		try {
-			String resource = "exercise/model/config.xml";
+			String resource = "mapper/config.xml";
 			InputStream inputStream = Resources.getResourceAsStream(resource);
 			sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);	
 		} catch (Exception e) {
