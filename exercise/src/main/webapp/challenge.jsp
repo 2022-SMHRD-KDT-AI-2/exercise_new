@@ -62,7 +62,7 @@
                             allowfullscreen></iframe>
                          <div class="s1_cont">
                              <ul class="text_box">
-                                 <li>제목 :<a href="">${vo.name1}</a></li> 
+                                 <li><a href="">${vo.name1}</a></li> 
                                  <input type="hidden" name="name1" value="${vo.name1}"/>             
                               </ul>
                               <ul class="text_2">
@@ -85,7 +85,7 @@
                             allowfullscreen></iframe>
                         <div class="s1_cont">
                              <ul class="text_box">
-                                 <li>제목 :<a href=""  >${vo.name2}</a></li>
+                                 <li><a href=""  >${vo.name2}</a></li>
                                  <input type="hidden" name="name2" value="${vo.name2}"/> 
                               </ul>
                               <ul class="text_2">
@@ -111,7 +111,7 @@
                             allowfullscreen></iframe>
                          <div class="s1_cont">
                              <ul class="text_box">
-                                 <li>제목 :<a href="">${vo.name3}</a></li>
+                                 <li><a href="">${vo.name3}</a></li>
                                  <input type="hidden" name="name3" value="${vo.name3}"/>             
                               </ul>
                               <ul class="text_2">
@@ -134,7 +134,7 @@
                             allowfullscreen></iframe>
                         <div class="s1_cont">
                              <ul class="text_box">
-                                 <li>제목 :<a href="">${vo.name4}</a></li>
+                                 <li><a href="">${vo.name4}</a></li>
                                  <input type="hidden" name="name4" value="${vo.name4}"/> 
                               </ul>
                               <ul class="text_2">
@@ -158,7 +158,7 @@
                             allowfullscreen></iframe>
                          <div class="s1_cont">
                              <ul class="text_box">
-                                 <li>제목 :<a href="">${vo.name5}</a></li>
+                                 <li><a href="">${vo.name5}</a></li>
                                  <input type="hidden" name="name5" value="${vo.name5}"/>             
                               </ul>
                               <ul class="text_2">
@@ -181,7 +181,7 @@
                             allowfullscreen></iframe>
                         <div class="s1_cont">
                              <ul class="text_box">
-                                 <li>제목 :<a href="">${vo.name6}</a></li>
+                                 <li><a href="">${vo.name6}</a></li>
                                  <input type="hidden" name="name6" value="${vo.name6}"/> 
                               </ul>
                               <ul class="text_2">
@@ -207,7 +207,7 @@
                             allowfullscreen></iframe>
                          <div class="s1_cont">
                              <ul class="text_box">
-                                 <li>제목 :<a href="">${vo.name7}</a></li>
+                                 <li><a href="">${vo.name7}</a></li>
                                  <input type="hidden" name="name7" value="${vo.name1}"/>             
                               </ul>
                               <ul class="text_2">
@@ -230,7 +230,7 @@
                             allowfullscreen></iframe>
                         <div class="s1_cont">
                              <ul class="text_box">
-                                 <li>제목 :<a href="">${vo.name8}</a></li>
+                                 <li><a href="">${vo.name8}</a></li>
                                  <input type="hidden" name="name8" value="${vo.name8}"/> 
                               </ul>
                               <ul class="text_2">
@@ -256,7 +256,7 @@
                             allowfullscreen></iframe>
                          <div class="s1_cont">
                              <ul class="text_box">
-                                 <li>제목 :<a href="">${vo.name9}</a></li>
+                                 <li><a href="">${vo.name9}</a></li>
                                  <input type="hidden" name="name9" value="${vo.name9}"/>             
                               </ul>
                               <ul class="text_2">
@@ -279,7 +279,7 @@
                             allowfullscreen></iframe>
                         <div class="s1_cont">
                              <ul class="text_box">
-                                 <li>제목 :<a href="">${vo.name10}</a></li>
+                                 <li><a href="">${vo.name10}</a></li>
                                  <input type="hidden" name="name10" value="${vo.name10}"/> 
                               </ul>
                               <ul class="text_2">
@@ -305,7 +305,7 @@
                             allowfullscreen></iframe>
                          <div class="s1_cont">
                              <ul class="text_box">
-                                 <li>제목 :<a href="">${vo.name1}</a></li>             
+                                 <li><a href="">${vo.name1}</a></li>             
                               </ul>
                               <ul class="text_2">
                                   <li> <div class="icon">
@@ -327,7 +327,7 @@
                             allowfullscreen></iframe>
                         <div class="s1_cont">
                              <ul class="text_box">
-                                 <li>제목 :<a href="">${vo.name2}</a></li> 
+                                 <li><a href="">${vo.name2}</a></li> 
                               </ul>
                               <ul class="text_2">
                                   <li> <div class="icon">

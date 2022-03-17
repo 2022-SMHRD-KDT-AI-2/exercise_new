@@ -241,7 +241,7 @@ a {
   font-family: sans-serif;
 }
 .s1_cont .text_2 {
-  margin: 30px 20px 20px 300px;
+  margin: 30px 20px 20px 30px;
 }
 
 #section_1 > ul > li > div {
@@ -251,6 +251,11 @@ a {
   border: 3px solid #000;
   border-radius: 0 0 10px 10px;
 }
+.s1_cont{
+  width:540px;
+}
+
+
 
 
 
