@@ -20,7 +20,17 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Jua&family=Sunflower:wght@500&display=swap"
         rel="stylesheet">
-    </head>
+
+<script type="text/javascript">
+  	function goOut(){
+  		location.href="/exercise/logout.do"
+  	}
+  	
+  	function loginAlert(){
+  		alert("로그인이 필요합니다.")
+  	}
+  </script> 
+</head>
     <body>
       
         <div id="wrap">
