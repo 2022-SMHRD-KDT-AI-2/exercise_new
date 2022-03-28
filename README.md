@@ -24,7 +24,7 @@
 
 ## 팀원 단위 업무 분장 및 결과표
 팀원 : 박소연(팀장), 김유진, 윤중열, 이상현, 장강근
-
+<br><br><br>
 
 # ERD
 # ![erd최최종](https://user-images.githubusercontent.com/99311920/158744877-efa289d8-05f7-44a2-b421-74a1c7bbe554.PNG)
