@@ -16,3 +16,11 @@
 # ERD
 # ![erd최최종](https://user-images.githubusercontent.com/99311920/158744877-efa289d8-05f7-44a2-b421-74a1c7bbe554.PNG)
 
+##8. 페이지링크
+https://project-student-5.ddns.net/exercise/
+- 작성자:ㅂㅅㅇ
+- 작성일:
+ 2022.03.28 오후 5시 
+  a. 리드미파일 초기 업로드
+  b. 헬시플레저 주요 기능 작성 
+ 
