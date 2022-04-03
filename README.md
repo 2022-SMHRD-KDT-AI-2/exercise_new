@@ -51,5 +51,3 @@
 ## 페이지링크
 Click [Healthy Pleasure](https://project-student-5.ddns.net/exercise/)
 
- ## 시연영상
-Click [Healthy Pleasure Video](https://www.youtube.com/watch?v=tVkiP3sKanU)
